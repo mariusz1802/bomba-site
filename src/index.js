@@ -11,13 +11,19 @@ import Offer from "./view/Offer/Offer.js";
 import Partners from "./view/Partners/Partners.js";
 import Contact from "./view/Contact/Contact.js";
 import Footer from "./view/Footer/Footer.js";
-
+import LoadingScreen from 'react-loading-screen';
+import Logo from "./view/Head/logo_big.jpg"
 
 import "./i18n";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Suspense fallback={(<div>Loading ~~~</div>)} >
+    <Suspense fallback={<LoadingScreen     loading={true}
+    bgColor='#f1f1f1'
+    spinnerColor='#9ee5f8'
+    textColor='#676767'
+    logoSrc={Logo}
+    />} >
     <Navbar />
     <Head />
     <NavbarDesktop/>
