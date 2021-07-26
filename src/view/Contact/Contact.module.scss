@@ -1,0 +1,138 @@
+@import "../../index.module.scss";
+
+.contactStyle {
+  color: $dark-grey;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction : row;
+  flex-wrap : wrap;
+  justify-content: space-between;
+}
+
+.textarea {
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  border: 2px solid $medium-grey;
+  width: 100%;
+  height: auto;
+  color: grey;
+  background-color : $soft-grey;
+  padding: 5px;
+  font-size : 18px;
+  margin-top: 10px;
+
+}
+.title {
+  font-size: 1.6rem;
+}
+
+
+.iframe {
+  border: 3px solid $medium-grey;
+}
+
+.textarea::placeholder {
+  font-family: "Roboto";
+  color: grey;
+  color : $dark-grey;
+  font-size: 18px;
+  margin : 5px;
+}
+.textarea:focus {
+  outline:none;
+  border: 3px solid #5fa8d3;
+}
+
+iframe {
+  width: 100%;
+  min-height: 300px;
+  height: auto;
+}
+
+.openHours {
+  margin: 10px 0;
+}
+
+.askQuestion {
+  margin-top: 30px;
+}
+
+.column {
+  background-color : $soft-grey;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  margin : 20px auto;
+  width: 90%;
+  line-height: 1.5;
+}
+.certificate {
+  margin-top: 50px;
+}
+.logoRF {
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  margin : auto;
+  margin-top: 30px;
+  text-align: justify;
+}
+
+
+
+
+
+@media screen and (min-width: 670px ) and (max-width: 930px ) {
+  .column{
+    display: flex;
+    width: 48%;
+    flex-direction : column;
+    background-color : $soft-grey;
+    padding: 10px;
+
+  }
+
+  .column:last-child{
+    width: 100%;
+    margin : auto;
+    margin-top: 20px;
+  }
+
+  .askQuestion {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  .column{
+    display: flex;
+    width: 32%;
+    flex-direction : column;
+    background-color : $soft-grey;
+    padding: 20px;
+
+  }
+
+  .askQuestion {
+    margin-top: 10px;
+  }
+}
+
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: grey;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: grey;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: grey;
+}

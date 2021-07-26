@@ -1,0 +1,17 @@
+.active {
+  background-color: #a5a5a5;
+  width: 130px;
+  height: 60px;
+  display: block;
+  display: inline-block;
+}
+
+
+.pasive {
+  background-color: green;
+  width: 130px;
+  height: 60px;
+  display: block;
+  display: inline-block;
+}
+

@@ -1,0 +1,66 @@
+@import "../../index.module.scss";
+
+.form {
+  font-size: 18px;
+  width: 100%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  margin-bottom: 10px;
+
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  color: $dark-grey;
+  padding-top: 20px;
+  padding-left: 8px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background-color: $soft-grey;
+
+}
+
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 2px solid $medium-grey;
+
+}
+
+.form label::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  left: 0px;
+  bottom: -1px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.contentName {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  transition: all 0.3s ease;
+}
+
+.form input:focus + .labelName .contentName,
+.form input:valid + .labelName .contentName {
+  transform: translateY(-120%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.form input:focus + .labelName::after,
+.form input:valid + labelName::after {
+  transform: translateX(0);
+}

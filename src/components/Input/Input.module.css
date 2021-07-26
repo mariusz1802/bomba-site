@@ -1,0 +1,71 @@
+:export {
+  redcolor: #ff5c5c;
+}
+
+.form {
+  font-style: 16px;
+  width: 90%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  color: #595f6e;
+  padding-top: 20px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #000;
+}
+
+.form label::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  left: 0px;
+  bottom: -1px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.contentName {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.form input:focus + .labelName .contentName,
+.form input:valid + .labelName .contentName {
+  -webkit-transform: translateY(-120%);
+          transform: translateY(-120%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.form input:focus + .labelName::after,
+.form input:valid + labelName::after {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+/*# sourceMappingURL=Input.module.css.map */

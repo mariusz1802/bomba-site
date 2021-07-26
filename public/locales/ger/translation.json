@@ -1,0 +1,81 @@
+{
+  "Thanks": {
+    "1": "Danke dir"
+  },
+  "Why": {
+    "1": "Fur diesie video ansehen"
+  },
+  "Menu": {
+    "1": "HOME",
+    "2": "ÜBER UNS",
+    "3": "ANGEBOT",
+    "4": "PARTNER",
+    "5": "KONTAKT"
+  },
+  "aboutUs": {
+    "title": "Über uns",
+    "description": "Unser Unternehmen besteht aus Menschen, die sich mit Leidenschaft ihrer Arbeit widmen. Wir unterscheiden uns voneinander, aber gemeinsam schaffen wir einen Monolithen, der jedes auftretende Problem überwindet. Wir gestalten Websites, Stores und mobile Anwendungen. Wir lieben Programmieren und Computergrafik, daher erfüllen wir Ihre Erwartungen. Wir sind offen für neue Ideen und Projekte!",
+    "technologies": "verwendete Technologien: "
+  },
+  "offer": {
+    "title": "Angebot",
+    "description": "Wir bieten eine breite Palette von Dienstleistungen rund um Computergrafik sowie Webprogrammierung an. Wir können für Sie sowohl eine einfache One Page Besuchsseite als auch komplexere Seiten basierend auf dem CMS-System erstellen. Wir verwenden Technologien, die sich in der Internetsuchmaschine perfekt positionieren. Die Erstgestaltung der Website übernehmen wir kostenlos. Erst nach Annahme des Projekts geht es an die Umsetzung.",
+    "whatWeCanDo": "Was können wir für dich tun ?"
+  },
+  "offerLogo": {
+    "title": "Logo",
+    "description": "Die Gestaltung eines Logos ist nicht nur Teil unserer Arbeit, sondern auch eine große Freude, der wir große Sorgfalt widmen. Es ist eines der grundlegenden Elemente, die sich mit Ihrer Marke identifizieren. Das Logo sollte in jedem Format, in jeder Größe gut aussehen und vor allem soll es lange in Erinnerung bleiben!"
+  },
+  "offerShop" : {
+    "title" : "Sklep internetowy",
+    "description" : "Zajmujesz się sprzedażą ? Stworzymy dla Ciebie sklep internetowy spełniający kryteria najbardziej wymagającego klienta. Wiemy jak ma wyglądać sklep i jakie cechy powinien posiadać aby był funkcjonalny i przejrzyty. Zaufaj nam i pozwól stowrzyć wstępny projekt zupełnie za darmo."
+  },
+  "offerWebsite": {
+    "title": "Website",
+    "description": "Obwohl die Reichweite der Online-Verbreitung zugenommen hat, ist ein Unternehmen ohne eigene Website kaum vorstellbar. Heute ist es ein weltweit gültiger Standard. Wir konzipieren und erstellen für Sie eine Website oder, wenn Sie im Vertrieb tätig sind, einen Online-Shop!"
+  },
+  "offerPainting": {
+    "title": "Druckmaterialien",
+    "description": "Wir erstellen auch Werbemittel für Unternehmen wie Kalender, Visitenkarten und Prospekte. Wir bieten auch Großformatdruck an."
+  },
+  "partners": {
+    "title": "Partner",
+    "subtitle": "Unsere Geschäftspartner",
+    "button": "begleiten Sie uns!"
+  },
+  "contact" :{
+    "title" : "Kontakt",
+    "phone" : "Telefonnummer:",
+    "adresse" : "Adresse:",
+    "description" : "Wenn Sie Ihr Projekt vorstellen oder Themen diskutieren möchten, die Sie beschäftigen, treffen wir uns gerne und besprechen das Thema. Wenn uns die Distanz trennt, machen wir Ihr Projekt aus der Ferne.",
+
+    "street" : "Kasernenstraße 13a",
+    "country" : "POLEN",
+    "map" : "Anfahrtsplan",
+    "openingHours" : "Öffnungszeiten",
+    "openingTime" : "Mo-Sa: 8:00-17:00",
+    "askQuestion" : "Stelle eine Frage",
+    "subject" : "Thema",
+    "name" : "Name",
+    "mobile" : "Telefonnummer",
+    "button" : "Senden"
+  },
+  "validation": {
+    "subject": "Das Thema ist zu kurz",
+    "name": "Der Name ist zu kurz",
+    "email": "Ungültige E-Mail",
+    "phonenumber": "Das Telefon ist nicht gültig",
+    "message": "Die Frage ist zu kurz"
+  },
+  "placeholder": {
+    "subject": "Thema",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Telefon",
+    "message": "Nachricht"
+  },
+  "sendInfo": {
+    "header": "Danke für deine Nachricht!",
+    "description": "Nachdem wir den Inhalt gelesen haben, werden wir so schnell wie möglich antworten."
+  }
+}

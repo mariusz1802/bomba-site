@@ -1,0 +1,82 @@
+{
+  "Thanks": {
+    "1": "Thank you"
+  },
+  "Why": {
+    "1": "For watching this video"
+  },
+
+  "Menu": {
+    "1": "HOME",
+    "2": "ABOUT US",
+    "3": "OFFER",
+    "4": "PARTNERS",
+    "5": "CONTACT"
+  },
+  "aboutUs": {
+    "title": "About us",
+    "description": "Our company consists of people who passionately devote themselves to their work. We differ from each other, but together we create a monolith that will overcome every encountered problem. We design websites, stores and mobile applications. We love programming and computer graphics, so we meet your expectations. We are open to new ideas and projects!",
+    "technologies" : "Technologies we use: " 
+  },
+  "offer" : {
+    "title" : "Offer",
+    "description" : "We offer a wide range of services related to computer graphics as well as web programming. We can make for you both a simple One Page visit page or more complex pages based on the CMS system. We use technologies that perfectly position themselves in the Internet search engine. We will do the initial design of the website for free. Only after accepting the project, we proceed to implementation.",
+    "whatWeCanDo" : "What we can do for you ?"
+  },
+  "offerLogo" : {
+    "title" : "Logo",
+    "description" : "Designing a logo is not only part of our work, but also a great pleasure, to which we apply great care. It is one of the basic elements that identify with your brand. The logo should look good in any format, size and most importantly, it should be remembered for a long time!"
+  },
+  "offerWebsite" : {
+    "title" : "Web Page",
+    "description" : "While the reach of online dissemination has increased, it is hard to imagine a company that does not have a website of its own. Today it is a standard that is valid all over the world. We will design and make a website for you, or if you are involved in sales - an online store!"
+  },
+  "offerShop" : {
+    "title" : "Sklep internetowy",
+    "description" : "Zajmujesz się sprzedażą ? Stworzymy dla Ciebie sklep internetowy spełniający kryteria najbardziej wymagającego klienta. Wiemy jak ma wyglądać sklep i jakie cechy powinien posiadać aby był funkcjonalny i przejrzyty. Zaufaj nam i pozwól stowrzyć wstępny projekt zupełnie za darmo."
+  },
+  "offerPainting" : {
+    "title" : "Printing materials",
+    "description" : "We also create advertising materials for companies, such as calendars, business cards and leaflets. We also provide large-format printing. "
+  },
+  "partners" : {
+    "title" : "Partners",
+    "subtitle" : "Our Partners in bussiness",
+    "button" : "Join Us!"
+  },
+  "contact" :{
+    "title" : "Contact",
+    "phone" : "Phone",
+    "phoneNumber" : " +48 609-923-989",
+    "adresse" : "Address:",
+    "description" : "If you would like to present your project or discuss issues that concern you, we are happy to meet and discuss the topic. When the distance separates us, we will make your project remotely.",
+    "street" : "Barakowastreet 13a",
+    "country" : "POLAND",
+    "map" : "Access map",
+    "openingHours" : "Opening hours",
+    "openingTime" : "Mon-Sat: 8:00-17:00",
+    "askQuestion" : "Ask a question",
+    "subject" : "Subject",
+    "name" : "Name",
+    "mobile" : "Phone number",
+    "button" : "Send"
+  },
+  "validation": {
+    "subject": "Subject is too short",
+    "name": "Name is too short",
+    "email": "Invalid Email",
+    "phonenumber": "Invalid Phonenumber",
+    "message": "Message is too short"
+  },
+  "placeholder": {
+    "subject": "Subject",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message"
+  },
+  "sendInfo": {
+    "header": "Thank you for you message!",
+    "description": "After reading the content, we will reply as soon as possible"
+  }
+}

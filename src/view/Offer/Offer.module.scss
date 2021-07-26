@@ -1,0 +1,47 @@
+
+.whatWeCanDo {
+       margin-top: 50px;
+       font-weight : 300;
+       font-size: 2rem;
+     }
+     
+
+@media screen and (min-width: 800px) {
+       .image {
+         margin : 20px auto;
+       }
+       .ownClass {
+         min-height: 620px;
+         padding: 10px;
+         padding-bottom: 20px;
+       }
+     
+     }
+     
+
+
+@media screen and (min-width: 900px) {
+.column {
+       width: 45%;
+}
+
+@media screen and (min-width:1200px) {
+  .ownClass {
+    min-height: 700px;
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+
+}
+
+.oferta {
+ 
+       display: flex;
+       flex-direction : row;
+       flex-wrap : wrap;
+       justify-content: space-evenly;
+}
+}
+
+
+

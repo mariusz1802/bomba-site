@@ -1,0 +1,70 @@
+@import "../../index.module.scss";
+
+.title {
+  font-family: "Pacifico";
+  text-align: center;
+  color: $dark-grey;
+  font-size: 3.5rem;
+}
+.description {
+  margin: 20px 0;
+  color: $dark-grey;
+  font-size: 1.3rem;
+  font-family: "Roboto";
+  text-align: justify;
+  text-justify: auto;
+}
+
+.subtitle {
+  text-align: center;
+}
+.underline {
+  width: 40%;
+  height: 3px;
+  margin: auto;
+  background: red;
+
+  background: linear-gradient(
+    to right,
+    red,
+    red 33.33%,
+    yellow 33.33%,
+    yellow 66.66%,
+    rgb(15, 190, 15) 66.66%
+  );
+}
+
+@media only screen and (min-width: 670px) {
+  .description {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 830px) {
+  .title {
+    margin-top: 40px;
+  }
+  .description {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .underline {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .description {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .description {
+    width: 50%;
+  }
+}

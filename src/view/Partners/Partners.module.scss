@@ -1,0 +1,23 @@
+@import "../../index.module.scss";
+
+@media screen and (min-width: 800px) {
+       .column {
+              width: 50%;
+              margin : auto;
+       }
+}
+
+@media screen and (min-width: 1100px) {
+       .partners {
+              width: 80%;
+              margin :  auto;
+       }
+}
+
+.column {
+       margin : 30px auto;
+}
+.partners {
+       background-color : $soft-grey;
+       padding: 50px 30px;
+}

@@ -1,0 +1,83 @@
+{
+  "Thanks": {
+    "1": "Dziekujemy Ci"
+  },
+  "Why": {
+    "1": "Że obejrzałes to video!"
+  },
+  "Menu": {
+    "1": "HOME",
+    "2": "O NAS",
+    "3": "OFERTA",
+    "4": "PARTNERZY",
+    "5": "KONTAKT"
+  },
+  "aboutUs": {
+    "title": "O nas",
+    "description": "Nasza firma składa się z ludzi, którzy z zamiłowaniem poświęcają się swojej pracy. Różnimy się od siebie, natomiast wspólnie tworzymy monolit, który przezwycięży każdy napotkany problem. Zajmujemy się projektowaniem stron internetowych, sklepów i aplikacji mobilnych. Uwielbiamy programowanie oraz grafikę komputerową, dlatego wychodzimy naprzeciw Waszym oczekiwaniom. Jesteśmy otwarci na nowe pomysły i projekty!",
+    "technologies": "Używane technologie: "
+  },
+  "offer": {
+    "title": "Oferta",
+    "description": "Oferujemy szeroki wachlarz usług związanych z samą grafiką komputerową jak i programowaniem webowym. Możemy wykonać dla Ciebie zarówno prostą stronę wizytową typu One Page lub bardziej skomplikowane strony, oparte na systemie CMS. Używamy technologii, które znakomicie pozycjonują się w wyszukiwarce internetowej. Wstępny projekt strony wykonamy całkowicie za darmo. Dopiero po zaakceptowaniu projektu przystępujemy do realizacji.",
+    "whatWeCanDo": "Co możemy dla Ciebie zrobić ?"
+  },
+  "offerLogo": {
+    "title": "Logo",
+    "description": "Projektowanie logo to nie tylko część naszej pracy, ale ogromna przyjemność, do której przykładamy się z niezwykłą starannością. Jest to jeden z podstawowych elementów, które identyfikują się z Twoją marką. Logo powinno wyglądać dobrze w każdym formacie,  wielkości i co najważniejsze powinno być zapamiętane na długo !"
+  },
+  "offerWebsite": {
+    "title": "Strona internetowa",
+    "description": "Chociaż zwiększył się zasięg jeśli chodzi o rozpowszechnianie informacji w internecie, ciężko jest sobie wyobrazić firmę, która nie posiada własnej strony internetowej. Dzisiaj jest to standard, który obowiązuje na całym świecie. Zaprojektujemy i wykonamy dla Ciebie stronę !"
+  },
+  "offerShop": {
+    "title": "Sklep internetowy",
+    "description": "Zajmujesz się sprzedażą ? Stworzymy dla Ciebie sklep internetowy spełniający kryteria najbardziej wymagającego klienta. Wiemy jak ma wyglądać sklep i jakie cechy powinien posiadać aby był funkcjonalny i przejrzyty. Zaufaj nam i pozwól stowrzyć wstępny projekt zupełnie za darmo."
+  },
+  "offerPainting": {
+    "title": "Drukowanie materiałów",
+    "description": "Tworzymy również materiały reklamowe dla Firm takie jak kalendarze, wizytówki czy ulotki. Wykonujemy również także druk wielkoformatowy."
+  },
+  "partners": {
+    "title": "Partnerzy",
+    "subtitle": "Nasi partnerzy w biznesie",
+    "button": "Dołącz do nas!"
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "phone": "Telefon:",
+    "phoneNumber": "609-923-989",
+    "adresse": "Adres:",
+    "street": "Barakowa 13a",
+    "country": "POLSKA",
+    "map": "Mapa dojazdu",
+    "openingHours": "Godziny otwarcia",
+    "openingTime": "Pn-Pt: 8:00-17:00",
+    "description" : "Jeśli chciałbyś przedstawić swój projekt lub omówić, kwestie które Cię niepokoją, chętnie możemy się spotakać i omówić temat. Kiedy dzieli nas odległość wykonamy twój projekt zdalnie.",
+    "askQuestion": "Zadaj pytanie",
+    "subject": "Temat",
+    "name": "Imię",
+    "mobile": "Numer telefonu",
+    "certificate" : "Certifikaty:",
+    "button": "Wyślij"
+  },
+  "validation": {
+    "subject": "Temat jest zbyt krótki",
+    "name": "Imię jest zby krótkie",
+    "email": "Nieprawidłowy email",
+    "phonenumber": "Telefon jest nieprawidłowy",
+    "message": "Pytanie jest zbyt krótkie"
+  },
+  "placeholder": {
+    "subject": "Temat",
+    "name": "Imię",
+    "email": "Email",
+    "phone": "Telefon",
+    "message": "Wiadomość"
+  },
+  "sendInfo": {
+    "header": "Dziękujemy za przesłanie wiadomości!",
+    "description": "Po zapoznaniu się z treścią odpowiemy tak szybko jak to możliwe"
+  }
+}
