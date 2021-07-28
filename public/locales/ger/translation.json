@@ -26,9 +26,9 @@
     "title": "Logo",
     "description": "Die Gestaltung eines Logos ist nicht nur Teil unserer Arbeit, sondern auch eine große Freude, der wir große Sorgfalt widmen. Es ist eines der grundlegenden Elemente, die sich mit Ihrer Marke identifizieren. Das Logo sollte in jedem Format, in jeder Größe gut aussehen und vor allem soll es lange in Erinnerung bleiben!"
   },
-  "offerShop" : {
-    "title" : "Sklep internetowy",
-    "description" : "Zajmujesz się sprzedażą ? Stworzymy dla Ciebie sklep internetowy spełniający kryteria najbardziej wymagającego klienta. Wiemy jak ma wyglądać sklep i jakie cechy powinien posiadać aby był funkcjonalny i przejrzyty. Zaufaj nam i pozwól stowrzyć wstępny projekt zupełnie za darmo."
+  "offerShop": {
+    "title": "Sklep internetowy",
+    "description": "Zajmujesz się sprzedażą ? Stworzymy dla Ciebie sklep internetowy spełniający kryteria najbardziej wymagającego klienta. Wiemy jak ma wyglądać sklep i jakie cechy powinien posiadać aby był funkcjonalny i przejrzyty. Zaufaj nam i pozwól stowrzyć wstępny projekt zupełnie za darmo."
   },
   "offerWebsite": {
     "title": "Website",
@@ -43,22 +43,22 @@
     "subtitle": "Unsere Geschäftspartner",
     "button": "begleiten Sie uns!"
   },
-  "contact" :{
-    "title" : "Kontakt",
-    "phone" : "Telefonnummer:",
-    "adresse" : "Adresse:",
-    "description" : "Wenn Sie Ihr Projekt vorstellen oder Themen diskutieren möchten, die Sie beschäftigen, treffen wir uns gerne und besprechen das Thema. Wenn uns die Distanz trennt, machen wir Ihr Projekt aus der Ferne.",
-
-    "street" : "Kasernenstraße 13a",
-    "country" : "POLEN",
-    "map" : "Anfahrtsplan",
-    "openingHours" : "Öffnungszeiten",
-    "openingTime" : "Mo-Sa: 8:00-17:00",
-    "askQuestion" : "Stelle eine Frage",
-    "subject" : "Thema",
-    "name" : "Name",
-    "mobile" : "Telefonnummer",
-    "button" : "Senden"
+  "contact": {
+    "title": "Kontakt",
+    "phone": "Telefonnummer:",
+    "adresse": "Adresse:",
+    "description": "Wenn Sie Ihr Projekt vorstellen oder Themen diskutieren möchten, die Sie beschäftigen, treffen wir uns gerne und besprechen das Thema. Wenn uns die Distanz trennt, machen wir Ihr Projekt aus der Ferne.",
+    "street": " Kasernenstraße 13a",
+    "country": "POLEN",
+    "map": "Anfahrtsplan",
+    "openingHours": "Öffnungszeiten",
+    "openingTime": "Mo-Sa: 8:00-17:00",
+    "askQuestion": "Stelle eine Frage",
+    "certificate": "Zertifikat:",
+    "subject": "Thema",
+    "name": "Name",
+    "mobile": "Telefonnummer",
+    "button": "Senden"
   },
   "validation": {
     "subject": "Das Thema ist zu kurz",

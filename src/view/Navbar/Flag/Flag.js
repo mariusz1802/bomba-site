@@ -33,42 +33,42 @@ function Flag() {
       <ButtonToggle
         key="pl"
         active={active === "pl"}
-        onClick={() => setActive("pl")}
+        onClick={() => handleLang("pl")}
       >
-        <button className={styles.buttonFlag} onClick={() => handleLang("pl")}>
+        <div className={styles.buttonFlag} >
           <img
             src={polish}
             className={styles.flag}
             alt="polish-languange"
           ></img>
-        </button>
+        </div>
       </ButtonToggle>
       <ButtonToggle
         key="en"
         active={active === "en"}
-        onClick={() => setActive("en")}
+        onClick={() => handleLang("en")}
       >
-        <button className={styles.buttonFlag} onClick={() => handleLang("en")}>
+        <div className={styles.buttonFlag} >
           <img
             src={english}
             className={styles.flag}
             alt="english-languange"
           ></img>
-        </button>
+        </div>
       </ButtonToggle>
 
       <ButtonToggle
         key="ger"
         active={active === "ger"}
-        onClick={() => setActive("ger")}
+        onClick={() => handleLang("ger")}
       >
-        <button className={styles.buttonFlag} onClick={() => handleLang("ger")}>
+        <div className={styles.buttonFlag}>
           <img
             src={german}
             className={styles.flag}
             alt="german-languange"
           ></img>
-        </button>
+        </div>
       </ButtonToggle>
     </div>
   );

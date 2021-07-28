@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 350px;
+  height: 450px;
 }
 
 .each-slide span {
@@ -16,7 +16,14 @@
 }
 
 .image {
-  width: 400px;
+  width: 100%;
+  height: auto;
   margin: auto;
   background-position: center;
+}
+
+@media screen and (max-width: 500px) {
+  .each-slide > div {
+    height: 200px;
+  }
 }

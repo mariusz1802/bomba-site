@@ -59,7 +59,7 @@
     "subject": "Temat",
     "name": "Imię",
     "mobile": "Numer telefonu",
-    "certificate" : "Certifikaty:",
+    "certificate" : "Certifikat:",
     "button": "Wyślij"
   },
   "validation": {

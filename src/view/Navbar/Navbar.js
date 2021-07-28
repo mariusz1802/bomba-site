@@ -4,7 +4,6 @@ import styles from "./Navbar.module.scss";
 import { BrowserRouter as Router } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { HashLink as Link } from "react-router-hash-link";
-import "./Navbar.css";
 import logo from "./logo_small.png";
 
 import { useTranslation } from "react-i18next";
@@ -18,29 +17,28 @@ function Navbar() {
 
   return (
     <>
-      <div className={styles.navbar} onClick={handleClick}>
+      <div className={styles.mobileIcons} onClick={handleClick}>
         {click ? (
-          <FaTimes className={styles.menu} />
+          <FaTimes className={styles.closeButton} />
         ) : (
-          <GiHamburgerMenu className={`${styles.menu} ${styles.burger}`} />
+          <GiHamburgerMenu className={`${styles.closeButton} ${styles.burger}`} />
         )}
       </div>
-      <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li className="nav-item">
+      <ul className={click ? `${styles.navMenu} ${styles.active}` : styles.navMenu}>
+        <li>
           <img src={logo} alt="logo" className={styles.logoMenu} />
           <Router>
-       
-            <Link smooth to="#home" onClick={handleClick} className="nav-links">
+            <Link smooth to="#home" onClick={handleClick} className={styles.navLinks}>
               {t("Menu.1")}
             </Link>
-            <Link smooth to="#onas" onClick={handleClick} className="nav-links">
+            <Link smooth to="#onas" onClick={handleClick} className={styles.navLinks}>
               {t("Menu.2")}
             </Link>
             <Link
               smooth
               to="#oferta"
               onClick={handleClick}
-              className="nav-links"
+              className={styles.navLinks}
             >
               {t("Menu.3")}
             </Link>
@@ -48,7 +46,7 @@ function Navbar() {
               smooth
               to="#partnerzy"
               onClick={handleClick}
-              className="nav-links"
+              className={styles.navLinks}
             >
               {t("Menu.4")}
             </Link>
@@ -56,7 +54,7 @@ function Navbar() {
               smooth
               to="#kontakt"
               onClick={handleClick}
-              className="nav-links"
+              className={styles.navLinks}
             >
               {t("Menu.5")}
             </Link>

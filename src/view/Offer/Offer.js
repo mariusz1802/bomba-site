@@ -44,7 +44,6 @@ function Offer() {
             description={t("offerWebsite.description")}
             ownClass={styles.ownClass}
             animationImage="fade"
-        
             onClick={() => alert("!Klik2")}
           />
         </div>

@@ -36,6 +36,14 @@
   right: 0;
 }
 
+@media screen and (max-width: 475px){
+  .image{
+    width: 100%;
+    padding-top: 5px;
+    padding: 0;
+  }
+}
+
 
 
 
