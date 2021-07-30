@@ -23,11 +23,14 @@
 
 .description {
   margin-bottom: 10px;
-  width: 90%;
+  // width: 90%;
+  padding:  12px;
   margin : auto;
   text-align: justify;
-  text-justify: auto;
+  text-justify: distribute;
   font-size : 1.3rem;
+  text-align-last: left;
+  hyphens: auto;
 }
 .buttonLocation {
   position: absolute;
@@ -41,6 +44,10 @@
     width: 100%;
     padding-top: 5px;
     padding: 0;
+  }
+  .title {
+    font-size : 1.5rem;
+ 
   }
 }
 

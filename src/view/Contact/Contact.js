@@ -4,6 +4,9 @@ import styles from "./Contact.module.scss";
 import { useTranslation } from "react-i18next";
 import ContactForm from "./ContactForm";
 import logo from "./logo.png";
+import Hyphenated from "react-hyphen";
+import pl from "hyphenated-pl";
+import Fade from "react-reveal/Fade";
 
 function Contact() {
   const { t } = useTranslation();
@@ -13,7 +16,9 @@ function Contact() {
       <Chapter title={t("contact.title")} />
       <div className={styles.contactStyle}>
         <div className={styles.column}>
-          <h3>{t("contact.adresse")}</h3>
+          <Fade left cascade appear="true" when="true">
+            <h3>{t("contact.adresse")}</h3>
+          </Fade>
           <div className={styles.contactWrapper}>
             <p className={`${styles.title} ${styles.dataBlock}`}>
               <b>Bomba</b> <p>web design </p>
@@ -46,7 +51,9 @@ function Contact() {
         </div>
 
         <div className={styles.column}>
-          <h3>{t("contact.map")}</h3>
+          <Fade left cascade appear="true" when="true">
+            <h3>{t("contact.map")}</h3>
+          </Fade>
           <iframe
             className={styles.iframe}
             title="bomba"
@@ -55,14 +62,14 @@ function Contact() {
             loading="lazy"
           ></iframe>
           <div className={styles.openHours}>
-           
+            <Hyphenated language={pl}>
               <p className={styles.dataBlock}>
                 <b className={styles.bombaName}> Bomba</b> web design
                 <p>{t("contact.openingHours")}</p>
                 <p>{t("contact.openingTime")}</p>
               </p>
-          
-            <p className={styles.description}>{t("contact.description")} </p>
+              <p className={styles.description}>{t("contact.description")} </p>
+            </Hyphenated>
           </div>
         </div>
         <ContactForm />

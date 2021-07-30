@@ -26,7 +26,8 @@ function Flag() {
     setActive(lang);
   };
 
-  const [active, setActive] = useState("pl");
+  console.log(i18n.language);
+  const [active, setActive] = useState(i18n.language);
 
   return (
     <div className={styles.flagContainer}>
@@ -35,7 +36,7 @@ function Flag() {
         active={active === "pl"}
         onClick={() => handleLang("pl")}
       >
-        <div className={styles.buttonFlag} >
+        <div className={styles.buttonFlag}>
           <img
             src={polish}
             className={styles.flag}
@@ -48,7 +49,7 @@ function Flag() {
         active={active === "en"}
         onClick={() => handleLang("en")}
       >
-        <div className={styles.buttonFlag} >
+        <div className={styles.buttonFlag}>
           <img
             src={english}
             className={styles.flag}

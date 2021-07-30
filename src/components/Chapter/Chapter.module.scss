@@ -12,7 +12,9 @@
   font-size: 1.3rem;
   font-family: "Roboto";
   text-align: justify;
-  text-justify: auto;
+  text-justify: distribute;
+  text-align-last: left;
+  hyphens: auto;
 }
 
 .subtitle {

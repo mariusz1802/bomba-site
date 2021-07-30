@@ -6,6 +6,7 @@ import Button from "../../components/Button/Button";
 import emailjs from "emailjs-com";
 import { FormErrors } from "./FormErrors";
 import Modal from "../../components/Modal/Modal";
+import Fade from "react-reveal/Fade";
 
 class Form extends Component {
   constructor(props) {
@@ -158,7 +159,9 @@ class Form extends Component {
 
         <h3 className={styles.askQuestion} id="ask">
           {" "}
-          {this.props.t("contact.askQuestion")}:
+  <Fade left cascade appear="true" when="true">
+          {this.props.t("contact.askQuestion")}
+  </Fade>
         </h3>
         <form onSubmit={this.sendEmail}>
           <Input
