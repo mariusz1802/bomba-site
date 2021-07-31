@@ -3,7 +3,7 @@ import styles from "./NavbarDesktop.module.scss";
 import { BrowserRouter as Router } from "react-router-dom";
 import Links from "./Links";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
-const facebook_url = "http://www.facebook.com";
+const facebook_url = "https://www.facebook.com/Bombadesignpl-108034361531951";
 const instagram_url = "http://www.instagram.com";
 
 function NavbarDesktop() {
