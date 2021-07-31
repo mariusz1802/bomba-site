@@ -6,7 +6,6 @@ import ContactForm from "./ContactForm";
 import logo from "./logo.png";
 import Hyphenated from "react-hyphen";
 import pl from "hyphenated-pl";
-import Fade from "react-reveal/Fade";
 
 function Contact() {
   const { t } = useTranslation();
@@ -16,9 +15,7 @@ function Contact() {
       <Chapter title={t("contact.title")} />
       <div className={styles.contactStyle}>
         <div className={styles.column}>
-          <Fade left cascade appear="true" when="true">
             <h3>{t("contact.adresse")}</h3>
-          </Fade>
           <div className={styles.contactWrapper}>
             <p className={`${styles.title} ${styles.dataBlock}`}>
               <b>Bomba</b> <p>web design </p>
@@ -32,7 +29,7 @@ function Contact() {
             <p className={styles.dataBlock}>
               Email:{" "}
               <a href="mailto: contact.@bombadesign.pl">
-                <b className={styles.mailStyle}>contact@bombadesign.pl</b>{" "}
+                <b className={styles.mailStyle}>info@bombadesign.pl</b>{" "}
               </a>
             </p>
             <p className={styles.dataBlock}>
@@ -51,9 +48,7 @@ function Contact() {
         </div>
 
         <div className={styles.column}>
-          <Fade left cascade appear="true" when="true">
             <h3>{t("contact.map")}</h3>
-          </Fade>
           <iframe
             className={styles.iframe}
             title="bomba"

@@ -2,7 +2,7 @@ import React from "react";
 import background from "./footer-background.jpg";
 import styles from "./Footer.module.scss";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
-const facebook_url = "http://www.facebook.com";
+const facebook_url = "https://www.facebook.com/Bombadesignpl-108034361531951";
 const instagram_url = "http://www.instagram.com";
 function Footer() {
   return (
