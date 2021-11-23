@@ -13,11 +13,11 @@ function Links() {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
     const yOffset = -80;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
-    console.log(yCoordinate + yOffset);
+
   };
 
   return (
-    <div>
+  
       <Scrollspy
         items={["home", "onas", "oferta", "partnerzy", "kontakt"]}
         currentClassName={styles.myclass}
@@ -39,7 +39,7 @@ function Links() {
           <button className={styles.button}>{t("Menu.5")}</button>
         </NavHashLink>
       </Scrollspy>
-    </div>
+
   );
 }
 

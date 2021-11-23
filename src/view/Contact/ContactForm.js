@@ -43,6 +43,7 @@ class Form extends Component {
     this.setState(this.initialState);
   }
 
+
   setShow() {
     const currentState = this.state.show;
     this.setState({ show: !currentState });
