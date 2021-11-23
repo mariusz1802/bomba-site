@@ -39,6 +39,9 @@
 
 .iframe {
   border: 3px solid $medium-grey;
+  width: 100%;
+  min-height: 300px;
+  height: auto;
 }
 
 .textarea::placeholder {
@@ -51,12 +54,6 @@
 .textarea:focus {
   outline:none;
   border: 3px solid #5fa8d3;
-}
-
-iframe {
-  width: 100%;
-  min-height: 300px;
-  height: auto;
 }
 
 .openHours {
