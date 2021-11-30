@@ -53,7 +53,6 @@ function Offer() {
             description={t("offerShop.description")}
             ownClass={styles.ownClass}
             animationImage="fade"
-        
           />
         </div>
         <div className={styles.column}>
@@ -63,7 +62,7 @@ function Offer() {
             description={t("offerPainting.description")}
             ownClass={styles.ownClass}
             animationImage="fade"
-         
+          
           />
         </div>
       </div>

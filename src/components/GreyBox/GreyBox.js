@@ -22,7 +22,7 @@ function GreyBox({
         src={imgSrc}
         alt={title}
         className={styles.image}
-        data-aos={animationImage}
+    
       />
       <Hyphenated language={pl}>
         <p className={styles.description}> {description} </p>

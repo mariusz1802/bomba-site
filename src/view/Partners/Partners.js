@@ -10,8 +10,8 @@ function Partners() {
   const { t } = useTranslation();
   return (
     <>
-    <Chapter title={t("partners.title")} subtitle={t("partners.subtitle")} />
     <div id="partnerzy" className={styles.partners}>
+    <Chapter title={t("partners.title")} subtitle={t("partners.subtitle")} />
       <Slider />
     </div>
       <Router>

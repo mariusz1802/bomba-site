@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./NavbarDesktop.module.scss";
 import { BrowserRouter as Router } from "react-router-dom";
+import Scrollbar from "smooth-scrollbar";
+import ReactDOM from "react-dom";
+
 import Links from "./Links";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 const facebook_url = "https://www.facebook.com/Bombadesignpl-108034361531951";
@@ -8,7 +11,7 @@ const instagram_url = "http://www.instagram.com";
 
 function NavbarDesktop() {
   return (
-    <div className={styles.navbar}>
+    <div id="fixed" className={styles.navbar}>
       <div className={styles.buttonContainer}>
         <Router>
           <Links />

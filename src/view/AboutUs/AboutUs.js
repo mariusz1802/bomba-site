@@ -22,27 +22,27 @@ function AboutUs() {
   });
 
   return (
-    <div id="onas">
-      <Chapter
-        title={t("aboutUs.title")}
-        description={t("aboutUs.description")}
-      />
-      <h3 className={styles.technologies}>{t("aboutUs.technologies")} </h3>
-      <div className={styles.container}>
-        <div className={styles.column}>
-          <GreyBox title="Java Script" imgSrc={js} dataAos="fade-up" />
-        </div>
-        <div className={styles.column}>
-          <GreyBox title="React JS" imgSrc={react} dataAos="fade-up" />
-        </div>
-        <div className={styles.column}>
-          <GreyBox title="NodeJS" imgSrc={node} dataAos="fade-up" />
-        </div>
-        <div className={styles.column}>
-          <GreyBox title="Wordpress" imgSrc={wordpress} dataAos="fade-up" />
+      <div id="onas">
+        <Chapter
+          title={t("aboutUs.title")}
+          description={t("aboutUs.description")}
+        />
+        <h3 className={styles.technologies}>{t("aboutUs.technologies")} </h3>
+        <div className={styles.container}>
+          <div className={styles.column}>
+            <GreyBox title="Java Script" imgSrc={js}  />
+          </div>
+          <div className={styles.column}>
+            <GreyBox title="React JS" imgSrc={react}  />
+          </div>
+          <div className={styles.column}>
+            <GreyBox title="NodeJS" imgSrc={node}  />
+          </div>
+          <div className={styles.column}>
+            <GreyBox title="Wordpress" imgSrc={wordpress}  />
+          </div>
         </div>
       </div>
-    </div>
   );
 }
 

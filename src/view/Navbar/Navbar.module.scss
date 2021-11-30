@@ -15,7 +15,11 @@
 }
 
 .mobileIcons {
-  width: 100%;
+    background-color : rgba(255, 255, 255, 0.4);
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 130;
 }
 button {
   all: none;
@@ -49,25 +53,25 @@ button {
 .navMenu {
   list-style: none;
   text-align: center;
-  justify-content: flex-end;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   width: 100%;
+  top: 0;
   height: 100%;
   position: fixed;
   left: -100%;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.5s ease;
   z-index: 110;
-  padding-bottom: 20px;
+  background: white;
+  overflow: hidden;
 }
 
 .navMenu.active {
-  background: white;
   left: 0;
   opacity: 1;
   transition: all 0.6s ease;
-  overflow: scroll;
 }
 
 .navLinks {

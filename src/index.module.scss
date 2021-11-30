@@ -9,7 +9,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
 }
+
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -41,3 +48,5 @@ h3{
   text-align: center;
 
 }
+
+

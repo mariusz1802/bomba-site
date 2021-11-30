@@ -12,6 +12,8 @@ function Footer() {
         <AiFillFacebook className={`${styles.facebook} ${styles.icons}`} />
       </a>
 
+      <button></button>
+
       <a href={instagram_url} target="_blank" rel="noopener noreferrer">
         <AiFillInstagram className={`${styles.instagram} ${styles.icons}`} />
       </a>

@@ -16,8 +16,8 @@
   width: 100%;
   height: auto;
   color: grey;
-  background-color : $soft-grey;
   padding: 5px;
+  background-color : rgba(255, 255, 255, 0.1);
   font-size : 18px;
   margin-top: 10px;
 }
@@ -65,8 +65,9 @@
 }
 
 .column {
-  background-color : $soft-grey;
-  padding: 10px 20px;
+    background-image: radial-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    // background-color : $soft-grey;
+    padding: 10px 20px;
   margin-bottom: 20px;
   margin : 20px auto;
   width: 90%;
@@ -96,8 +97,9 @@
     display: flex;
     width: 48%;
     flex-direction : column;
-    background-color : $soft-grey;
     padding: 10px;
+    background-image: radial-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
 
   }
 
@@ -114,11 +116,11 @@
 
 @media screen and (min-width: 930px) {
   .column{
-    display: flex;
-    width: 32%;
-    flex-direction : column;
-    background-color : $soft-grey;
-    padding:  10px 20px;
+      display: flex;
+      width: 32%;
+      flex-direction : column;
+      padding: 10px 20px;
+      background-image: radial-gradient( #fdfbfb 0%, #ebedee 100%);
 
   }
 

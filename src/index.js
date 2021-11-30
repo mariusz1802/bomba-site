@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import "./index.module.scss";
 import MessengerCustomerChat from "react-messenger-customer-chat";
@@ -14,43 +14,27 @@ import Contact from "./view/Contact/Contact.js";
 import Footer from "./view/Footer/Footer.js";
 import LoadingScreen from "react-loading-screen";
 import Logo from "./view/Head/logo_big.jpg";
-import "react-use-smooth-scroll/dist/index.css";
+import { UseEffectScroll } from "react-use-smooth-scroll";
+import SmoothScroll from "./components/SmoothScroll/SmoothScroll";
+
 import "./i18n";
 import "./index.css";
 
 ReactDOM.render(
   <React.Fragment>
-    <Suspense
-      fallback={
-        <LoadingScreen
-          loading={true}
-          bgColor="#f1f1f1"
-          spinnerColor="#9ee5f8"
-          textColor="#676767"
-          logoSrc={Logo}
-          children="bombadesign.pl"
-        />
-      }
-    >
-      <MessengerCustomerChat
-        pageId="108034361531951"
-        appId="3321358404655618"
-        language="pl_PL"
-      />
-      ,
-      <Head />
+    <Head />
+    <SmoothScroll />
+    <NavbarDesktop />
+    <Wrapper>
       <Navbar />
-      <NavbarDesktop />
-      <Wrapper>
-        <AboutUs />
-        <Offer />
-        <Partners />
-        <Contact />
-      </Wrapper>
-      <Footer />
-    </Suspense>
+      <AboutUs />
+      <Offer />
+      <Partners />
+      <Contact />
+    </Wrapper>
+    <Footer />
   </React.Fragment>,
-  document.getElementById("root")
+  document.getElementById("rowot")
 );
 
 // If you want to start measuring performance in your app, pass a function

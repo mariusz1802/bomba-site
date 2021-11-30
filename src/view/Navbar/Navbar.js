@@ -4,6 +4,7 @@ import styles from "./Navbar.module.scss";
 import { BrowserRouter as Router } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { HashLink as Link } from "react-router-hash-link";
+import { Spin as Hamburger } from "hamburger-react";
 import logo from "./logo_small.png";
 
 import { useTranslation } from "react-i18next";
@@ -14,24 +15,38 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const { t } = useTranslation();
 
-
   return (
     <>
       <div className={styles.mobileIcons} onClick={handleClick}>
-        {click ? (
-          <FaTimes className={styles.closeButton} />
-        ) : (
-          <GiHamburgerMenu className={`${styles.closeButton} ${styles.burger}`} />
-        )}
+        <Hamburger
+          toggled={click}
+          toggle={setClick}
+          size="38"
+          direction="right"
+        />
       </div>
-      <ul className={click ? `${styles.navMenu} ${styles.active}` : styles.navMenu}>
+      <ul
+        className={
+          click ? `${styles.navMenu} ${styles.active}` : styles.navMenu
+        }
+      >
         <li>
           <img src={logo} alt="logo" className={styles.logoMenu} />
           <Router>
-            <Link smooth to="#home" onClick={handleClick} className={styles.navLinks}>
+            <Link
+              smooth
+              to="#home"
+              onClick={handleClick}
+              className={styles.navLinks}
+            >
               {t("Menu.1")}
             </Link>
-            <Link smooth to="#onas" onClick={handleClick} className={styles.navLinks}>
+            <Link
+              smooth
+              to="#onas"
+              onClick={handleClick}
+              className={styles.navLinks}
+            >
               {t("Menu.2")}
             </Link>
             <Link

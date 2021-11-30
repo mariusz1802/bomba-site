@@ -1,13 +1,13 @@
 @import "../../index.module.scss";
 
 .container {
-  background-color: $soft-grey;
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
   padding: 10px;
   color: $dark-grey;
   position: relative;
+  background-image: radial-gradient( #fdfbfb 0%, #ebedee 100%);
 }
 
 .image {
@@ -23,7 +23,7 @@
 
 .description {
   margin-bottom: 10px;
-  padding:  12px;
+  padding:   20px 30px;
   margin : auto;
   text-align: justify;
   text-justify: distribute;
