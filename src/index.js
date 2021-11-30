@@ -22,19 +22,20 @@ import "./index.css";
 
 ReactDOM.render(
   <React.Fragment>
-    <Head />
-    <SmoothScroll />
-    <NavbarDesktop />
-    <Wrapper>
-      <Navbar />
-      <AboutUs />
-      <Offer />
-      <Partners />
-      <Contact />
-    </Wrapper>
-    <Footer />
+    <>
+      <Head />
+      <NavbarDesktop />
+      <Wrapper>
+        <Navbar />
+        <AboutUs />
+        <Offer />
+        <Partners />
+        <Contact />
+      </Wrapper>
+      <Footer />
+    </>
   </React.Fragment>,
-  document.getElementById("rowot")
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

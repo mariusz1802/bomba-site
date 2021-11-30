@@ -7,7 +7,7 @@ const options = {
 
 // const scrollbar = document.getElementById("scrollbar");
 
-let scrollbar = Scrollbar.initdocument.getElementById('scrollbar'))
+let scrollbar = document.getElementById('scrollbar')
 
 
 const Scroll = () => {
