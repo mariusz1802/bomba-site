@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+}
+
+/* global colors */
+h3 {
+  color: #747474;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #747474;
+  position: relative;
+  background-image: radial-gradient(#fdfbfb 0%, #ebedee 100%);
+}
+
+.image {
+  width: 90%;
+  padding: 10px;
+  height: auto;
+}
+
+.title {
+  font-weight: 500;
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+.description {
+  margin-bottom: 10px;
+  padding: 20px 30px;
+  margin: auto;
+  text-align: justify;
+  text-justify: distribute;
+  font-size: 1.3rem;
+  text-align-last: left;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+.buttonLocation {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 475px) {
+  .image {
+    width: 100%;
+    padding-top: 5px;
+    padding: 0;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=GreyBox.module.css.map */
