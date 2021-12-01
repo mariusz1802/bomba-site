@@ -1,7 +1,6 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
 import "./index.module.scss";
-import MessengerCustomerChat from "react-messenger-customer-chat";
 import reportWebVitals from "./reportWebVitals";
 import Head from "./view/Head/Head.js";
 import Navbar from "./view/Navbar/Navbar.js";
@@ -14,26 +13,34 @@ import Contact from "./view/Contact/Contact.js";
 import Footer from "./view/Footer/Footer.js";
 import LoadingScreen from "react-loading-screen";
 import Logo from "./view/Head/logo_big.jpg";
-import { UseEffectScroll } from "react-use-smooth-scroll";
-import SmoothScroll from "./components/SmoothScroll/SmoothScroll";
 
 import "./i18n";
-import "./index.css";
 
 ReactDOM.render(
   <React.Fragment>
-    <>
+    <Suspense
+      fallback={
+        <LoadingScreen
+          loading={true}
+          bgColor="#f1f1f1"
+          spinnerColor="#9ee5f8"
+          textColor="#676767"
+          logoSrc={Logo}
+          children="bombadesign.pl"
+        />
+      }
+    >
+      <Navbar />
       <Head />
       <NavbarDesktop />
       <Wrapper>
-        <Navbar />
         <AboutUs />
         <Offer />
         <Partners />
         <Contact />
       </Wrapper>
       <Footer />
-    </>
+    </Suspense>
   </React.Fragment>,
   document.getElementById("root")
 );
