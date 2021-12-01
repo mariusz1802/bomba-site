@@ -1,0 +1,48 @@
+.whatWeCanDo {
+  margin-top: 50px;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .image {
+    margin: 20px auto;
+  }
+  .ownClass {
+    min-height: 620px;
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .column {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 900px) and (min-width: 1200px) {
+  .ownClass {
+    min-height: 700px;
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .oferta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+/*# sourceMappingURL=Offer.module.css.map */
