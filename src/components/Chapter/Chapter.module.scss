@@ -1,5 +1,6 @@
 @import "../../index.module.scss";
 
+
 .title {
   font-family: "Pacifico";
   text-align: center;
@@ -45,6 +46,8 @@
 @media only screen and (min-width: 830px) {
   .title {
     margin-top: 40px;
+    z-index: 0;
+    opacity: 1;
   }
   .description {
     display: flex;
@@ -62,6 +65,7 @@
 @media only screen and (min-width: 1100px) {
   .description {
     width: 70%;
+
   }
 }
 

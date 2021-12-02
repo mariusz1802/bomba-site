@@ -76,6 +76,8 @@ h3 {
 @media only screen and (min-width: 830px) {
   .title {
     margin-top: 40px;
+    z-index: 0;
+    opacity: 1;
   }
   .description {
     display: -webkit-box;

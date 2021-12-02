@@ -1,6 +1,9 @@
 .container {
-  height: 100vh;
+  height: 80vh;
   position: relative;
+  z-index: 10;
+  background-color : white;
+  z-index: 100;
 }
 .responsive {
   position: absolute;
