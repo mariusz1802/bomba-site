@@ -13,7 +13,6 @@ import Contact from "./view/Contact/Contact.js";
 import Footer from "./view/Footer/Footer.js";
 import LoadingScreen from "react-loading-screen";
 import Logo from "./view/Head/logo_big.jpg";
-
 import "./i18n";
 
 ReactDOM.render(
@@ -30,9 +29,9 @@ ReactDOM.render(
         />
       }
     >
-      <Navbar />
       <Head />
       <NavbarDesktop />
+      <Navbar />
       <Wrapper>
         <AboutUs />
         <Offer />
