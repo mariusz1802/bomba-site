@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./NavbarDesktop.module.scss";
 import { BrowserRouter as Router } from "react-router-dom";
-import Scrollbar from "smooth-scrollbar";
-import ReactDOM from "react-dom";
 import Sticky from "react-sticky-el";
 
 import Links from "./Links";
