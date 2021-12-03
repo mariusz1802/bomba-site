@@ -1,5 +1,11 @@
 @import "../../index.module.scss";
 
+#partnerzy {
+    background-color : red;
+    height: 300px;
+    width: 100%;
+}
+
 @media screen and (min-width: 800px) {
        .column {
               width: 50%;

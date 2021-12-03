@@ -12,11 +12,7 @@ import Partners from "./view/Partners/Partners.js";
 import Contact from "./view/Contact/Contact.js";
 import Footer from "./view/Footer/Footer.js";
 import LoadingScreen from "react-loading-screen";
-import ScrollArea from "react-scrollbar";
-import { SmoothProvider } from "react-smooth-scrolling";
 import Logo from "./view/Head/logo_big.jpg";
-import ScrollingContainer from "./components/SmoothScroll/SmoothScroll";
-import { Scrollbar } from "smooth-scrollbar-react";
 import "./i18n";
 
 ReactDOM.render(
@@ -36,15 +32,14 @@ ReactDOM.render(
       <Head />
       <Navbar />
       <NavbarDesktop />
-      <ScrollingContainer>
-        <Wrapper>
-          <AboutUs />
-          <Offer />
-          <Partners />
-          <Contact />
-        </Wrapper>
-        <Footer />
-      </ScrollingContainer>
+      <Navbar />
+      <Wrapper>
+        <AboutUs />
+        <Offer />
+        <Partners />
+        <Contact />
+      </Wrapper>
+      <Footer />
     </Suspense>
   </React.Fragment>,
   document.body

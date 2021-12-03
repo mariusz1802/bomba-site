@@ -3,7 +3,6 @@ import styles from "./NavbarDesktop.module.scss";
 import { NavHashLink } from "react-router-hash-link";
 import { useTranslation } from "react-i18next";
 import Scrollspy from "react-scrollspy";
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 function Links() {
@@ -17,55 +16,40 @@ function Links() {
     console.log(window.innerHeight);
   };
 
-  var Scroll = require("react-scroll");
-  var scroll = Scroll.animateScroll;
-
-  function ScrollToTop() {
-    scroll.scrollToTop();
-  }
-  function ScrollToAbout() {
-    scroll.scrollTo(700);
-  }
-  function ScrollToOffer() {
-    scroll.scrollTo(1170);
-  }
-  function ScrollToPartners() {
-    scroll.scrollTo(2150);
-  }
-  function ScrollToContact() {
-    scroll.scrollTo(2570);
-  }
 
   return (
-    <>
+    <Scrollspy
+      items={["home", "onas", "oferta", "partnerzy", "kontakt"]}
+      currentClassName={styles.myclass}
+    >
       <NavHashLink to="#home" scroll={(el) => scrollWithOffset(el)}>
-        <button onClick={() => ScrollToTop()} className={styles.button}>
+        <button currentClassName className={styles.button}>
           {" "}
           {t("Menu.1")}
         </button>
       </NavHashLink>
       <NavHashLink to="#onas" scroll={(el) => scrollWithOffset(el)}>
-        <button onClick={() => ScrollToAbout()} className={styles.button}>
+        <button currentClassName className={styles.button}>
           {" "}
           {t("Menu.2")}
         </button>
       </NavHashLink>
       <NavHashLink scroll={(el) => scrollWithOffset(el)} to="#oferta">
-        <button onClick={() => ScrollToOffer()} className={styles.button}>
+        <button currentClassName className={styles.button}>
           {t("Menu.3")}
         </button>
       </NavHashLink>
-      <NavHashLink to="#partnerzy" scroll={(el) => scrollWithOffset(el)}>
-        <button onClick={() => ScrollToPartners()} className={styles.button}>
+      <NavHashLink scroll={(el) => scrollWithOffset(el)} to="#partnerzy">
+        <button currentClassName className={styles.button}>
           {t("Menu.4")}
         </button>
       </NavHashLink>
-      <NavHashLink to="#kontakt" scroll={(el) => scrollWithOffset(el)}>
-        <button onClick={() => ScrollToContact()} className={styles.button}>
+      <NavHashLink scroll={(el) => scrollWithOffset(el)} to="#kontakt">
+        <button currentClassName className={styles.button}>
           {t("Menu.5")}
         </button>
       </NavHashLink>
-    </>
+    </Scrollspy>
   );
 }
 
