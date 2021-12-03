@@ -160,9 +160,8 @@ class Form extends Component {
 
         <h3 className={styles.askQuestion} id="ask">
           {" "}
-  <Fade left cascade appear="true" when="true">
           {this.props.t("contact.askQuestion")}
-  </Fade>
+
         </h3>
         <form onSubmit={this.sendEmail}>
           <Input
