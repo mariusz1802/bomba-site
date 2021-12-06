@@ -1,15 +1,14 @@
 import React from "react";
 import styles from "./Head.module.scss";
-import logoSmall from "./logo_small.jpg";
 import Flag from "../Navbar/Flag/Flag";
-import HamburgerButton from "../../components/Hamburger/Hamburger";
+import BombaLogo from "../../components/BombaLogo/BombaLogo";
 function Head() {
   return (
     <div id="home" className={styles.container}>
+      <BombaLogo />
       <div className={styles.flag}>
         <Flag />
       </div>
-      <img src={logoSmall} alt="logo" className={styles.responsive}></img>
     </div>
   );
 }

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./Navbar.module.scss";
 import { BrowserRouter as Router } from "react-router-dom";
-import { FaTimes } from "react-icons/fa";
 import { HashLink as Link } from "react-router-hash-link";
 import { Spin as Hamburger } from "hamburger-react";
 import logo from "./logo_small.png";
+
+import HamburgerButton from "../../components/Hamburger/Hamburger";
 
 import { useTranslation } from "react-i18next";
 import Flag from "./Flag/Flag";
@@ -17,22 +17,17 @@ function Navbar() {
 
   return (
     <>
-      <div className={styles.mobileIcons} onClick={handleClick}>
-        <Hamburger
-          toggled={click}
-          toggle={setClick}
-          size="38"
-          direction="right"
-        />
+      <div onClick={handleClick}>
+        <HamburgerButton />
       </div>
       <ul
         className={
           click ? `${styles.navMenu} ${styles.active}` : styles.navMenu
         }
       >
-        <li>
           <img src={logo} alt="logo" className={styles.logoMenu} />
           <Router>
+        <li>
             <Link
               smooth
               to="#home"
@@ -41,6 +36,8 @@ function Navbar() {
             >
               {t("Menu.1")}
             </Link>
+                    </li>
+                            <li>
             <Link
               smooth
               to="#onas"
@@ -49,6 +46,8 @@ function Navbar() {
             >
               {t("Menu.2")}
             </Link>
+                    </li>
+                            <li>
             <Link
               smooth
               to="#oferta"
@@ -57,6 +56,8 @@ function Navbar() {
             >
               {t("Menu.3")}
             </Link>
+                    </li>
+                            <li>
             <Link
               smooth
               to="#partnerzy"
@@ -65,6 +66,8 @@ function Navbar() {
             >
               {t("Menu.4")}
             </Link>
+                    </li>
+                            <li>
             <Link
               smooth
               to="#kontakt"
@@ -73,9 +76,9 @@ function Navbar() {
             >
               {t("Menu.5")}
             </Link>
+            </li>
             <Flag />
           </Router>
-        </li>
       </ul>
     </>
   );

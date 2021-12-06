@@ -10,17 +10,9 @@
 }
 
 .burger {
-  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 3px;
 }
 
-.mobileIcons {
-    background-color : rgba(255, 255, 255, 0.4);
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 130;
-}
 button {
   all: none;
   background: none;
@@ -28,8 +20,8 @@ button {
 
 .logoMenu {
   margin-top: 90px;
-  width: 160px;
-  height: auto;
+  width: 30%;
+  margin : 10px auto;
 }
 
 .flag {

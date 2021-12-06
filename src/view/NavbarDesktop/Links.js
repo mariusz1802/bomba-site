@@ -4,6 +4,7 @@ import { NavHashLink } from "react-router-hash-link";
 import { useTranslation } from "react-i18next";
 import Scrollspy from "react-scrollspy";
 
+window.scroll({ behavior: 'smooth' });
 
 function Links() {
   // funkcja zmieniająca wybrany język

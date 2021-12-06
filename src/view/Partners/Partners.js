@@ -6,11 +6,24 @@ import { useTranslation } from "react-i18next";
 import { BrowserRouter as Router } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import styles from "./Partners.module.scss";
+import styled from "styled-components";
 function Partners() {
   const { t } = useTranslation();
+
+  const PartnersWrapper = styled.div`
+    background-color: ${({ theme }) => theme.graditent};
+    color: ${({ theme }) => theme.text};
+    padding: 0px 30px 30px 30px;
+    @media screen and (min-width: 1100px) {
+      width: 80%;
+      margin: auto;
+    }
+  `;
+
   return (
     <div id="partnerzy">
-      <div className={styles.partners}>
+      <PartnersWrapper>
+        {/* <div className={styles.partners}> */}
         <Chapter
           title={t("partners.title")}
           subtitle={t("partners.subtitle")}
@@ -28,7 +41,8 @@ function Partners() {
             </Link>
           </div>
         </Router>
-      </div>
+        {/* </div> */}
+      </PartnersWrapper>
     </div>
   );
 }

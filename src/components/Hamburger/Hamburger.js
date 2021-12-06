@@ -1,16 +1,27 @@
 import React from "react";
 import { Spin as Hamburger } from "hamburger-react";
-import styles from "./Hamburger.module.scss";
+import styled from "styled-components";
+
+const HamburgerContainer = styled.div`
+  background-color: ${({ theme }) => theme.body};
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 130;
+  @media only screen and (min-width: 1000px) {
+    display: none;
+  }
+`;
 function HamburgerButton({ toggled, toggle }) {
   return (
-    <div className={styles.mobileIcons}>
+    <HamburgerContainer>
       <Hamburger
         toggled={toggled}
         toggle={toggle}
         size="38"
         direction="right"
       />
-    </div>
+    </HamburgerContainer>
   );
 }
 

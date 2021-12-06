@@ -1,13 +1,6 @@
 @import "../../index.module.scss";
 
-.contactStyle {
-  color: $dark-grey;
-  font-size: 1.3rem;
-  display: flex;
-  flex-direction : row;
-  flex-wrap : wrap;
-  justify-content: space-between;
-}
+
 
 .textarea {
   font-family: "Roboto";
@@ -22,16 +15,7 @@
   margin-top: 10px;
 }
 
-.title {
-  font-size: 1.3rem;
-  line-height: 1.1;
- 
-}
 
-.title b {
-  font-size : 2.3rem;
-  font-family : "Pacifico"
-}
 .bombaName {
   font-family: "Pacifico";
 }
@@ -64,15 +48,7 @@
   margin-top: 30px;
 }
 
-.column {
-    background-image: radial-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-    // background-color : $soft-grey;
-    padding: 10px 20px;
-  margin-bottom: 20px;
-  margin : 20px auto;
-  width: 90%;
-  line-height: 1.5;
-}
+
 .certificate {
   margin-top: 50px;
 }
@@ -93,21 +69,7 @@
 
 
 @media screen and (min-width: 670px ) and (max-width: 930px ) {
-  .column{
-    display: flex;
-    width: 48%;
-    flex-direction : column;
-    padding: 10px;
-    background-image: radial-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 
-
-  }
-
-  .column:last-child{
-    width: 100%;
-    margin : auto;
-    margin-top: 20px;
-  }
 
   .askQuestion {
     margin-top: 10px;
@@ -115,14 +77,7 @@
 }
 
 @media screen and (min-width: 930px) {
-  .column{
-      display: flex;
-      width: 32%;
-      flex-direction : column;
-      padding: 10px 20px;
-      background-image: radial-gradient( #fdfbfb 0%, #ebedee 100%);
 
-  }
 
   .askQuestion {
     margin-top: 10px;
@@ -135,9 +90,7 @@
 
 
 @media screen and (max-width: 450px) {
-  .column {
-    width: 100%;
-  }
+
 .mailStyle {
   font-size : 1.2rem;
 }
@@ -171,6 +124,7 @@
 .dataBlock {
   margin-bottom: 20px;
   border-bottom: 1px solid grey;
+  display: flex;
   padding-bottom: 15px;
 }
 

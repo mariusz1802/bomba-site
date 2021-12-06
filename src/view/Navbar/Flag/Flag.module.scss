@@ -8,6 +8,7 @@
   right: 0;
   margin: auto;
   opacity: 1;
+  z-index: 12;
 }
 
 .flag:hover {
@@ -16,7 +17,7 @@
 
 .flagContainer {
   margin-left: 20px;
-  margin-top: 5px;
+  margin-top: 5px; 
 }
 
 .buttonFlag {
@@ -34,4 +35,5 @@
 
 .flag button {
   all: none;
+  z-index: 100;
 }

@@ -6,20 +6,37 @@ import ContactForm from "./ContactForm";
 import logo from "./logo.png";
 import Hyphenated from "react-hyphen";
 import pl from "hyphenated-pl";
+import { Column, ContactStyle } from "./Contact.styled";
+import styled from "styled-components";
 
 function Contact() {
   const { t } = useTranslation();
 
+  const Description = styled.p`
+    color: ${({ theme }) => theme.ahref};
+    & b {
+      color: ${({ theme }) => theme.ahref};
+    }
+  `;
+  const Title = styled.p`
+    font-size: 1.3rem;
+    line-height: 1.1;
+    & b {
+      font-size: 2.3rem;
+      font-family: "Pacifico";
+    }
+  `;
+
   return (
     <div id="kontakt">
       <Chapter title={t("contact.title")} />
-      <div className={styles.contactStyle}>
-        <div className={styles.column}>
-            <h3>{t("contact.adresse")}</h3>
+      <ContactStyle>
+        <Column>
+          <h3>{t("contact.adresse")}</h3>
           <div className={styles.contactWrapper}>
-            <p className={`${styles.title} ${styles.dataBlock}`}>
+            <Title>
               <b>Bomba</b> <p>web design </p>
-            </p>
+            </Title>
             <p clasName={styles.dataBlock}>
               {t("contact.phone")}
               <a href="tel:+48666742743">
@@ -45,10 +62,10 @@ function Contact() {
 
           <h3 className={styles.certificate}> {t("contact.certificate")}</h3>
           <img src={logo} className={styles.logoRF} alt="certyfikat" />
-        </div>
+        </Column>
 
-        <div className={styles.column}>
-            <h3>{t("contact.map")}</h3>
+        <Column>
+          <h3>{t("contact.map")}</h3>
           <iframe
             className={styles.iframe}
             title="bomba"
@@ -59,16 +76,18 @@ function Contact() {
           <div className={styles.openHours}>
             <Hyphenated language={pl}>
               <p className={styles.dataBlock}>
-                <b className={styles.bombaName}> Bomba</b> web design
-                <p>{t("contact.openingHours")}</p>
-                <p>{t("contact.openingTime")}</p>
+      
+                <Description>{t("contact.openingHours")}</Description>
+                <Description>{t("contact.openingTime")}</Description>
               </p>
-              <p className={styles.description}>{t("contact.description")} </p>
+              <Description>{t("contact.description")} </Description>
             </Hyphenated>
           </div>
-        </div>
-        <ContactForm />
-      </div>
+        </Column>
+        <Column>
+          <ContactForm />
+        </Column>
+      </ContactStyle>
     </div>
   );
 }

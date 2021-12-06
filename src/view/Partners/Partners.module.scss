@@ -1,7 +1,6 @@
 @import "../../index.module.scss";
 
 #partnerzy {
-    background-color : red;
     height: 300px;
     width: 100%;
 }
@@ -25,5 +24,6 @@
 }
 .partners {
        background-color : $soft-grey;
-       padding: 0px 30px 30px 30px;
+    color:white;
+  
 }
