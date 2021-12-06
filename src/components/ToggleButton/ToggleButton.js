@@ -5,12 +5,6 @@ import moonIcon from "./moon.svg";
 import sunIcon from "./sun.svg";
 import { lightTheme } from "../NightMode/theme";
 
-const Container = styled.div`
-  display: block;
-  position: fixed;
-  right: 20px;
-  top: 0;
-`;
 
 const ToggleContainer = styled.button`
   display: flex;

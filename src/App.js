@@ -7,6 +7,7 @@ import Navbar from "./view/Navbar/Navbar.js";
 import NavbarDesktop from "./view/NavbarDesktop/NavbarDesktop";
 import Wrapper from "./components/Wrapper/Wrapper";
 import AboutUs from "./view/AboutUs/AboutUs";
+import MessengerCustomerChat from "react-messenger-customer-chat";
 import Offer from "./view/Offer/Offer.js";
 import Partners from "./view/Partners/Partners.js";
 import Contact from "./view/Contact/Contact.js";
@@ -17,9 +18,10 @@ import { lightTheme, darkTheme } from "./components/NightMode/theme";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./global.js";
 import ToggleButton from "./components/ToggleButton/ToggleButton";
+import { useDarkMode } from "./hooks/useDarkMode";
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useDarkMode();
   const toggleTheme = () => {
     if (theme === "light") {
       setTheme("dark");
@@ -43,6 +45,12 @@ function App() {
           />
         }
       >
+        <MessengerCustomerChat
+          pageId="108034361531951"
+          appId="3321358404655618"
+          language="pl_PL"
+        />
+
         <Navbar />
         <Head />
         <Navbar />
