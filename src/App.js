@@ -33,7 +33,6 @@ function App() {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
-      <ToggleButton theme={theme} toggleTheme={toggleTheme} />
       <Suspense
         fallback={
           <LoadingScreen
@@ -53,7 +52,7 @@ function App() {
         />
 
         <Navbar />
-        <Head />
+        <Head theme={theme} toggleTheme={toggleTheme}/>
         <Navbar />
         <NavbarDesktop />
         <Wrapper>

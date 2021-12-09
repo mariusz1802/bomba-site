@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import { Spin as Hamburger } from "hamburger-react";
 import styled from "styled-components";
+import BombaLogo from "../../components/BombaLogo/BombaLogo";
 import logo from "./logo_small.png";
 
 import HamburgerButton from "../../components/Hamburger/Hamburger";
@@ -17,7 +18,6 @@ function Navbar() {
   const { t } = useTranslation();
 
   const Wrapper = styled.div`
-color: red;
 height: 100%;
 width: 100%;
 padding-top: 100px;
@@ -36,7 +36,7 @@ background-color : ${({ theme }) => theme.body};
         }
       >
         <Wrapper>
-          <img src={logo} alt="logo" className={styles.logoMenu} />
+          <BombaLogo mobile />
           <Router>
             <li>
               <Link

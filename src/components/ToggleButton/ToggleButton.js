@@ -40,8 +40,8 @@ const ToggleContainer = styled.button`
     }
   }
   @media screen and (max-width: 1000px) {
-    position: absolute;
-    top: 80%;
+    position: relative;
+    top: 10vh;
     left: 50%;
     transform: translateX(-50%);
   }

@@ -12,7 +12,7 @@ function Links() {
   //funckja cofająca przejscie zejscie strony o wysokośc menu
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -80;
+    const yOffset = -5;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
     console.log(window.innerHeight);
   };

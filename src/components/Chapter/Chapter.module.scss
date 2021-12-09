@@ -6,6 +6,7 @@
   text-align: center;
   color: $dark-grey;
   font-size: 3.5rem;
+  padding-top: 100px;
 }
 .description {
   margin: 20px 0;
@@ -61,6 +62,17 @@
     width: 25%;
   }
 }
+
+
+
+@media only screen and (max-width: 1000px) {
+
+.title {
+    padding-top: 10px;
+}
+
+}
+
 
 @media only screen and (min-width: 1100px) {
   .description {

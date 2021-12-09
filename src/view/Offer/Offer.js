@@ -33,7 +33,7 @@ function Offer() {
       <div className={styles.oferta}>
         <div className={styles.column}>
             <GreyBox
-              title={t("offerLogo.title")}
+            title={t("offerLogo.title")}
               imgSrc={logo}
               description={t("offerLogo.description")}
               ownClass={styles.ownClass}

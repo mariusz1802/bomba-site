@@ -2,6 +2,7 @@
   height: 100vh;
   position: relative;
   z-index: 12;
+
 }
 
 
@@ -39,5 +40,12 @@
     display: block;
   }
 }
+
+// @media only screen and (max-width:1000px) {
+//     .container {
+//         padding: 30px;
+//         padding-top: 70px;
+//     }
+// }
 
 
