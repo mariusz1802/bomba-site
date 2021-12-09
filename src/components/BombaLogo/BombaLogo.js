@@ -47,9 +47,9 @@ function BombaLogo({ mobile }) {
         ></img>
       ) : (
         <img
-          src={bombaSmall}
+          src={bomba}
           alt="Bomba Web Design"
-          className={`${styles.bombaMobileMenu} ${styles.responsive} `}
+          className={styles.responsive}
         ></img>
       )}
       <TextContainer>
