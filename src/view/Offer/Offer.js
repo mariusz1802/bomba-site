@@ -4,11 +4,16 @@ import styles from "./Offer.module.scss";
 import GreyBox from "../../components/GreyBox/GreyBox";
 import logo from "./new-way-trip-logo.png";
 import website from "./website.jpg";
+import styled from "styled-components";
 import painting from "./PAINTING-MATERIALS.jpg";
 import shop from "./onlines-shop.jpg";
 import { useTranslation } from "react-i18next";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+const TopHeight = styled.div`
+  min-height: ${(props) => (props.height = "1000px")};
+`;
 
 function Offer() {
   const { t } = useTranslation();
@@ -27,14 +32,14 @@ function Offer() {
       <h3 className={styles.whatWeCanDo}> {t("offer.whatWeCanDo")} </h3>
       <div className={styles.oferta}>
         <div className={styles.column}>
-          <GreyBox
-            title={t("offerLogo.title")}
-            imgSrc={logo}
-            description={t("offerLogo.description")}
-            ownClass={styles.ownClass}
-            animationImage="fade"
-            onClick={() => alert("!Klik")}
-          />
+            <GreyBox
+              title={t("offerLogo.title")}
+              imgSrc={logo}
+              description={t("offerLogo.description")}
+              ownClass={styles.ownClass}
+              animationImage="fade"
+              onClick={() => alert("!Klik")}
+            />
         </div>
         <div className={styles.column}>
           <GreyBox
@@ -62,7 +67,6 @@ function Offer() {
             description={t("offerPainting.description")}
             ownClass={styles.ownClass}
             animationImage="fade"
-          
           />
         </div>
       </div>

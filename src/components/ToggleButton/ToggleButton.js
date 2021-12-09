@@ -5,7 +5,6 @@ import moonIcon from "./moon.svg";
 import sunIcon from "./sun.svg";
 import { lightTheme } from "../NightMode/theme";
 
-
 const ToggleContainer = styled.button`
   display: flex;
   background: ${({ theme }) => theme.iconGradient};
@@ -23,6 +22,7 @@ const ToggleContainer = styled.button`
   position: fixed;
   right: 20px;
   top: 17px;
+  outline: 0 !important;
 
   img {
     height: auto;

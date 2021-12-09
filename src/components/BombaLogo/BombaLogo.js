@@ -30,7 +30,7 @@ function BombaLogo() {
       <TextContainer>
         <BombaText>Bomba</BombaText>
         <BombaSubText>
-          <span>Web</span> design
+          <span>web</span> design
         </BombaSubText>
       </TextContainer>
     </div>

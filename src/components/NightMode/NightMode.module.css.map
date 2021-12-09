@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "NightMode.module.scss"
+    ],
+    "names": [],
+    "file": "NightMode.module.css"
+}

@@ -11,6 +11,7 @@ import MessengerCustomerChat from "react-messenger-customer-chat";
 import Offer from "./view/Offer/Offer.js";
 import Partners from "./view/Partners/Partners.js";
 import Contact from "./view/Contact/Contact.js";
+import SliderMotion from "./components/SliderMotion/SliderMotion";
 import Footer from "./view/Footer/Footer.js";
 import LoadingScreen from "react-loading-screen";
 import Logo from "./components/BombaLogo/logo_small.jpg";
@@ -61,6 +62,7 @@ function App() {
           <Partners />
           <Contact />
         </Wrapper>
+        <SliderMotion />
         <Footer theme={theme} />
       </Suspense>
     </ThemeProvider>
