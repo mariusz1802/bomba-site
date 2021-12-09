@@ -7,14 +7,14 @@ const moveLeft = keyframes`
     transform: translateX(-66.6666%);  
   }
 `;
-
+//TODO: Check fast scrolling 
 const ImageContainer = styled.div`
   height: 200px;
   width: 100%;
   margin: 100px auto;
   position: relative;
   overflow: hidden;
-  transform: translate3d(0, 0, 0);
+  /* transform: translate3d(0, 0, 0); */
 `;
 
 const Image = styled.div`
@@ -27,7 +27,7 @@ const Image = styled.div`
   top: 0;
   left: 0;
   height: 100%;
-  transform: translate3d(0, 0, 0);
+  /* transform: translate3d(0, 0, 0); */
   animation: ${moveLeft} 95s linear infinite;
 `;
 

@@ -24,6 +24,7 @@ function Contact() {
     & b {
       font-size: 2.3rem;
       font-family: "Pacifico";
+      color : #2b2b2b;
     }
   `;
 
@@ -44,9 +45,9 @@ function Contact() {
               </a>
             </p>
             <p className={styles.dataBlock}>
-              Email:{" "}
+              <span>Email:</span>
               <a href="mailto: contact.@bombadesign.pl">
-                <b className={styles.mailStyle}>info@bombadesign.pl</b>{" "}
+                <b>info@bombadesign.pl</b> 
               </a>
             </p>
             <p className={styles.dataBlock}>
@@ -54,7 +55,7 @@ function Contact() {
 
               <b>
                 {t("contact.street")}
-                <p>59-220 Legnica</p>
+                <b>59-220 Legnica</b>
                 <p>{t("contact.country")}</p>
               </b>
             </p>
@@ -76,7 +77,6 @@ function Contact() {
           <div className={styles.openHours}>
             <Hyphenated language={pl}>
               <p className={styles.dataBlock}>
-      
                 <Description>{t("contact.openingHours")}</Description>
                 <Description>{t("contact.openingTime")}</Description>
               </p>

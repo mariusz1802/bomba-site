@@ -6,7 +6,6 @@ import Button from "../../components/Button/Button";
 import emailjs from "emailjs-com";
 import { FormErrors } from "./FormErrors";
 import Modal from "../../components/Modal/Modal";
-import Fade from "react-reveal/Fade";
 
 class Form extends Component {
   constructor(props) {

@@ -9,16 +9,16 @@
   transition: all 1s ease-in-out;
   box-shadow: 0 10px 40px -15px rgba(#818181, 0.5);
 }
-
-//Button Size  Style
-
 .wide {
   width: 100%;
 }
+
 .medium {
   width: 70%;
   margin: 10px auto;
+  text-align: center;  
 }
+
 .small {
   width: 50%;
   display: block;

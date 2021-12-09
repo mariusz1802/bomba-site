@@ -5,8 +5,6 @@ import { HashLink as Link } from "react-router-hash-link";
 import { Spin as Hamburger } from "hamburger-react";
 import styled from "styled-components";
 import BombaLogo from "../../components/BombaLogo/BombaLogo";
-import logo from "./logo_small.png";
-
 import HamburgerButton from "../../components/Hamburger/Hamburger";
 
 import { useTranslation } from "react-i18next";
@@ -20,6 +18,7 @@ function Navbar() {
   const Wrapper = styled.div`
 height: 100%;
 width: 100%;
+padding: 20px;
 padding-top: 100px;
 background-color : ${({ theme }) => theme.body};
   }
@@ -27,8 +26,13 @@ background-color : ${({ theme }) => theme.body};
 
   return (
     <>
-      <div onClick={handleClick}>
-        <HamburgerButton toggled={click} toggle={handleClick} />
+      <div className={styles.hamburgerClick} onClick={handleClick}>
+        <HamburgerButton
+          style={{ WebkitTapHighLightColor: "rgba(0,0,0,0)" }}
+          hideOutline={false}
+          toggled={click}
+          toggle={handleClick}
+        />
       </div>
       <ul
         className={

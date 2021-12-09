@@ -3,7 +3,6 @@ import background from "./footer-background.jpg";
 import backgroundDark from "./footer-background-dark.jpg";
 import styles from "./Footer.module.scss";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
-import { lightTheme } from "../../components/NightMode/theme";
 const facebook_url = "https://www.facebook.com/Bombadesignpl-108034361531951";
 const instagram_url = "http://www.instagram.com";
 

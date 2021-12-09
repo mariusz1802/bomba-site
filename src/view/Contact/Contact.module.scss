@@ -84,9 +84,12 @@
   }
 }
 
-.contactWrapper a {
+.contactWrapper a  {
   color: $dark-grey;
 }
+.contactWrapper b  {
+    color: $dark-grey;
+  }
 
 
 @media screen and (max-width: 450px) {
@@ -94,6 +97,8 @@
 .mailStyle {
   font-size : 1.2rem;
 }
+
+
 
 }
 
@@ -124,7 +129,6 @@
 .dataBlock {
   margin-bottom: 20px;
   border-bottom: 1px solid grey;
-  display: flex;
   padding-bottom: 15px;
 }
 

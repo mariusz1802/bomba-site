@@ -23,7 +23,6 @@ function Partners() {
   return (
     <div id="partnerzy">
       <PartnersWrapper>
-        {/* <div className={styles.partners}> */}
         <Chapter
           title={t("partners.title")}
           subtitle={t("partners.subtitle")}
@@ -35,13 +34,11 @@ function Partners() {
               {" "}
               <Button
                 title={t("partners.button")}
-                buttonSize="small"
                 buttonColor="green"
               />{" "}
             </Link>
           </div>
         </Router>
-        {/* </div> */}
       </PartnersWrapper>
     </div>
   );
