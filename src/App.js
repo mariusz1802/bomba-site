@@ -1,7 +1,5 @@
 import React, { Suspense, useState } from "react";
-import ReactDOM from "react-dom";
 import "./index.module.scss";
-import reportWebVitals from "./reportWebVitals";
 import Head from "./view/Head/Head.js";
 import Navbar from "./view/Navbar/Navbar.js";
 import NavbarDesktop from "./view/NavbarDesktop/NavbarDesktop";
@@ -14,11 +12,10 @@ import Contact from "./view/Contact/Contact.js";
 import SliderMotion from "./components/SliderMotion/SliderMotion";
 import Footer from "./view/Footer/Footer.js";
 import LoadingScreen from "react-loading-screen";
-import Logo from "./components/BombaLogo/logo_small.jpg";
+import Logo from "./components/BombaLogo/bomba_small.png";
 import { lightTheme, darkTheme } from "./components/NightMode/theme";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./global.js";
-import ToggleButton from "./components/ToggleButton/ToggleButton";
 import { useDarkMode } from "./hooks/useDarkMode";
 
 function App() {
@@ -52,7 +49,7 @@ function App() {
         />
 
         <Navbar />
-        <Head theme={theme} toggleTheme={toggleTheme}/>
+        <Head theme={theme} toggleTheme={toggleTheme} />
         <Navbar />
         <NavbarDesktop />
         <Wrapper>
