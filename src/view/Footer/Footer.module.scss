@@ -65,11 +65,15 @@
   }
 
   @media only screen and (max-width: 450px) {
+      .footerContainer {
+          width: 100%;
+        overflow: hidden;
+      }
     .image {
         height: 300px;
         width: auto;
+        margin-left: -65%;
         margin-bottom: -30px;
-        margin-left: -60%;
     }
   } 
 

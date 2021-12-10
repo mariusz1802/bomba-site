@@ -30,12 +30,9 @@ function Partners() {
         <Slider />
         <Router>
           <div className={styles.column}>
-            <Link smooth to="#kontakt">
+            <Link smooth to="#formularz">
               {" "}
-              <Button
-                title={t("partners.button")}
-                buttonColor="green"
-              />{" "}
+              <Button title={t("partners.button")} buttonColor="green" />{" "}
             </Link>
           </div>
         </Router>

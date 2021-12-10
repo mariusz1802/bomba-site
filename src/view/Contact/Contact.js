@@ -24,7 +24,7 @@ function Contact() {
     & b {
       font-size: 2.3rem;
       font-family: "Pacifico";
-      color : #2b2b2b;
+      color: ${({ theme }) =>   theme.text};
     }
   `;
 
@@ -47,7 +47,7 @@ function Contact() {
             <p className={styles.dataBlock}>
               <span>Email:</span>
               <a href="mailto: contact.@bombadesign.pl">
-                <b>info@bombadesign.pl</b> 
+                <b>info@bombadesign.pl</b>
               </a>
             </p>
             <p className={styles.dataBlock}>

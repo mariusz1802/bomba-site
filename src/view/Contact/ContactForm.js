@@ -42,7 +42,6 @@ class Form extends Component {
     this.setState(this.initialState);
   }
 
-
   setShow() {
     const currentState = this.state.show;
     this.setState({ show: !currentState });
@@ -60,12 +59,8 @@ class Form extends Component {
         "user_1TdvSO4giHTFbWcnfWoJ4"
       )
       .then(
-        () => {
-
-         
-        },
-        () => {
-        }
+        () => {},
+        () => {}
       );
   }
 
@@ -148,7 +143,7 @@ class Form extends Component {
 
   render() {
     return (
-      <div className={styles.column}>
+      <div className={styles.column} id="formularz">
         <Modal
           onClose={this.setShow}
           btnTitle="OK"
@@ -160,7 +155,6 @@ class Form extends Component {
         <h3 className={styles.askQuestion} id="ask">
           {" "}
           {this.props.t("contact.askQuestion")}
-
         </h3>
         <form onSubmit={this.sendEmail}>
           <Input
