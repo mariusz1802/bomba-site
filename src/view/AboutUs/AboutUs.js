@@ -9,9 +9,11 @@ import react from "./react-logo.png";
 import { useTranslation } from "react-i18next";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import maniollo from "./maniollo.png";
 
 function AboutUs() {
   const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init(
       {
@@ -22,27 +24,28 @@ function AboutUs() {
   });
 
   return (
-      <div id="onas">
-        <Chapter
-          title={t("aboutUs.title")}
-          description={t("aboutUs.description")}
-        />
-        <h3 className={styles.technologies}>{t("aboutUs.technologies")} </h3>
-        <div className={styles.container}>
-          <div className={styles.column}>
-            <GreyBox title="Java Script" imgSrc={js}  />
-          </div>
-          <div className={styles.column}>
-            <GreyBox title="React JS" imgSrc={react}  />
-          </div>
-          <div className={styles.column}>
-            <GreyBox title="NodeJS" imgSrc={node}  />
-          </div>
-          <div className={styles.column}>
-            <GreyBox title="Wordpress" imgSrc={wordpress}  />
-          </div>
+    <div id="onas">
+      <Chapter
+        title={t("aboutUs.title")}
+        description={t("aboutUs.description")}
+        src={maniollo}
+      />
+      <h3 className={styles.technologies}>{t("aboutUs.technologies")} </h3>
+      <div className={styles.container}>
+        <div className={styles.column}>
+          <GreyBox title="Java Script" imgSrc={js} />
+        </div>
+        <div className={styles.column}>
+          <GreyBox title="React JS" imgSrc={react} />
+        </div>
+        <div className={styles.column}>
+          <GreyBox title="NodeJS" imgSrc={node} />
+        </div>
+        <div className={styles.column}>
+          <GreyBox title="Wordpress" imgSrc={wordpress} />
         </div>
       </div>
+    </div>
   );
 }
 

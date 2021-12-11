@@ -8,6 +8,8 @@ const HamburgerContainer = styled.div`
   top: 20px;
   right: 20px;
   z-index: 130;
+      -webkit-tap-highlight-color: transparent;
+}
   @media only screen and (min-width: 1000px) {
     display: none;
   }

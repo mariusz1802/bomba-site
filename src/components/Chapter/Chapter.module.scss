@@ -19,6 +19,18 @@
   hyphens: auto;
 }
 
+.descriptionWrapper {
+display: flex;
+justify-content: center;
+flex-direction: space-around;
+}
+
+.maniollo {
+    width: 300px;
+    height: auto;
+    margin-top: -100px;
+}
+
 .subtitle {
   text-align: center;
 }
@@ -27,7 +39,6 @@
   height: 3px;
   margin: auto;
   background: red;
-
   background: linear-gradient(
     to right,
     red,
@@ -74,15 +85,18 @@
 }
 
 
-@media only screen and (min-width: 1100px) {
-  .description {
-    width: 70%;
+@media only screen and (max-width: 1100px) {
+.descriptionWrapper {
+    flex-direction : column-reverse;
+}
+.maniollo {
+    margin : 20px auto;
+}
 
-  }
 }
 
 @media only screen and (min-width: 1500px) {
   .description {
-    width: 50%;
+    width: 70%;
   }
 }

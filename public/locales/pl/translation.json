@@ -7,13 +7,13 @@
   },
   "Menu": {
     "1": "HOME",
-    "2": "O NAS",
+    "2": "O FIRMIE",
     "3": "OFERTA",
     "4": "PARTNERZY",
     "5": "KONTAKT"
   },
   "aboutUs": {
-    "title": "O nas",
+    "title": "O firmie",
     "description": "Nasza firma składa się z ludzi, którzy z zamiłowaniem poświęcają się swojej pracy. Różnimy się od siebie, natomiast wspólnie tworzymy monolit, który przezwycięży każdy napotkany problem. Zajmujemy się projektowaniem stron internetowych, sklepów i aplikacji mobilnych. Uwielbiamy programowanie oraz grafikę komputerową, dlatego wychodzimy naprzeciw Waszym oczekiwaniom. Jesteśmy otwarci na nowe pomysły i projekty!",
     "technologies": "Używane technologie: "
   },
@@ -54,12 +54,12 @@
     "map": "Mapa dojazdu",
     "openingHours": "Godziny otwarcia",
     "openingTime": "Pn-Pt: 8:00-17:00",
-    "description" : "Jeśli chciałbyś przedstawić swój projekt lub omówić, kwestie które Cię niepokoją, chętnie możemy się spotakać i omówić temat. Kiedy dzieli nas odległość wykonamy twój projekt zdalnie.",
+    "description": "Jeśli chciałbyś przedstawić swój projekt lub omówić, kwestie które Cię niepokoją, chętnie możemy się spotakać i omówić temat. Kiedy dzieli nas odległość wykonamy twój projekt zdalnie.",
     "askQuestion": "Zadaj pytanie",
     "subject": "Temat",
     "name": "Imię",
     "mobile": "Numer telefonu",
-    "certificate" : "Certifikat:",
+    "certificate": "Certifikat:",
     "button": "Wyślij"
   },
   "validation": {
