@@ -32,5 +32,4 @@ function ToggleGroup() {
   );
 }
 
-
 export default ToggleGroup;

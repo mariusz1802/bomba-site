@@ -29,10 +29,11 @@ function Slider() {
 
   function debounce(fn, ms) {
     let timer;
-    return (_) => {
+
+    return () => {
       clearTimeout(timer);
-      timer = setTimeout((_) => {
-        timer = setTimeout((_) => {
+      timer = setTimeout(() => {
+        timer = setTimeout(() => {
           timer = null;
           fn.apply(this, arguments);
         }, ms);
@@ -50,7 +51,7 @@ function Slider() {
 
     window.addEventListener("resize", debouncedHandleResize);
 
-    return (_) => {
+    return () => {
       window.removeEventListener("resize", debouncedHandleResize);
     };
   });

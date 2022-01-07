@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./NightMode.module.scss";
 import SwitchButton from "../SwitchButton/SwitchButton";
-function NightMode({ night, day, children, checked }) {
+function NightMode({ children, checked }) {
   return (
     <div className={styles.container}>
       {children}

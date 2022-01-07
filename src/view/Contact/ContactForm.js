@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styles from "./Contact.module.scss";
 import Input from "../../components/Input/Input";
 import { withTranslation } from "react-i18next";
+import AOS from "aos";
 import Button from "../../components/Button/Button";
 import emailjs from "emailjs-com";
 import { FormErrors } from "./FormErrors";
@@ -42,6 +43,15 @@ class Form extends Component {
     this.setState(this.initialState);
   }
 
+  compondentDidMount() {
+    AOS.init(
+      {
+        duration: 1000,
+      },
+      []
+    );
+  }
+
   setShow() {
     const currentState = this.state.show;
     this.setState({ show: !currentState });
@@ -69,6 +79,9 @@ class Form extends Component {
     const name = e.target.name;
     const value = e.target.value;
     this.setState({ [name]: value }, () => {
+      if (value.length === 0) {
+        // this.setState((this.initialState.formErrors = {}));
+      }
       this.validateField(name, value);
     });
   }
@@ -104,6 +117,7 @@ class Form extends Component {
         break;
       case "phonenumber":
         phonenumberValid = value.match(/((\+\d{2}|00\d{2}|0)\d{7,9})/g);
+        phonenumberValid = value.length === 0;
         fieldValidationErrors.phonenumber = phonenumberValid
           ? ""
           : this.props.t("validation.phonenumber");
@@ -116,6 +130,11 @@ class Form extends Component {
         break;
       default:
         break;
+    }
+
+    //Check - if input field is empty
+    if (!value) {
+      fieldValidationErrors[fieldName] = value.length === 0 && "";
     }
     this.setState(
       {
@@ -156,11 +175,10 @@ class Form extends Component {
           {" "}
           {this.props.t("contact.askQuestion")}
         </h3>
-        <form onSubmit={this.sendEmail}>
+        <form onSubmit={this.sendEmail} autoComplete="off">
           <Input
             type="text"
             placeholder={this.props.t("placeholder.subject")}
-            autoComplete="none"
             maxLength="70"
             name="subject"
             value={this.state.subject}
@@ -173,7 +191,6 @@ class Form extends Component {
           <Input
             type="text"
             placeholder={this.props.t("placeholder.name")}
-            autoComplete="none"
             maxLength="30"
             name="name"
             value={this.state.name}
@@ -198,7 +215,6 @@ class Form extends Component {
             placeholder={this.props.t("placeholder.phone")}
             value={this.state.phonenumber}
             onChange={(event) => this.handleUserInput(event)}
-            required
           />
           <FormErrors formErrors={this.state.formErrors.phonenumber} />
           <textarea

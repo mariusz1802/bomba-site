@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
 import { BrowserRouter as Router } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
-import { Spin as Hamburger } from "hamburger-react";
 import styled from "styled-components";
 import BombaLogo from "../../components/BombaLogo/BombaLogo";
 import HamburgerButton from "../../components/Hamburger/Hamburger";

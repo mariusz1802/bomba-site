@@ -6,10 +6,7 @@ import german from "./german.jpg";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
-const Button = styled.button`
-  /* Same as above */
-`;
-const ButtonToggle = styled(Button)`
+const ButtonToggle = styled.button`
   opacity: 0.6;
   ${({ active }) =>
     active &&
@@ -26,7 +23,6 @@ function Flag() {
     setActive(lang);
   };
 
-  console.log(i18n.language);
   const [active, setActive] = useState(i18n.language);
 
   return (

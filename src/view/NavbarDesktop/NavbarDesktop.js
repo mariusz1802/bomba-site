@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./NavbarDesktop.module.scss";
 import { BrowserRouter as Router } from "react-router-dom";
-import Sticky from "react-sticky-el";
 
 import Links from "./Links";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";

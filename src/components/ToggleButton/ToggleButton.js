@@ -1,5 +1,5 @@
 import React from "react";
-import { func, string } from "prop-types";
+import { func } from "prop-types";
 import styled from "styled-components";
 import moonIcon from "./moon.svg";
 import sunIcon from "./sun.svg";
@@ -47,7 +47,7 @@ const ToggleContainer = styled.button`
   }
 `;
 
-function ToggleButton({ theme, toggleTheme }) {
+function ToggleButton({ toggleTheme }) {
   return (
     <ToggleContainer onClick={toggleTheme}>
       <img src={sunIcon} alt="sun_Icon" />
@@ -57,7 +57,6 @@ function ToggleButton({ theme, toggleTheme }) {
 }
 
 ToggleButton.propTypes = {
-  theme: string.isRequred,
   toggleTheme: func.isRequired,
 };
 

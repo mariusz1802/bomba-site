@@ -1,6 +1,7 @@
 import React from "react";
 import { Spin as Hamburger } from "hamburger-react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const HamburgerContainer = styled.div`
   background-color: ${({ theme }) => theme.body};
@@ -26,5 +27,10 @@ function HamburgerButton({ toggled, toggle }) {
     </HamburgerContainer>
   );
 }
+
+HamburgerButton.propTypes = {
+  toggled: PropTypes.string,
+  toggle: PropTypes.string,
+};
 
 export default HamburgerButton;

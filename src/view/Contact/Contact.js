@@ -24,7 +24,7 @@ function Contact() {
     & b {
       font-size: 2.3rem;
       font-family: "Pacifico";
-      color: ${({ theme }) =>   theme.text};
+      color: ${({ theme }) => theme.text};
     }
   `;
 
@@ -38,7 +38,7 @@ function Contact() {
             <Title>
               <b>Bomba</b> <p>web design </p>
             </Title>
-            <p clasName={styles.dataBlock}>
+            <p className={styles.dataBlock}>
               {t("contact.phone")}
               <a href="tel:+48666742743">
                 <b> +48 666-742-743 </b>
@@ -64,7 +64,9 @@ function Contact() {
           <h3 className={styles.certificate}> {t("contact.certificate")}</h3>
           <img src={logo} className={styles.logoRF} alt="certyfikat" />
         </Column>
-
+        <Column>
+          <ContactForm />
+        </Column>
         <Column>
           <h3>{t("contact.map")}</h3>
           <iframe
@@ -83,9 +85,6 @@ function Contact() {
               <Description>{t("contact.description")} </Description>
             </Hyphenated>
           </div>
-        </Column>
-        <Column>
-          <ContactForm />
         </Column>
       </ContactStyle>
     </div>

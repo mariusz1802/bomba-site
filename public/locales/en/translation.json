@@ -16,51 +16,51 @@
   "aboutUs": {
     "title": "About us",
     "description": "Our company consists of people who passionately devote themselves to their work. We differ from each other, but together we create a monolith that will overcome every encountered problem. We design websites, stores and mobile applications. We love programming and computer graphics, so we meet your expectations. We are open to new ideas and projects!",
-    "technologies" : "Technologies we use: " 
+    "technologies": "Technologies we use: "
   },
-  "offer" : {
-    "title" : "Offer",
-    "description" : "We offer a wide range of services related to computer graphics as well as web programming. We can make for you both a simple One Page visit page or more complex pages based on the CMS system. We use technologies that perfectly position themselves in the Internet search engine. We will do the initial design of the website for free. Only after accepting the project, we proceed to implementation.",
-    "whatWeCanDo" : "What we can do for you ?"
+  "offer": {
+    "title": "Offer",
+    "description": "We offer a wide range of services related to computer graphics as well as web programming. We can make for you both a simple One Page visit page or more complex pages based on the CMS system. We use technologies that perfectly position themselves in the Internet search engine. We will do the initial design of the website for free. Only after accepting the project, we proceed to implementation.",
+    "whatWeCanDo": "What we can do for you ?"
   },
-  "offerLogo" : {
-    "title" : "Logo",
-    "description" : "Designing a logo is not only part of our work, but also a great pleasure, to which we apply great care. It is one of the basic elements that identify with your brand. The logo should look good in any format, size and most importantly, it should be remembered for a long time!"
+  "offerLogo": {
+    "title": "Logo",
+    "description": "Designing a logo is not only part of our work, but also a great pleasure, to which we apply great care. It is one of the basic elements that identify with your brand. The logo should look good in any format, size and most importantly, it should be remembered for a long time!"
   },
-  "offerWebsite" : {
-    "title" : "Web Page",
-    "description" : "While the reach of online dissemination has increased, it is hard to imagine a company that does not have a website of its own. Today it is a standard that is valid all over the world. We will design and make a website for you, or if you are involved in sales - an online store!"
+  "offerWebsite": {
+    "title": "Web Page",
+    "description": "While the reach of online dissemination has increased, it is hard to imagine a company that does not have a website of its own. Today it is a standard that is valid all over the world. We will design and make a website for you, or if you are involved in sales - an online store!"
   },
-  "offerShop" : {
-    "title" : "Online Shop",
-    "description" : "Are you selling? We will create an online store for you that meets the criteria of the most demanding customer. We know what a store should look like and what features it should have to be functional and transparent. Trust us and let us create a preliminary design for free."
+  "offerShop": {
+    "title": "Online Shop",
+    "description": "Are you selling? We will create an online store for you that meets the criteria of the most demanding customer. We know what a store should look like and what features it should have to be functional and transparent. Trust us and let us create a preliminary design for free."
   },
-  "offerPainting" : {
-    "title" : "Printing materials",
-    "description" : "We also create advertising materials for companies, such as calendars, business cards and leaflets. We also provide large-format printing. "
+  "offerPainting": {
+    "title": "Printing materials",
+    "description": "We also create advertising materials for companies, such as calendars, business cards and leaflets. We also provide large-format printing. "
   },
-  "partners" : {
-    "title" : "Partners",
-    "subtitle" : "Our Partners in bussiness",
-    "button" : "Join Us!"
+  "partners": {
+    "title": "Partners",
+    "subtitle": "Our Partners in bussiness",
+    "button": "Join Us!"
   },
-  "contact" :{
-    "title" : "Contact",
-    "phone" : "Phone",
-    "phoneNumber" : " +48 609-923-989",
-    "adresse" : "Address:",
-    "description" : "If you would like to present your project or discuss issues that concern you, we are happy to meet and discuss the topic. When the distance separates us, we will make your project remotely.",
-    "street" : " Barakowastreet 13a",
-    "country" : "POLAND",
-    "map" : "Access map",
-    "openingHours" : "Opening hours",
-    "openingTime" : "Mon-Sat: 8:00-17:00",
-    "askQuestion" : "Ask a question",
-    "certificate" : "Certificate:",
-    "subject" : "Subject",
-    "name" : "Name",
-    "mobile" : "Phone number",
-    "button" : "Send"
+  "contact": {
+    "title": "Contact",
+    "phone": "Phone",
+    "phoneNumber": " +48 609-923-989",
+    "adresse": "Address:",
+    "description": "If you would like to present your project or discuss issues that concern you, we are happy to meet and discuss the topic. When the distance separates us, we will make your project remotely.",
+    "street": " Barakowastreet 13a",
+    "country": "POLAND",
+    "map": "Access map",
+    "openingHours": "Opening hours",
+    "openingTime": "Mon-Sat: 8:00-17:00",
+    "askQuestion": "Ask a question",
+    "certificate": "Certificate:",
+    "subject": "Subject",
+    "name": "Name",
+    "mobile": "Phone number",
+    "button": "Send"
   },
   "validation": {
     "subject": "Subject is too short",
@@ -79,5 +79,59 @@
   "sendInfo": {
     "header": "Thank you for you message!",
     "description": "After reading the content, we will reply as soon as possible"
-  }
+  },
+  "logoPrice": [
+    {
+      "type": "title",
+      "text": "Logo"
+    },
+    {
+      "type": "checkbox",
+      "text": "logo w formacie wektorowym EN"
+    },
+    {
+      "type": "checkbox",
+      "text": "Logo w plikach PDF, PNG, JPEG "
+    },
+    {
+      "type": "checkbox",
+      "text": "Rabat na stronę internetową -200zł "
+    },
+    {
+      "type": "checkbox",
+      "text": "indywidualny projekt"
+    },
+    {
+      "type": "checkbox",
+      "text": "nielimitowane poprawki projektu"
+    }
+  ],
+  "rightsLogo": { "text": "Prawa do logo" },
+  "projectAmount": { "text": "Liczba projektów do przedstawienia en " },
+  "correctAmount": { "text": "Liczba poprawek wybranego projektu" },
+  "websitePrice": [
+    {
+      "type": "title",
+      "text": "Website"
+    },
+    {
+      "type": "checkbox",
+      "text": "szybka i wydajna strona internetowa EN"
+    },
+    {
+      "type": "checkbox",
+      "text": "Unikatowy design !"
+    },
+    {
+      "type": "checkbox",
+      "text": "Przystosowana do urządzeń mobilnych i tabletów"
+    },
+    {
+      "type": "checkbox",
+      "text": "Przyjazna dla użytkownika"
+    }
+  ],
+  "websiteLogo": { "text": "Potrzebuję logo" },
+  "websiteText": { "text": "Potrzebuję tekst na stronę" },
+  "websitePage": { "text": "Liczba podstron" }
 }

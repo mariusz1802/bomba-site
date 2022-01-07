@@ -20,11 +20,9 @@ function GreyBox({
   description,
   ownClass,
   dataAos,
-  animationImage,
   withButton,
   onClick,
   buttonTitle,
-  tall,
 }) {
   return (
     <BlackBox>

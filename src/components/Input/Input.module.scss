@@ -13,16 +13,23 @@
 .form input {
   width: 100%;
   height: 100%;
-  color: rgb(94, 97, 252);
+  color : rgb(134, 134, 134);
   padding-top: 18px;
   padding-left: 8px;
   border: none;
   font-size: 18px;
   font-weight : 500;
   outline: none;
-  background-color: rgba(255, 255,255, .1);
+//   background-color: rgba(255, 255,255, .1);
+  background: transparent;
 
 }
+.labelName span i {
+    content: "*";
+    color: rgb(218, 5, 5);
+    font-weight : 500;
+  }
+  
 
 .form label {
   position: absolute;
@@ -52,10 +59,12 @@
   bottom: 5px;
   left: 5px;
   transition: all 0.3s ease;
+  color: rgb(149, 149, 149);
+  
 }
 
 .form input:focus + .labelName .contentName,
-.form input:valid + .labelName .contentName {
+.form input:not([value=""]) + .labelName .contentName {
   transform: translateY(-120%);
   font-size: 14px;
   color: #5fa8d3;

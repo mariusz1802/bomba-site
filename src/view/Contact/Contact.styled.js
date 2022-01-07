@@ -15,9 +15,9 @@ export const Column = styled.div`
     color: ${({ theme }) => theme.ahref};
   }
   & textarea {
-    color: rgb(94, 97, 252);
+    color: rgb(134 , 134, 134);
     ::placeholder {
-      color: ${({ theme }) => theme.description};
+       color: rgb(149, 149, 149);
     }
     & input {
       background-color: red;

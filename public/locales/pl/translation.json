@@ -79,5 +79,47 @@
   "sendInfo": {
     "header": "Dziękujemy za przesłanie wiadomości!",
     "description": "Po zapoznaniu się z treścią odpowiemy tak szybko jak to możliwe"
-  }
+  },
+  "logoPrice": [
+    {
+      "id": 1,
+      "type": "title",
+      "text": "Logo"
+    },
+    {
+      "id": 2,
+      "type": "checkbox",
+      "text": "logo w formacie wektorowym"
+    },
+    {
+      "id": 3,
+      "type": "checkbox",
+      "text": "Logo w plikach PDF, PNG, JPEG"
+    },
+    {
+      "id": 4,
+      "type": "checkbox",
+      "text": "Rabat na stronę internetową -200zł"
+    },
+    {
+      "id": 5,
+      "type": "checkbox",
+      "text": "indywidualny projekt"
+    },
+    {
+      "id": 6,
+      "type": "checkbox",
+      "text": "nielimitowane poprawki projektu"
+    },
+    {
+      "id": 7,
+      "type": "checkbox",
+      "text": "nielimitowane poprawki projektu"
+    },
+    {
+      "id": 8,
+      "type": "checkbox",
+      "text": "nielimitowane poprawki projektu"
+    }
+  ]
 }

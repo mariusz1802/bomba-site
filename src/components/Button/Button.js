@@ -9,8 +9,12 @@ function Button({
   type,
   disabled,
 }) {
-  const STYLES = { btnMobile: styles.btnMobile, rounded : styles.rounded };
-  const COLOR = { red: styles.red, green: styles.green, transparent : styles.transparent  };
+  const STYLES = { btnMobile: styles.btnMobile, rounded: styles.rounded };
+  const COLOR = {
+    red: styles.red,
+    green: styles.green,
+    transparent: styles.transparent,
+  };
   const SIZE = {
     wide: styles.wide,
     medium: styles.medium,

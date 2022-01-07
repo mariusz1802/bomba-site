@@ -7,15 +7,8 @@ import Scrollspy from "react-scrollspy";
 window.scroll({ behavior: "smooth" });
 
 function Links() {
-  // funkcja zmieniająca wybrany język
+  // Change languange
   const { t } = useTranslation();
-  //funckja cofająca przejscie zejscie strony o wysokośc menu
-  const scrollWithOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -5;
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
-    console.log(window.innerHeight);
-  };
 
   return (
     <Scrollspy

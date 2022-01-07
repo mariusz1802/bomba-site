@@ -7,14 +7,12 @@ const moveLeft = keyframes`
     transform: translateX(-66.6666%);  
   }
 `;
-//TODO: Check fast scrolling 
 const ImageContainer = styled.div`
   height: 200px;
   width: 100%;
   margin: 100px auto;
   position: relative;
   overflow: hidden;
-  /* transform: translate3d(0, 0, 0); */
 `;
 
 const Image = styled.div`
@@ -29,12 +27,6 @@ const Image = styled.div`
   height: 100%;
   /* transform: translate3d(0, 0, 0); */
   animation: ${moveLeft} 95s linear infinite;
-`;
-
-const NextImage = styled(Image)`
-  transition: opacity 0.5s ease-out;
-  background-position: 0 -200px;
-  animation: moveSlideshow 15s linear infinite;
 `;
 
 function SliderMotion() {
