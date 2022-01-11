@@ -5,12 +5,14 @@ import GreyBox from "../../components/GreyBox/GreyBox";
 import logo from "./new-way-trip-logo.png";
 import website from "./website.jpg";
 import painting from "./PAINTING-MATERIALS.jpg";
+import ad from "./Advisertment.png";
 import shop from "./onlines-shop.jpg";
 import { useTranslation } from "react-i18next";
 import AOS from "aos";
 import ModalBox from "../../components/ModalBox/ModalBox";
 import CheckType from "../../components/ModalBox/CheckType";
 import "aos/dist/aos.css";
+import useFade from "../../hooks/useFade/useFade";
 
 function Offer() {
   const { t } = useTranslation();
@@ -23,17 +25,23 @@ function Offer() {
     );
   });
 
-  const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState();
   const [type, setType] = useState("");
+  const [isVisible, setVisible, fadeProps] = useFade();
 
   const handleModal = (type) => {
     setModal(!modal);
     setType(type);
   };
 
+  const handleVisible = (type) => {
+    setVisible(!isVisible);
+    setType(type);
+  };
+
   return (
     <>
-      {modal && <CheckType onClose={handleModal} type={type} />}
+      {isVisible && <CheckType onClose={handleVisible} type={type} />}
       <div id="oferta">
         <Chapter
           title={t("offer.title")}
@@ -48,43 +56,49 @@ function Offer() {
               description={t("offerLogo.description")}
               ownClass={styles.ownClass}
               animationImage="fade"
-              onClick={() => handleModal("logo")}
+              dataAos="fade-up"
+              onClick={() => handleVisible("logo")}
               withButton
-              buttonTitle="Sprawdz oferte"
+              text={t("fancyButton.text")}
             />
           </div>
           <div className={styles.column}>
             <GreyBox
               title={t("offerWebsite.title")}
               imgSrc={website}
+              dataAos="fade-up"
               description={t("offerWebsite.description")}
               ownClass={styles.ownClass}
               animationImage="fade"
-              onClick={() => handleModal("website")}
+              onClick={() => handleVisible("website")}
               withButton
-              buttonTitle="Sprawdz oferte"
+              text={t("fancyButton.text")}
             />
           </div>
           <div className={styles.column}>
             <GreyBox
               title={t("offerShop.title")}
               imgSrc={shop}
+              dataAos="fade-up"
               description={t("offerShop.description")}
               ownClass={styles.ownClass}
+              onClick={() => handleVisible("shop")}
               animationImage="fade"
               withButton
-              buttonTitle="Sprawdz oferte"
+              text={t("fancyButton.text")}
             />
           </div>
           <div className={styles.column}>
             <GreyBox
               title={t("offerPainting.title")}
-              imgSrc={painting}
+              imgSrc={ad}
+              dataAos="fade-up"
               description={t("offerPainting.description")}
               ownClass={styles.ownClass}
+              onClick={() => handleVisible("promo")}
               animationImage="fade"
               withButton
-              buttonTitle="Sprawdz oferte"
+              text={t("fancyButton.text")}
             />
           </div>
         </div>

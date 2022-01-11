@@ -17,13 +17,15 @@ function Factory({
   name,
   price,
   number,
+  type,
+  modalName,
 }) {
   const { t } = useTranslation();
   switch (component.type) {
     case "title":
       return <TitleComponent text={component.text} />;
     case "checkbox":
-      return <CheckedButton text={t(`logoPrice.${number}.text`)} />;
+      return <CheckedButton text={component.text} />; 
     case "tocheck":
       return (
         <ToCheckBox

@@ -33,16 +33,16 @@ function AboutUs() {
       <h3 className={styles.technologies}>{t("aboutUs.technologies")} </h3>
       <div className={styles.container}>
         <div className={styles.column}>
-          <GreyBox title="Java Script" imgSrc={js} />
+          <GreyBox title="Java Script" imgSrc={js} dataAos="fade-in" />
         </div>
         <div className={styles.column}>
-          <GreyBox title="React JS" imgSrc={react} />
+          <GreyBox title="React JS" imgSrc={react} dataAos="fade-in" />
         </div>
         <div className={styles.column}>
-          <GreyBox title="NodeJS" imgSrc={node} />
+          <GreyBox title="NodeJS" imgSrc={node} dataAos="fade-in" />
         </div>
         <div className={styles.column}>
-          <GreyBox title="Wordpress" imgSrc={wordpress} />
+          <GreyBox title="Wordpress" imgSrc={wordpress} dataAos="fade-in" />
         </div>
       </div>
     </div>

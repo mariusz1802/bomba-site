@@ -4,6 +4,13 @@
        font-weight : 300;
        font-size: 2rem;
      }
+
+     @media screen and (max-width: 800px) {
+         .ownClass{
+             min-height: 700px;
+         }
+     }
+
      
 
 @media screen and (min-width: 800px) {
@@ -11,7 +18,7 @@
          margin : 20px auto;
        }
        .ownClass {
-         min-height: 620px;
+         min-height: 820px;
          padding: 10px;
          padding-bottom: 20px;
        }
@@ -27,7 +34,7 @@
 
 @media screen and (min-width:1200px) {
   .ownClass {
-    min-height: 700px;
+    min-height: 800px;
     padding: 10px;
     padding-bottom: 20px;
   }

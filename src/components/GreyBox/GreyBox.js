@@ -4,6 +4,7 @@ import Hyphenated from "react-hyphen";
 import Button from "../Button/Button";
 import pl from "hyphenated-pl";
 import styled from "styled-components";
+import FancyButton from "../FancyButton/FancyButton"
 
 export const BlackBox = styled.div`
   width: 100%;
@@ -22,7 +23,7 @@ function GreyBox({
   dataAos,
   withButton,
   onClick,
-  buttonTitle,
+  text,
 }) {
   return (
     <BlackBox>
@@ -33,15 +34,7 @@ function GreyBox({
           <p className={styles.description}> {description} </p>
         </Hyphenated>
         <div className={styles.buttonLocation}>
-          {withButton && (
-            <Button
-              buttonSize="micro"
-              buttonColor="transparent"
-              buttonStyle="rounded"
-              title={buttonTitle}
-              onClick={onClick}
-            />
-          )}
+          {withButton && <FancyButton text={text} onClick={onClick} />}
         </div>
       </div>
     </BlackBox>

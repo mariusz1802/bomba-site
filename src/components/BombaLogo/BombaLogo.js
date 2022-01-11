@@ -61,5 +61,6 @@ function BombaLogo({ mobile }) {
     </div>
   );
 }
+export { SpanText, BombaSubText };
 
 export default BombaLogo;

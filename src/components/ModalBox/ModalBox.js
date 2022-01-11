@@ -1,14 +1,15 @@
 import React, { useState } from "react";
+import ReactDOM from "react-dom";
 import Factory from "./Factory";
 import styled from "styled-components";
-// import Counter from "./Elements/Counter";
-import SendButton from "./Elements/SendButton";
+import FancyButton from "../FancyButton/FancyButton"
 import { GrClose } from "react-icons/gr";
 import { VscClose } from "react-icons/vsc";
 import { IconContext } from "react-icons";
 import CountInput from "./Elements/CountInput";
 import Counter from "./Elements/Counter";
 import { Trans, useTranslation } from "react-i18next";
+import useFade from "../../hooks/useFade/useFade";
 import i18next from "i18next";
 
 const BackgroundModal = styled.div`
@@ -31,9 +32,18 @@ const Wrapper = styled.div`
   }};
   text-align: center;
   z-index: 1000;
-  padding: 20px 20px 10px 20px ;
+  padding: 20px 20px 20px 20px ;
   overflow: hidden;
   position: relative;
+
+`;
+
+const Invisible = styled.div`
+  opacity: 0;
+`;
+
+const Visible = styled.div`
+  opacity: 1;
 `;
 
 const Xbutton = styled.div`
@@ -50,133 +60,73 @@ const Xbutton = styled.div`
   }
 `;
 
-function ModalBox({ type, action, onClose }) {
-  const { i18n } = useTranslation("array");
+function ModalBox({ type, action, onClose, price, setPrice, modalName }) {
   const { t } = useTranslation();
-
-  //   Logo states
-  const [logoPrice, setLogoPrice] = useState(500);
-  const [logo, setLogo] = useState([
-    {
-      type: "tocheck",
-      checked: false,
-      name: "rights",
-      text: t("rightsLogo.text"),
-      price: 200,
-    },
-    {
-      type: "prices",
-      name: "projectsAmount",
-      text: t("projectAmount.text"),
-      price: 300,
-      value: 1,
-      counter: 0,
-      max: 5,
-      min: 1,
-    },
-    {
-      type: "prices",
-      name: "correctAmount",
-      text: t("correctAmount.text"),
-      price: 100,
-      value: 2,
-      counter: 0,
-      max: 5,
-      min: 2,
-    },
-  ]);
-
-  //   Website states
-  const [websitePrice, setWebsitePrice] = useState(1000);
-  const [website, setWebsite] = useState([
-    {
-      type: "tocheck",
-      checked: false,
-      name: "rights",
-      text: t("websiteLogo.text"),
-      price: 300,
-    },
-    {
-      type: "tocheck",
-      checked: false,
-      name: "rights",
-      text: t("websiteText.text"),
-      price: 400,
-    },
-    {
-      type: "prices",
-      name: "projectsAmount",
-      text: t("websitePage.text"),
-      price: 200,
-      value: 0,
-      counter: 0,
-      max: 10,
-      min: 1,
-    },
-  ]);
-
 
   //update Check buttons by name
   const handleChange = (checkName) => {
-    const updateCheck = logo.map((element) => {
+    const updateCheck = type.map((element) => {
       if (element.name === checkName) {
         element.checked = !element.checked;
         if (element.checked) {
-          setLogoPrice(logoPrice + element.price);
+          setPrice(price + element.price);
         } else {
-          setLogoPrice(logoPrice - element.price);
+          setPrice(price - element.price);
         }
         return element;
       }
       return element;
     });
-    setLogo(updateCheck);
+    action(updateCheck);
   };
 
   // update plus and minus input buttton
   const plusButton = (counterName, max) => {
-    const updatedCounters = logo.map((element) => {
+    const updatedCounters = type.map((element) => {
       if (element.name === counterName && element.value < max) {
         element.value++;
         element.counter++;
-        setLogoPrice(logoPrice + element.price);
+        setPrice(price + element.price);
         return element;
       }
       return element;
     });
-    setLogo(updatedCounters);
+    action(updatedCounters);
   };
 
   const minusButton = (counterName, min) => {
-    const updatedCounters = logo.map((element) => {
+    const updatedCounters = type.map((element) => {
       if (element.name === counterName && element.value > min) {
         element.value--;
         element.counter--;
-        setLogoPrice(logoPrice - element.price);
+        setPrice(price - element.price);
         return element;
       }
       return element;
     });
-    setLogo(updatedCounters);
+    action(updatedCounters);
   };
 
-  return (
+  const [isVisible, setVisible, fadeProps] = useFade(true);
+
+  return ReactDOM.createPortal(
     <BackgroundModal>
-      <Wrapper>
+      <Wrapper {...fadeProps}>
         <Xbutton onClick={onClose}>
           <VscClose />
         </Xbutton>
-        {i18next.t("logoPrice", { returnObjects: true }).map((element, i) => (
+
+        {i18next.t(modalName, { returnObjects: true }).map((element, i) => (
           // eslint-disable-next-line react/jsx-key
           <Factory component={element} number={i} />
         ))}
-
-        {logo.map((element, i) => (
+        {type.map((element, i) => (
           <>
             <Factory
               component={element}
               name={element.name}
               value={element.value}
+              modalName={modalName}
               checked={element.checked}
               onChange={() => handleChange(element.name)}
               plusButton={() => plusButton(element.name, element.max)}
@@ -184,10 +134,11 @@ function ModalBox({ type, action, onClose }) {
             />
           </>
         ))}
-        <Counter price={logoPrice} />
-        <SendButton />
+        <Counter price={price} />
+        <FancyButton text={t("intresstedButton.text")} />
       </Wrapper>
-    </BackgroundModal>
+    </BackgroundModal>,
+    document.getElementById("modal-root")
   );
 }
 

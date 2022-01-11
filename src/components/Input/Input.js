@@ -16,7 +16,7 @@ function Input({
   return (
     <div className={styles.form}>
       <input
-        autoComplete="off"
+        autoComplete="new-password"
         type={type}
         name={name}
         className={`${styles.form} ${ownClass}`}

@@ -8,6 +8,8 @@ import Hyphenated from "react-hyphen";
 import pl from "hyphenated-pl";
 import { Column, ContactStyle } from "./Contact.styled";
 import styled from "styled-components";
+import AOS from "aos";
+import { SpanText, BombaSubText } from "../../components/BombaLogo/BombaLogo";
 
 function Contact() {
   const { t } = useTranslation();
@@ -21,11 +23,16 @@ function Contact() {
   const Title = styled.p`
     font-size: 1.3rem;
     line-height: 1.1;
+      color:#747474;
     & b {
       font-size: 2.3rem;
       font-family: "Pacifico";
       color: ${({ theme }) => theme.text};
     }
+  `;
+
+  const SubTextExtend = styled(BombaSubText)`
+    font-size: 1;
   `;
 
   return (
@@ -36,7 +43,11 @@ function Contact() {
           <h3>{t("contact.adresse")}</h3>
           <div className={styles.contactWrapper}>
             <Title>
-              <b>Bomba</b> <p>web design </p>
+              <b>Bomba</b>{" "}
+              <p className={styles.subText}>
+                {" "}
+                <SpanText>web </SpanText> design{" "}
+              </p>
             </Title>
             <p className={styles.dataBlock}>
               {t("contact.phone")}

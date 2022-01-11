@@ -80,7 +80,7 @@
     "header": "Thank you for you message!",
     "description": "After reading the content, we will reply as soon as possible"
   },
-  "logoPrice": [
+  "logo": [
     {
       "type": "title",
       "text": "Logo"
@@ -91,7 +91,7 @@
     },
     {
       "type": "checkbox",
-      "text": "Logo w plikach PDF, PNG, JPEG "
+      "text": "Logo w plikach PDF, PNG, JPEGA "
     },
     {
       "type": "checkbox",
@@ -109,7 +109,7 @@
   "rightsLogo": { "text": "Prawa do logo" },
   "projectAmount": { "text": "Liczba projektów do przedstawienia en " },
   "correctAmount": { "text": "Liczba poprawek wybranego projektu" },
-  "websitePrice": [
+  "website": [
     {
       "type": "title",
       "text": "Website"
@@ -133,5 +133,57 @@
   ],
   "websiteLogo": { "text": "Potrzebuję logo" },
   "websiteText": { "text": "Potrzebuję tekst na stronę" },
-  "websitePage": { "text": "Liczba podstron" }
+  "websitePage": { "text": "Liczba podstron" },
+  "shop": [
+    {
+      "type": "title",
+      "text": "E-commerce"
+    },
+    {
+      "type": "checkbox",
+      "text": "szybka i wydajna strona internetowa EN"
+    },
+    {
+      "type": "checkbox",
+      "text": "Unikatowy design!"
+    },
+    {
+      "type": "checkbox",
+      "text": "Przystosowana do urządzeń mobilnych i tabletów"
+    },
+    {
+      "type": "checkbox",
+      "text": "Łatwe zakupy i zintegrowane narzędzoa"
+    }
+  ],
+  "shopLogo": { "text": "Potrzebuję logo" },
+  "shopPhoto": { "text": "Potrzebuję zdjęć produktów" },
+  "shopText": { "text": "Potrzebuję tekst na stronę" },
+  "shopProduct": { "text": "Szacunkowa liczba produktów" },
+  "shopPage": { "text": "Liczba podstron" },
+  "promo": [
+    {
+      "type": "title",
+      "text": "Promotion"
+    },
+    {
+      "type": "checkbox",
+      "text": "zwiekszenie zasięgu odbiorców EN"
+    },
+    {
+      "type": "checkbox",
+      "text": "targetowanie na odpowiedniego klienta"
+    },
+    {
+      "type": "checkbox",
+      "text": "Indywidualna strategia marketingowa"
+    }
+  ],
+  "promoFacebook": { "text": "Promocja na Facebooku" },
+  "promoGoogle": { "text": "Promocja na Google" },
+  "promoInstagram": { "text": "Promocja na instagramie" },
+  "promoSEO": { "text": "Promocja SEO" },
+  "promoMonth": { "text": "Liczba miesiecy" },
+  "fancyButton": { "text": "Sprawdź oferte" },
+  "intresstedButton": { "text": "Jestem zainteresowany" }
 }

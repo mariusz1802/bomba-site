@@ -7,7 +7,6 @@
   font-size: 1.5rem;
   color: white;
   transition: all 1s ease-in-out;
-  box-shadow: 0 10px 40px -15px rgba(#818181, 0.5);
 }
 
 
@@ -42,21 +41,26 @@ a:link {
   background-image: linear-gradient($dark-red, $soft-red);
 }
 
-.green {
-//   background-size: 1px 200px;
-//   background-color: #f8ef42;
-//   background-image: linear-gradient(315deg, #f8ef42 0%, #0fd64f 74%);
+.btn:disabled {
+    background: transparent;
+    border: 2px solid grey;
+    cursor: no-drop;
+    color : $medium-grey;
+  }
 
-  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
-  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
-  transition: transform 0.9s ease-in-out;
+
+.green {
+  background-size: 1px 200px;
+  background-size: 300% 100%;
+background-image: linear-gradient(315deg, #f8ef42 0%, #0fd64f 74%);
+transition: all .3s ease-in-out;
+color: white;
 }
 
 .green:hover {
-  background-image: linear-gradient(to left, #f83600 0%, #f9d423 100%);
+    background-position: 70% 0;
+    transition: all .3s ease-in-out;
+    color: white;
 
 }
 
@@ -76,8 +80,3 @@ a:link {
   cursor: pointer;
 }
 
-.btn:disabled {
-    background: transparent;
-    border: 2px solid grey;
-    cursor: no-drop;
-  }

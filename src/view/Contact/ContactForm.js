@@ -30,7 +30,7 @@ class Form extends Component {
       },
       subjectValid: false,
       nameValid: false,
-      phonenumberValid: false,
+      phonenumberValid: true,
       emailValid: false,
       messageValid: false,
       show: false,
@@ -116,8 +116,8 @@ class Form extends Component {
           : this.props.t("validation.email");
         break;
       case "phonenumber":
-        phonenumberValid = value.match(/((\+\d{2}|00\d{2}|0)\d{7,9})/g);
-        phonenumberValid = value.length === 0;
+        phonenumberValid =
+          value.match(/((\+\d{2}|00\d{2}|0)\d{7,9})/g) || value.length === 0;
         fieldValidationErrors.phonenumber = phonenumberValid
           ? ""
           : this.props.t("validation.phonenumber");
@@ -175,7 +175,7 @@ class Form extends Component {
           {" "}
           {this.props.t("contact.askQuestion")}
         </h3>
-        <form onSubmit={this.sendEmail} autoComplete="off">
+        <form onSubmit={this.sendEmail} autoComplete="none">
           <Input
             type="text"
             placeholder={this.props.t("placeholder.subject")}
@@ -228,7 +228,6 @@ class Form extends Component {
             cols="50"
           ></textarea>
           <FormErrors formErrors={this.state.formErrors.message} />
-
           <Button
             title={this.props.t("contact.button")}
             buttonColor="green"
