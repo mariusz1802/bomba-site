@@ -35,8 +35,8 @@
     "description": "Obwohl die Reichweite der Online-Verbreitung zugenommen hat, ist ein Unternehmen ohne eigene Website kaum vorstellbar. Heute ist es ein weltweit gültiger Standard. Wir konzipieren und erstellen für Sie eine Website oder, wenn Sie im Vertrieb tätig sind, einen Online-Shop!"
   },
   "offerPainting": {
-    "title": "Druckmaterialien",
-    "description": "Wir erstellen auch Werbemittel für Unternehmen wie Kalender, Visitenkarten und Prospekte. Wir bieten auch Großformatdruck an."
+    "title": "Werbung und Verkaufsförderung",
+    "description": "Die Website ist der erste Schritt, der es Ihrem Unternehmen ermöglicht, auf dem Markt zu erscheinen und ein kommerzielles Angebot zu präsentieren. Der nächste Schritt ist die Bewerbung und Förderung des Unternehmens im Internet. Indem wir unser Wissen und die neueste Internet-Marketing-Technologie nutzen, helfen wir Ihnen, so viele Kunden wie möglich zu gewinnen!"
   },
   "partners": {
     "title": "Partner",
@@ -77,5 +77,117 @@
   "sendInfo": {
     "header": "Danke für deine Nachricht!",
     "description": "Nachdem wir den Inhalt gelesen haben, werden wir so schnell wie möglich antworten."
+  },
+  "logo": [
+    {
+      "type": "title",
+      "text": "logo"
+    },
+    {
+      "type": "checkbox",
+      "text": "Logo im Vektorformat"
+    },
+    {
+      "type": "checkbox",
+      "text": "Logo in PDF-, PNG-, JPEG-Dateien"
+    },
+    {
+      "type": "checkbox",
+      "text": "Website-Rabatt -200 PLN"
+    },
+    {
+      "type": "checkbox",
+      "text": "individuelles Projekt"
+    },
+    {
+      "type": "checkbox",
+      "text": "unbegrenzte Designrevisionen"
+    }
+  ],
+  "rightsLogo": { "text": "Urheberrecht des Logos" },
+  "projectAmount": { "text": "Anzahl der einzureichenden Projekte" },
+  "website": [
+    {
+      "type": "title",
+      "text": "Website"
+    },
+    {
+      "type": "checkbox",
+      "text": "schnelle und effiziente Website"
+    },
+    {
+      "type": "checkbox",
+      "text": "einzigartiges Design!"
+    },
+    {
+      "type": "checkbox",
+      "text": "angepasst an Mobilgeräte und Tablets"
+    },
+    {
+      "type": "checkbox",
+      "text": ""
+    }
+  ],
+  "websiteLogo": { "text": "Ich brauche ein Logo" },
+  "websiteText": { "text": "Ich brauche Text für eine Website" },
+  "websitePage": { "text": "Anzahl Unterseiten" },
+  "shop": [
+    {
+      "type": "title",
+      "text": "E-commerce"
+    },
+    {
+      "type": "checkbox",
+      "text": "schnelle und effiziente Website"
+    },
+    {
+      "type": "checkbox",
+      "text": "einzigartiges Design!"
+    },
+
+    {
+      "type": "checkbox",
+      "text": "einfaches Einkaufen und integrierte Tools"
+    }
+  ],
+  "shopLogo": { "text": "Ich brauche ein Logo" },
+  "shopPhoto": { "text": "Ich brauche Produktfotos" },
+  "shopText": { "text": "Ich brauche Text für die Seite" },
+  "shopProduct": { "text": "geschätzte Anzahl von Produkten" },
+  "shopPage": { "text": "Anzahl Unterseiten" },
+  "promo": [
+    {
+      "type": "title",
+      "text": "Online-Werbung"
+    },
+    {
+      "type": "checkbox",
+      "text": "Erhöhung der Reichweite der Empfänger"
+    },
+    {
+      "type": "checkbox",
+      "text": "den richtigen Kunden anzusprechen"
+    },
+    {
+      "type": "checkbox",
+      "text": "individuelle Marketingstrategie"
+    }
+  ],
+  "promoFacebook": { "text": "Werbung auf Facebook" },
+  "promoGoogle": { "text": "Werbung auf Google" },
+  "promoInstagram": { "text": "Werbung auf Instagram" },
+  "promoSEO": { "text": "SEO-Werbung" },
+  "promoMonth": { "text": "Anzahl der Monate" },
+  "fancyButton": { "text": "prüfen Sie das Angebot" },
+  "intresstedButton": {
+    "text": "Ich bin interessiert",
+    "data": "GEBEN SIE IHRE KONTAKTDATEN AN"
+  },
+  "sendDataButton": { "text": "Senden Sie Ihre Anfrage" },
+  "sendDataInfo": {
+    "send": "IHRE ANFRAGE WURDE VERSENDET",
+    "thank": "Danke für deine Nachricht!",
+    "contact": "Ich werde mich mit Ihnen in Verbindung setzen, um die Details zu besprechen ...",
+    "btnClose": "Schließe es"
   }
 }

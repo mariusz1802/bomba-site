@@ -1,6 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+
+@font-face {
+    
+}
+
+
+
   *,
   *::after,
   *::before {
@@ -31,5 +38,7 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
   }`;
+
+
 
 /* Change Autocomplete styles in Chrome*/

@@ -36,8 +36,8 @@
     "description": "Are you selling? We will create an online store for you that meets the criteria of the most demanding customer. We know what a store should look like and what features it should have to be functional and transparent. Trust us and let us create a preliminary design for free."
   },
   "offerPainting": {
-    "title": "Printing materials",
-    "description": "We also create advertising materials for companies, such as calendars, business cards and leaflets. We also provide large-format printing. "
+    "title": "Advertising and promotion",
+    "description": "The website is the first step that will allow your company to appear on the market and present a commercial offer. The next step is advertising and promoting the company on the Internet. By using our knowledge and the latest internet marketing technology, we will help you get as many customers as possible!"
   },
   "partners": {
     "title": "Partners",
@@ -87,28 +87,27 @@
     },
     {
       "type": "checkbox",
-      "text": "logo w formacie wektorowym EN"
+      "text": "logo in vector format"
     },
     {
       "type": "checkbox",
-      "text": "Logo w plikach PDF, PNG, JPEGA "
+      "text": "preparation in PDF, PNG, JPG, SVG files"
     },
     {
       "type": "checkbox",
-      "text": "Rabat na stronę internetową -200zł "
+      "text": "website discount -200PLN"
     },
     {
       "type": "checkbox",
-      "text": "indywidualny projekt"
+      "text": "original project"
     },
     {
       "type": "checkbox",
-      "text": "nielimitowane poprawki projektu"
+      "text": "unlimited scraps of the project"
     }
   ],
-  "rightsLogo": { "text": "Prawa do logo" },
-  "projectAmount": { "text": "Liczba projektów do przedstawienia en " },
-  "correctAmount": { "text": "Liczba poprawek wybranego projektu" },
+  "rightsLogo": { "text": "copyright of the logo" },
+  "projectAmount": { "text": "number of projects to be submitted" },
   "website": [
     {
       "type": "title",
@@ -116,24 +115,24 @@
     },
     {
       "type": "checkbox",
-      "text": "szybka i wydajna strona internetowa EN"
+      "text": "fast and efficient website"
     },
     {
       "type": "checkbox",
-      "text": "Unikatowy design !"
+      "text": "unique design!"
     },
     {
       "type": "checkbox",
-      "text": "Przystosowana do urządzeń mobilnych i tabletów"
+      "text": "adapted to mobile devices and tablets"
     },
     {
       "type": "checkbox",
-      "text": "Przyjazna dla użytkownika"
+      "text": "friendly for users"
     }
   ],
-  "websiteLogo": { "text": "Potrzebuję logo" },
-  "websiteText": { "text": "Potrzebuję tekst na stronę" },
-  "websitePage": { "text": "Liczba podstron" },
+  "websiteLogo": { "text": "I need logo" },
+  "websiteText": { "text": "I need text content for webside" },
+  "websitePage": { "text": "numbers of subpages" },
   "shop": [
     {
       "type": "title",
@@ -141,26 +140,23 @@
     },
     {
       "type": "checkbox",
-      "text": "szybka i wydajna strona internetowa EN"
+      "text": "fast and efficient website"
     },
     {
       "type": "checkbox",
-      "text": "Unikatowy design!"
+      "text": "unique design!"
     },
+
     {
       "type": "checkbox",
-      "text": "Przystosowana do urządzeń mobilnych i tabletów"
-    },
-    {
-      "type": "checkbox",
-      "text": "Łatwe zakupy i zintegrowane narzędzoa"
+      "text": "easy shopping and integrated tools"
     }
   ],
-  "shopLogo": { "text": "Potrzebuję logo" },
-  "shopPhoto": { "text": "Potrzebuję zdjęć produktów" },
-  "shopText": { "text": "Potrzebuję tekst na stronę" },
-  "shopProduct": { "text": "Szacunkowa liczba produktów" },
-  "shopPage": { "text": "Liczba podstron" },
+  "shopLogo": { "text": "I need logo" },
+  "shopPhoto": { "text": "I need text content for website" },
+  "shopText": { "text": "I need product photos" },
+  "shopProduct": { "text": "estimated number of products" },
+  "shopPage": { "text": "number of subpages" },
   "promo": [
     {
       "type": "title",
@@ -168,22 +164,31 @@
     },
     {
       "type": "checkbox",
-      "text": "zwiekszenie zasięgu odbiorców EN"
+      "text": "increasing the reach of recipients "
     },
     {
       "type": "checkbox",
-      "text": "targetowanie na odpowiedniego klienta"
+      "text": "targeting the right customer"
     },
     {
       "type": "checkbox",
-      "text": "Indywidualna strategia marketingowa"
+      "text": "Individual marketing strategy"
     }
   ],
-  "promoFacebook": { "text": "Promocja na Facebooku" },
-  "promoGoogle": { "text": "Promocja na Google" },
-  "promoInstagram": { "text": "Promocja na instagramie" },
-  "promoSEO": { "text": "Promocja SEO" },
-  "promoMonth": { "text": "Liczba miesiecy" },
-  "fancyButton": { "text": "Sprawdź oferte" },
-  "intresstedButton": { "text": "Jestem zainteresowany" }
+  "promoFacebook": { "text": "promotion on Facebook" },
+  "promoGoogle": { "text": "promotion on Google" },
+  "promoInstagram": { "text": "promotion on Instagram" },
+  "promoSEO": { "text": "SEO positioning" },
+  "fancyButton": { "text": "Check offer" },
+  "intresstedButton": {
+    "text": "I'm intrested",
+    "data": "ENTER YOUR CONTACT DETAILS"
+  },
+  "sendDataButton": { "text": "Send message" },
+  "sendDataInfo": {
+    "send": "YOUR APPLICATION HAS BEEN SENT",
+    "thank": "Dziękuję za wiadomość!",
+    "contact": "We will contact you to discuss the details",
+    "btnClose": "Close"
+  }
 }

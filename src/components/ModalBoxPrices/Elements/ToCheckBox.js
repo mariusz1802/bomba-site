@@ -1,17 +1,22 @@
 import React, { useState } from "react";
 import { CheckWrapper, Text } from "./CheckedBox";
 import styled from "styled-components";
+import { device } from "../../../device";
 
 const InputCheckBox = styled.input`
   font-size: 3rem;
   margin-right: 10px;
   height: 30px;
   width: 30px;
-  color: red;
-  background-color: red;
   :hover {
     cursor: pointer;
   }
+
+  @media ${device.mobileM} {
+    height: 25px;
+    width: 25px;
+  
+    }
 `;
 
 function ToCheckBox({ text, checked, onChange }) {
@@ -20,10 +25,10 @@ function ToCheckBox({ text, checked, onChange }) {
       <InputCheckBox
         type="checkbox"
         checked={checked}
-        onChange={onChange}
+        onClick={onChange}
+        onChange={(e) => {}}
         checkStatus={checked}
       />
-
       <Text>{text}</Text>
     </CheckWrapper>
   );

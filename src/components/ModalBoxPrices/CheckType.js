@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Trans, useTranslation } from "react-i18next";
-import ModalBox from "./ModalBox";
+import ModalBoxPrices from "./ModalBoxPrices";
+import Prices from "./Prices";
 
 export default function CheckType({
   type,
@@ -9,41 +10,29 @@ export default function CheckType({
   modalName,
   children,
 }) {
-  const { t } = useTranslation();
-  const [logoPrice, setLogoPrice] = useState(500);
-  const [logo, setLogo] = useState([
-    {
-      type: "tocheck",
-      checked: false,
-      name: "rights",
-      text: t("rightsLogo.text"),
-      price: 200,
-    },
-    {
-      type: "prices",
-      name: "promoMonth",
-      text: t("projectAmount.text"),
-      price: 300,
-      value: 1,
-      counter: 0,
-      max: 5,
-      min: 1,
-    },
-    {
-      type: "prices",
-      name: "correctAmount",
-      text: t("correctAmount.text"),
-      price: 100,
-      value: 2,
-      counter: 0,
-      max: 5,
-      min: 2,
-    },
-  ]);
+  const { t, i18n } = useTranslation();
 
-  //   Website states
-  const [websitePrice, setWebsitePrice] = useState(1000);
-  const [website, setWebsite] = useState([
+  const logoInit = [
+      {
+        type: "tocheck",
+        checked: false,
+        name: "rights",
+        text: t("rightsLogo.text"),
+        price: 200,
+      },
+      {
+        type: "prices",
+        name: "promoMonth",
+        text: t("projectAmount.text"),
+        price: 300,
+        value: 1,
+        counter: 0,
+        max: 5,
+        min: 1,
+      },
+    ];
+
+  const websiteInit = [
     {
       type: "tocheck",
       checked: false,
@@ -66,12 +55,11 @@ export default function CheckType({
       value: 0,
       counter: 0,
       max: 10,
-      min: 1,
+      min: 0,
     },
-  ]);
+  ];
 
-  const [shopPrice, setShopPrice] = useState(3500);
-  const [shop, setShop] = useState([
+  const shopInit = [
     {
       type: "tocheck",
       checked: false,
@@ -113,11 +101,9 @@ export default function CheckType({
       max: 10,
       min: 1,
     },
-  ]);
+  ];
 
-  const [promoPrice, setPromoPrice] = useState(800);
-
-  const [promo, setPromo] = useState([
+  const promoInit = [
     {
       type: "tocheck",
       checked: false,
@@ -146,22 +132,55 @@ export default function CheckType({
       text: t("promoSEO.text"),
       price: 300,
     },
+  ];
+
+  // Logo
+  const [logoPrice, setLogoPrice] = useState(500);
+  const [logo, setLogo] = useState([
     {
-      type: "prices",
-      name: "promoMonth",
-      text: t("promoMonth.text"),
+      type: "tocheck",
+      checked: false,
+      name: "rights",
+      text: t("rightsLogo.text"),
       price: 200,
-      value: 0,
-      counter: 0,
-      max: 10,
-      min: 1,
     },
+          {
+        type: "prices",
+        name: "promoMonth",
+        text: t("projectAmount.text"),
+        price: 300,
+        value: 1,
+        counter: 0,
+        max: 5,
+        min: 1,
+      },
   ]);
+
+    // Website`
+  const [websitePrice, setWebsitePrice] = useState(1500);
+  const [website, setWebsite] = useState(websiteInit);
+  // Shop
+  const [shopPrice, setShopPrice] = useState(3500);
+  const [shop, setShop] = useState(shopInit);
+
+  // Promo
+  const [promoPrice, setPromoPrice] = useState(800);
+  const [promo, setPromo] = useState(promoInit);
+
+//effect for languange change
+  useEffect(() => {
+    setLogo(logoInit);
+    setWebsite(websiteInit);
+    setShop(shopInit);
+    setPromo(promoInit)
+  }, [i18n.language]);
+
+
 
   switch (type) {
     case "logo":
       return (
-        <ModalBox
+        <ModalBoxPrices
           modalName="logo"
           type={logo}
           action={setLogo}
@@ -172,7 +191,7 @@ export default function CheckType({
       );
     case "website":
       return (
-        <ModalBox
+        <ModalBoxPrices
           modalName="website"
           type={website}
           action={setWebsite}
@@ -183,7 +202,7 @@ export default function CheckType({
       );
     case "shop":
       return (
-        <ModalBox
+        <ModalBoxPrices
           modalName="shop"
           type={shop}
           action={setShop}
@@ -194,7 +213,7 @@ export default function CheckType({
       );
     case "promo":
       return (
-        <ModalBox
+        <ModalBoxPrices
           modalName="promo"
           type={promo}
           action={setPromo}

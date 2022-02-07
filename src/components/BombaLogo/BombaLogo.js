@@ -9,13 +9,32 @@ const TextContainer = styled.div`
   font-family: "Pacifico";
   display: flex;
   line-height: 0.8;
+  line-height: ${(props) => {
+    switch (props.lineHeight) {
+      case "height":
+        return "1.2";
+      case "low":
+        return "0.4";
+      default:
+        return "0.8";
+    }
+  }};
   flex-direction: column;
-  padding-bottom: 15px;
 `;
 
 const BombaText = styled.h3`
   color: ${({ theme }) => theme.text};
   font-size: 6rem;
+  font-size: ${(props) => {
+    switch (props.fontSize) {
+      case "lg":
+        return "8rem";
+      case "sm":
+        return "3rem";
+      default:
+        return "6rem";
+    }
+  }};
   @media only screen and (max-width: 1000px) {
     font-size: 5rem;
     padding-top: 15px;
@@ -23,6 +42,16 @@ const BombaText = styled.h3`
 `;
 const BombaSubText = styled.h3`
   font-size: 3rem;
+  font-size: ${(props) => {
+    switch (props.subText) {
+      case "lg":
+        return "5rem";
+      case "sm":
+        return "1.3rem";
+      default:
+        return "3rem";
+    }
+  }};
   letter-spacing: 2px;
   font-family: "Noto Sans";
   @media only screen and (max-width: 1000px) {
@@ -36,7 +65,7 @@ const SpanText = styled.span`
   color: #252424;
 `;
 
-function BombaLogo({ mobile }) {
+function BombaLogo({ mobile, fontSize, subText, lineHeight }) {
   return (
     <div>
       {mobile ? (
@@ -52,9 +81,9 @@ function BombaLogo({ mobile }) {
           className={styles.responsive}
         ></img>
       )}
-      <TextContainer>
-        <BombaText>Bomba</BombaText>
-        <BombaSubText>
+      <TextContainer lineHeight={lineHeight}>
+        <BombaText fontSize={fontSize}>Bomba</BombaText>
+        <BombaSubText subText={subText}>
           <SpanText>web</SpanText> design
         </BombaSubText>
       </TextContainer>

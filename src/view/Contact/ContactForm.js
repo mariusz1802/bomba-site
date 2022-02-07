@@ -79,9 +79,6 @@ class Form extends Component {
     const name = e.target.name;
     const value = e.target.value;
     this.setState({ [name]: value }, () => {
-      if (value.length === 0) {
-        // this.setState((this.initialState.formErrors = {}));
-      }
       this.validateField(name, value);
     });
   }
@@ -202,7 +199,7 @@ class Form extends Component {
             type="text"
             name="email"
             placeholder={this.props.t("placeholder.email")}
-            maxLength="35"
+            maxLength="40"
             value={this.state.email}
             onChange={(event) => this.handleUserInput(event)}
             required

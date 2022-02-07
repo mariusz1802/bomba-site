@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./GutsButton.module.scss";
-function GutsButton({ text, onClick }) {
+function GutsButton({ text, onClick, disabled }) {
   return (
-    <button className={styles.button} onClick={onClick}>
+    <button disabled={disabled} className={styles.button} onClick={onClick}>
       <span> {text}</span>
       <div className={styles.button__horizontal}></div>
       <div className={styles.button__vertical}></div>

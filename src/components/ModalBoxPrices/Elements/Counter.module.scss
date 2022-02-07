@@ -2,10 +2,12 @@
 
 .price {
     font-family: 'Pushster', cursive;
-    display: flex;
-    justify-content: flex-end;
     font-size : 7rem;
-    // position: absolute;
-    bottom: 100px;
-    right: 20px;
+}
+
+
+@media screen and (max-width: 420px) {
+    .price {
+        font-size : 4rem;
+    }
 }

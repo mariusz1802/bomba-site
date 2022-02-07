@@ -11,7 +11,13 @@
     margin: 0;
 }
 
+@media screen and (max-width: 420px){
+    .count{
+        font-size : 2rem;
+        width: 60px;
+        margin-top: 10px;
+    }
 
-
+}
 
 

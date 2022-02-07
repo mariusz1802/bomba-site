@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import CheckedButton from "../ModalBox/Elements/CheckedBox";
-import ToCheckBox from "../ModalBox/Elements/ToCheckBox";
+import CheckedButton from "./Elements/CheckedBox";
+import ToCheckBox from "./Elements/ToCheckBox";
 import TitleComponent from "./Elements/TitleComponent";
 import CountInput from "./Elements/CountInput";
 import Counter from "./Elements/Counter";

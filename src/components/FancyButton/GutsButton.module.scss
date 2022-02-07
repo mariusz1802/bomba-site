@@ -82,5 +82,29 @@
 	&:hover &__vertical {
 		transform: scaleY(0);
 	}
-	
+
+ &:disabled {
+        background: transparent;
+        border: 2px solid grey;
+        cursor: no-drop;
+        color : grey;
+    
+ }
+
+  &:disabled:hover span {
+    color : grey;
+
+}
+
+
+
+}
+
+
+@media screen and (max-width: 380px) {
+    .button {
+        padding: 1em 1.5em;
+        font-size : 0.7rem;
+        line-height: 1.3;
+        }
 }

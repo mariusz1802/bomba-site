@@ -3,10 +3,17 @@ import NumericInput from "react-numeric-input";
 import { CheckWrapper, Text } from "./CheckedBox";
 import styles from "./CountInput.module.scss";
 import styled from "styled-components";
+import { device } from "../../../device";
 
 const WrapCounter = styled(CheckWrapper)`
-
-    margin-top: 20px;
+  margin-top: 20px;
+    @media ${device.mobileL} {
+        margin-top: 10px;
+      display: flex;
+      flex-direction : column-reverse;
+      justify-content: flex-start;
+      align-items: flex-start;   
+    }
 `;
 
 const ButtonPlusMinus = styled.button`
@@ -30,15 +37,19 @@ const ButtonPlusMinus = styled.button`
     margin-left: 0;
   }
   :active {
-      transform: scale(0.95);
+    transform: scale(0.95);
   }
+      @media ${device.mobileL} {
+  font-size: 2rem;
+  margin-top: 10px;
+      }
 `;
 const ButtonWrapper = styled.div`
   display: flex;
   align-items: center;
 `;
 
-function CountInput({ text, value, name, plusButton, minusButton }) {
+function CountInput({ text, value, name, plusButton, minusButton, onChange }) {
   return (
     <WrapCounter>
       <ButtonWrapper>

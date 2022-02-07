@@ -9,8 +9,8 @@ import ad from "./Advisertment.png";
 import shop from "./onlines-shop.jpg";
 import { useTranslation } from "react-i18next";
 import AOS from "aos";
-import ModalBox from "../../components/ModalBox/ModalBox";
-import CheckType from "../../components/ModalBox/CheckType";
+import ModalBoxPrices from "../../components/ModalBoxPrices/ModalBoxPrices";
+import CheckType from "../../components/ModalBoxPrices/CheckType";
 import "aos/dist/aos.css";
 import useFade from "../../hooks/useFade/useFade";
 

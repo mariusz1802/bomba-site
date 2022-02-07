@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Flag.module.scss";
 import polish from "./polish.jpg";
 import english from "./english.jpg";

@@ -17,8 +17,8 @@ import { lightTheme, darkTheme } from "./components/NightMode/theme";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./global.js";
 import { useDarkMode } from "./hooks/useDarkMode";
-import ModalBox from "./components/ModalBox/ModalBox";
-import "./i18n";
+import ModalBoxPrices from "./components/ModalBoxPrices/ModalBoxPrices";
+import CheckType from "./components/ModalBoxPrices/CheckType"
 
 function App() {
   const [theme, setTheme] = useDarkMode();
@@ -32,16 +32,25 @@ function App() {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
-      <Suspense fallback={<div> LoadingS... </div>}>
-        {/* TODO://Mesenger to active */}
-        {/* <MessengerCustomerChat
+           <Suspense
+        fallback={
+          <LoadingScreen
+            loading={true}
+            bgColor="#f1f1f1"
+            spinnerColor="#9ee5f8"
+            textColor="#676767"
+            logoSrc={Logo}
+            // children="bombadesign.pl"
+          />
+        }
+      >
+         <MessengerCustomerChat
           pageId="108034361531951"
-          appId="3321358404655618"
-          language="pl_PL"
-        /> */}
-
+           appId="3321358404655618"
+           language="pl_PL"
+         />
+<CheckType type="shop"/>
         <Navbar />
-        {/* <ModalBox /> */}
         <Head theme={theme} toggleTheme={toggleTheme} />
         <Navbar />
         <NavbarDesktop />

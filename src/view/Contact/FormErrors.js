@@ -10,6 +10,6 @@ export const FormErrors = ({ formErrors }) => (
           <FadeIn>{formErrors}</FadeIn>
         </p>
       )}
-    </div>
+</div>
   </div>
 );

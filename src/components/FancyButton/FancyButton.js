@@ -1,22 +1,40 @@
 import React from "react";
 import styled from "styled-components";
 import GutsButton from "./GutsButton.js";
+import { device } from "../../device";
+
 const Wrapper = styled.div`
-  width: 100%;
-  border-top: 1px solid
+  width: 90%;
+  align-items: center;
+  margin: auto;
+
+  padding-top: 10px;
+  justify-content: center;
+  display: flex;
+  @media ${device.mobileL} {
+    width: 40%;
+    font-size: 1rem;
+  }
+`;
+
+const LineTop = styled.div`
+  width: 98%;
+  text-align: center;
+  margin : auto;
+  border-bottom: 1px solid
     ${({ theme }) => {
       theme.text;
     }};
-    padding-top: 10px;
-  justify-content: center;
-  display: flex;
 `;
 
-function FancyButton({ text, onClick }) {
+function FancyButton({ text, onClick, disabled }) {
   return (
-    <Wrapper>
-      <GutsButton text={text} onClick={onClick} />
-    </Wrapper>
+    <>
+      <LineTop />
+      <Wrapper>
+        <GutsButton disabled={disabled} text={text} onClick={onClick} />
+      </Wrapper>
+    </>
   );
 }
 

@@ -14,7 +14,7 @@
   },
   "aboutUs": {
     "title": "O firmie",
-    "description": "Witaj ! Nazywam się Mariusz i jestem założycielem firmy Bomba Web Design! Programowanie oraz grafika komputerowa to moja pasja, którą zajmuję się już od czasów liceum. Ukończyłem studia IT o specjalizacji – grafika komputerowa. Filozofią, która powstała przy tworzeniu firmy Bomba Web Design jest tworzenie czytelnych, spójnych i wydajnych serwisów internetowych. Zadowolnie klienta, terminowość oraz stały kontakt na każdym etapieprojektu jest kluczem do satysfacji z końcowego efektu. Jesteśmy otwarci na nowe pomysły i projekty!",
+    "description": "Witaj ! Nazywam się Mariusz i jestem założycielem firmy Bomba Web Design! Programowanie oraz grafika komputerowa to moja pasja, którą zajmuję się już od czasów liceum. Ukończyłem studia IT o specjalizacji – grafika komputerowa. Filozofią, która powstała przy tworzeniu firmy Bomba Web Design jest tworzenie czytelnych, spójnych i wydajnych serwisów internetowych. Zadowolnie klienta, terminowość oraz stały kontakt na każdym etapie projektu jest kluczem do satysfacji z końcowego efektu. Jesteśmy otwarci na nowe pomysły i projekty! Sprawdź naszą ofertę!",
     "technologies": "Używane technologie: "
   },
   "offer": {
@@ -35,8 +35,8 @@
     "description": "Zajmujesz się sprzedażą ? Stworzymy dla Ciebie sklep internetowy spełniający kryteria najbardziej wymagającego klienta. Wiemy jak ma wyglądać sklep i jakie cechy powinien posiadać aby był funkcjonalny i przejrzyty. Zaufaj nam i pozwól stowrzyć wstępny projekt zupełnie za darmo."
   },
   "offerPainting": {
-    "title": "Drukowanie materiałów",
-    "description": "Tworzymy również materiały reklamowe dla Firm takie jak kalendarze, wizytówki czy ulotki. Wykonujemy również także druk wielkoformatowy."
+    "title": "Kampanie reklamowe",
+    "description": "Strona interntowa to pierwszy krok, który pozwoli Twojej firmie zaistnieć na rynku oraz przedstawić ofertę handlową. Kolejnym krokiem jest reklama i promocja firmy w internecie. Dzięki wykorzystaniu naszej wiedzy oraz najnowszej technologii marketingu internetowego, pomożemy Ci zdobyć jak najwięcej klientów!"
   },
   "partners": {
     "title": "Partnerzy",
@@ -80,46 +80,116 @@
     "header": "Dziękujemy za przesłanie wiadomości!",
     "description": "Po zapoznaniu się z treścią odpowiemy tak szybko jak to możliwe"
   },
-  "logoPrice": [
+  "logo": [
     {
-      "id": 1,
       "type": "title",
-      "text": "Logo"
+      "text": "logo"
     },
     {
-      "id": 2,
       "type": "checkbox",
       "text": "logo w formacie wektorowym"
     },
     {
-      "id": 3,
       "type": "checkbox",
-      "text": "Logo w plikach PDF, PNG, JPEG"
+      "text": "logo w plikach PDF, PNG, JPEG"
     },
     {
-      "id": 4,
       "type": "checkbox",
-      "text": "Rabat na stronę internetową -200zł"
+      "text": "rabat na stronę internetową -200zł"
     },
     {
-      "id": 5,
       "type": "checkbox",
       "text": "indywidualny projekt"
     },
     {
-      "id": 6,
-      "type": "checkbox",
-      "text": "nielimitowane poprawki projektu"
-    },
-    {
-      "id": 7,
-      "type": "checkbox",
-      "text": "nielimitowane poprawki projektu"
-    },
-    {
-      "id": 8,
       "type": "checkbox",
       "text": "nielimitowane poprawki projektu"
     }
-  ]
+  ],
+  "rightsLogo": { "text": "prawa autorskie logotypu" },
+  "projectAmount": { "text": "liczba projektów do przedstawienia" },
+  "website": [
+    {
+      "type": "title",
+      "text": "Strona internetowa"
+    },
+    {
+      "type": "checkbox",
+      "text": "szybka i wydajna strona internetowa"
+    },
+    {
+      "type": "checkbox",
+      "text": "unikatowy design!"
+    },
+    {
+      "type": "checkbox",
+      "text": "przystosowana do urządzeń mobilnych i tabletów"
+    },
+    {
+      "type": "checkbox",
+      "text": "przyjazna dla użytkownika"
+    }
+  ],
+  "websiteLogo": { "text": "potrzebuję logo" },
+  "websiteText": { "text": "potrzebuję tekst na stronę" },
+  "websitePage": { "text": "liczba podstron" },
+  "shop": [
+    {
+      "type": "title",
+      "text": "E-commerce"
+    },
+    {
+      "type": "checkbox",
+      "text": "szybka i wydajna strona internetowa"
+    },
+    {
+      "type": "checkbox",
+      "text": "unikatowy design!"
+    },
+
+    {
+      "type": "checkbox",
+      "text": "łatwe zakupy i zintegrowane narzędzia"
+    }
+  ],
+  "shopLogo": { "text": "potrzebuję logo" },
+  "shopPhoto": { "text": "potrzebuję zdjęć produktów" },
+  "shopText": { "text": "potrzebuję tekst na stronę" },
+  "shopProduct": { "text": "szacunkowa liczba produktów" },
+  "shopPage": { "text": "liczba podstron" },
+  "promo": [
+    {
+      "type": "title",
+      "text": "promocja w sieci"
+    },
+    {
+      "type": "checkbox",
+      "text": "zwiekszenie zasięgu odbiorców"
+    },
+    {
+      "type": "checkbox",
+      "text": "targetowanie na odpowiedniego klienta"
+    },
+    {
+      "type": "checkbox",
+      "text": "indywidualna strategia marketingowa"
+    }
+  ],
+  "promoFacebook": { "text": "promocja na Facebooku" },
+  "promoGoogle": { "text": "promocja na Google" },
+  "promoInstagram": { "text": "promocja na Instagramie" },
+  "promoSEO": { "text": "promocja SEO" },
+  "promoMonth": { "text": "liczba miesiecy" },
+  "fancyButton": { "text": "sprawdź oferte" },
+  "intresstedButton": {
+    "text": "Jestem zainteresowany",
+    "data": "PODAJ SWOJE DANE KONTAKTOWE"
+  },
+  "sendDataButton": { "text": "Wyślij zapytanie" },
+  "sendDataInfo": {
+    "send": "ZGŁOSZENIE ZOSTAŁO WYSŁANE",
+    "thank": "Dziękujemy za wiadomość!",
+    "contact": "Skontaktuję się z Tobą aby omówić szczegóły...",
+    "btnClose": "Zamknij"
+  }
 }
