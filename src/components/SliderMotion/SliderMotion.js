@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import one from "./maxior.png";
+import oneAvif from "./maxior.avif";
 
 const moveLeft = keyframes`
    100% { 
@@ -32,7 +33,7 @@ const Image = styled.div`
 function SliderMotion() {
   return (
     <ImageContainer>
-      <Image src={one} />
+        <Image src={one} />
     </ImageContainer>
   );
 }

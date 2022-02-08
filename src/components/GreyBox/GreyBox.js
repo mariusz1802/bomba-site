@@ -4,7 +4,7 @@ import Hyphenated from "react-hyphen";
 import Button from "../Button/Button";
 import pl from "hyphenated-pl";
 import styled from "styled-components";
-import FancyButton from "../FancyButton/FancyButton"
+import FancyButton from "../FancyButton/FancyButton";
 
 export const BlackBox = styled.div`
   width: 100%;
@@ -24,12 +24,16 @@ function GreyBox({
   withButton,
   onClick,
   text,
+  srcSet,
 }) {
   return (
     <BlackBox>
       <div className={`${styles.container} ${ownClass}`} data-aos={dataAos}>
         <h1 className={styles.title}>{title} </h1>
-        <img src={imgSrc} alt={title} className={styles.image} />
+        <picture>
+          <source type="image/avif" srcSet={srcSet} />
+          <img src={imgSrc} alt={title} className={styles.image} />
+        </picture>
         <Hyphenated language={pl}>
           <p className={styles.description}> {description} </p>
         </Hyphenated>

@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import pl from "hyphenated-pl";
 
-function Chapter({ title, description, subtitle, src }) {
+function Chapter({ title, description, subtitle, src, srcSet }) {
   AOS.init();
 
   return (
@@ -16,7 +16,12 @@ function Chapter({ title, description, subtitle, src }) {
       <Hyphenated language={pl}>
         <div className={styles.descriptionWrapper}>
           <p className={styles.description}>{description}</p>
-          {src && <img src={src} alt="myself" className={styles.maniollo} />}
+          {src && (
+            <picture>
+              <source type="image/avif" srcSet={srcSet} />
+              <img src={src} alt="myself" className={styles.maniollo} />
+            </picture>
+          )}
         </div>
       </Hyphenated>
     </>

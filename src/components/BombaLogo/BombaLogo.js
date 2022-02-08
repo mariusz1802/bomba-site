@@ -1,6 +1,8 @@
 import React from "react";
 import bomba from "./bomba_logo_transparent.png";
 import bombaSmall from "./bomba_small.png";
+import bombaAvif from "./bomba_logo_transparent.avif";
+import bombaSmallAvif from "./bomba_small.avif";
 import styles from "./BombaLogo.module.scss";
 import styled from "styled-components";
 
@@ -69,17 +71,23 @@ function BombaLogo({ mobile, fontSize, subText, lineHeight }) {
   return (
     <div>
       {mobile ? (
-        <img
-          src={bombaSmall}
-          alt="Bomba Web Design"
-          className={`${styles.bombaMobileMenu} ${styles.responsive} `}
-        ></img>
+        <picture>
+          <source type="image/avif" srcSet={bombaSmallAvif} />
+          <img
+            src={bombaSmall}
+            alt="Bomba Web Design"
+            className={`${styles.bombaMobileMenu} ${styles.responsive} `}
+          />
+        </picture>
       ) : (
-        <img
-          src={bomba}
-          alt="Bomba Web Design"
-          className={styles.responsive}
-        ></img>
+        <picture>
+          <source type="image/avif" srcSet={bombaAvif} />
+          <img
+            src={bomba}
+            alt="Bomba Web Design"
+            className={styles.responsive}
+          />
+        </picture>
       )}
       <TextContainer lineHeight={lineHeight}>
         <BombaText fontSize={fontSize}>Bomba</BombaText>
