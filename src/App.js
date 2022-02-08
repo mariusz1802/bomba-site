@@ -49,7 +49,6 @@ function App() {
            appId="3321358404655618"
            language="pl_PL"
          />
-<CheckType type="shop"/>
         <Navbar />
         <Head theme={theme} toggleTheme={toggleTheme} />
         <Navbar />
