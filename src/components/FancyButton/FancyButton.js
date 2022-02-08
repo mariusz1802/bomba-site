@@ -7,20 +7,18 @@ const Wrapper = styled.div`
   width: 90%;
   align-items: center;
   margin: auto;
-
   padding-top: 10px;
   justify-content: center;
   display: flex;
   @media ${device.mobileL} {
-    width: 40%;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 `;
 
 const LineTop = styled.div`
   width: 98%;
   text-align: center;
-  margin : auto;
+  margin: auto;
   border-bottom: 1px solid
     ${({ theme }) => {
       theme.text;

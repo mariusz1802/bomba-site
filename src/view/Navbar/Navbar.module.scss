@@ -10,10 +10,8 @@
 }
 
 .hamburgerClick{
-
     user-select:none;
     scroll-behavior: smooth;
-
 }
 
 .burger {
@@ -23,12 +21,6 @@
 button {
   all: none;
   background: none;
-}
-
-.logoMenu {
-  margin-top: 90px;
-  width: 30%;
-  margin : 10px auto;
 }
 
 .flag {
@@ -52,19 +44,16 @@ button {
 .navMenu {
   list-style: none;
   text-align: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   top: 0;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   position: fixed;
   left: -100%;
   opacity: 1;
   transition: all 0.5s ease;
   z-index: 110;
   overflow: hidden;
-
   background-color : black;
 }
 

@@ -42,24 +42,19 @@ function App() {
             spinnerColor="#9ee5f8"
             textColor="#676767"
             logoSrc={LogoAvif}
-            // children="bombadesign.pl"
           />
         }
       >
-        <MessengerCustomerChat
+        {/* <MessengerCustomerChat
           pageId="108034361531951"
           appId="3321358404655618"
           language="pl_PL"
-        />
+        /> */}
         <Navbar />
         <Head theme={theme} toggleTheme={toggleTheme} />
         <Navbar />
         <NavbarDesktop />
         <Wrapper>
-          {/* <AboutUs /> */}
-          {/* <Offer /> */}
-          {/* <Partners /> */}
-          {/* <Contact /> */}
           <AboutUsComponent />
           <OfferComponent />
           <PartnersComponent />

@@ -1,8 +1,6 @@
 .button {
-	
 	--offset: 10px;
 	--border-size: 2px;
-	
 	display: block;
 	position: relative;
 	padding: 1.5em 3em;
@@ -93,18 +91,13 @@
 
   &:disabled:hover span {
     color : grey;
-
 }
 
-
-
 }
-
-
 @media screen and (max-width: 380px) {
     .button {
-        padding: 1em 1.5em;
-        font-size : 0.7rem;
+        padding: 1em 1.9em;
+        font-size : 0.9rem;
         line-height: 1.3;
         }
 }

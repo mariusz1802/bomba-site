@@ -15,11 +15,11 @@ function Navbar() {
   const { t } = useTranslation();
 
   const Wrapper = styled.div`
-height: 100%;
-width: 100%;
-padding: 20px;
-padding-top: 100px;
+  display: flex;
+    flex-direction: column;
+      justify-content: center;
 background-color : ${({ theme }) => theme.body};
+    height: 100%;
   }
   `;
 
