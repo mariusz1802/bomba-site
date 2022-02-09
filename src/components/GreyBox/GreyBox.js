@@ -7,6 +7,10 @@ import styled from "styled-components";
 import FancyButton from "../FancyButton/FancyButton";
 import { device } from "../../device";
 
+
+const Picture = styled.picture`
+    padding: 10px
+`
 export const BlackBox = styled.div`
   width: 100%;
   text-align: center;
@@ -35,10 +39,10 @@ function GreyBox({
     <BlackBox>
       <div className={`${styles.container} ${ownClass}`} data-aos={dataAos}>
         <h1 className={styles.title}>{title} </h1>
-        <picture>
+        <Picture>
           <source type="image/avif" srcSet={srcSet} />
           <img src={imgSrc} alt={title} className={styles.image} />
-        </picture>
+        </Picture>
         <Hyphenated language={pl}>
           <p className={styles.description}> {description} </p>
         </Hyphenated>

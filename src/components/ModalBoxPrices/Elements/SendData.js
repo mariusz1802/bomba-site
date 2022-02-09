@@ -21,12 +21,7 @@ const Wrapper = styled.div`
 `;
 
 const Paragraph = styled.p`
-  font-size: 1.5rem;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  @media ${device.mobileL} {
-    font-size: 1.2rem;
-  }
+margin : 10px 0;
 `;
 
 const InputWrapper = styled.div`
@@ -49,6 +44,11 @@ export const ArrowWrapper = styled.div`
   :hover {
     color: #0ec50e;
     cursor: pointer;
+  }
+  @media ${device.mobileL} {
+      font-size : 2.5rem;
+      top: 10px;
+      left: 10px;
   }
 `;
 

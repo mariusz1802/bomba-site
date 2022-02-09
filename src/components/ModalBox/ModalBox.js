@@ -75,7 +75,7 @@ const Xbutton = styled.div`
 
   @media ${device.mobileL} {
     font-size: 3rem;
-    right: 5px;
+    right: 10px;
   }
   top: 5px;
 `;
