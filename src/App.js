@@ -45,11 +45,12 @@ function App() {
           />
         }
       >
-        {/* <MessengerCustomerChat
+        <MessengerCustomerChat
           pageId="108034361531951"
           appId="3321358404655618"
           language="pl_PL"
-        /> */}
+        />
+        {/* <CheckType type="logo" /> */}
         <Navbar />
         <Head theme={theme} toggleTheme={toggleTheme} />
         <Navbar />

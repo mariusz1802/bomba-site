@@ -5,6 +5,7 @@ import bombaAvif from "./bomba_logo_transparent.avif";
 import bombaSmallAvif from "./bomba_small.avif";
 import styles from "./BombaLogo.module.scss";
 import styled from "styled-components";
+import { device } from "../../device";
 
 const TextContainer = styled.div`
   margin: auto;
@@ -41,6 +42,9 @@ const BombaText = styled.h3`
     font-size: 5rem;
     padding-top: 15px;
   }
+  @media ${device.mobileL} {
+      font-size : 3.5rem;
+  }
 `;
 const BombaSubText = styled.h3`
   font-size: 3rem;
@@ -60,6 +64,9 @@ const BombaSubText = styled.h3`
     font-size: 2.5rem;
     line-height: 0;
     letter-spacing: 1px;
+  }
+    @media ${device.mobileL} {
+      font-size : 1.8rem;
   }
 `;
 

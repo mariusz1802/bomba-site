@@ -9,12 +9,33 @@ import { FormErrors } from "../../../view/Contact/FormErrors";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 import CheckAnimation from "./CheckAnimation/CheckAnimation";
 import useFade from "../../../hooks/useFade/useFade";
+import { device } from "../../../device";
 
+const Wrapper = styled.div`
+  /* height: 80%; */
+  /* padding-top: 150px; */
+  /* padding: 100px; */
+  @media ${device.mobileL} {
+    padding-top: 150px;
+  }
+`;
+
+const Paragraph = styled.p`
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  @media ${device.mobileL} {
+    font-size: 1.2rem;
+  }
+`;
 
 const InputWrapper = styled.div`
   width: 60%;
   margin: auto;
   margin-bottom: 30px;
+  @media ${device.mobileL} {
+    width: 80%;
+  }
 `;
 
 export const ArrowWrapper = styled.div`
@@ -118,7 +139,7 @@ function SendData({ backButton, orderDetails, onClose }) {
   };
 
   return data ? (
-    <div {...fadeProps}>
+    <Wrapper {...fadeProps}>
       <ArrowWrapper onClick={backButton}>
         <HiOutlineArrowLeft />
       </ArrowWrapper>
@@ -126,9 +147,7 @@ function SendData({ backButton, orderDetails, onClose }) {
       <BombaLogo mobile fontSize="sm" subText="sm" lineHeight="low" />
       <form onSubmit={sendEmail} autoComplete="off">
         <InputWrapper>
-          <p style={{ fontSize: "1.5rem", letterSpacing: ".1rem" }}>
-            {t("intresstedButton.data")}
-          </p>
+          <Paragraph>{t("intresstedButton.data")}</Paragraph>
           <Input
             type="text"
             name="name"
@@ -171,7 +190,7 @@ function SendData({ backButton, orderDetails, onClose }) {
           onClick={sendData}
         />
       </form>
-    </div>
+    </Wrapper>
   ) : (
     <>
       <ArrowWrapper onClick={backButton}>

@@ -51,6 +51,7 @@ function Offer() {
           title={t("offer.title")}
           description={t("offer.description")}
         />
+        
         <h3 className={styles.whatWeCanDo}> {t("offer.whatWeCanDo")} </h3>
         <div className={styles.oferta}>
           <div className={styles.column}>

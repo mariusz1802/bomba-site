@@ -4,6 +4,13 @@ import Hyphenated from "react-hyphen";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import pl from "hyphenated-pl";
+import styled from "styled-components";
+
+const Picture = styled.picture`
+    padding : 20px;
+    margin-left: auto;
+    margin-right: 30px;
+`
 
 function Chapter({ title, description, subtitle, src, srcSet }) {
   AOS.init();
@@ -17,10 +24,10 @@ function Chapter({ title, description, subtitle, src, srcSet }) {
         <div className={styles.descriptionWrapper}>
           <p className={styles.description}>{description}</p>
           {src && (
-            <picture>
+            <Picture>
               <source type="image/avif" srcSet={srcSet} />
               <img src={src} alt="myself" className={styles.maniollo} />
-            </picture>
+            </Picture>
           )}
         </div>
       </Hyphenated>

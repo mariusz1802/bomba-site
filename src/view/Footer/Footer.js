@@ -2,33 +2,33 @@ import React from "react";
 import styles from "./Footer.module.scss";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 const facebook_url = "https://www.facebook.com/Bombadesignpl-108034361531951";
-const instagram_url = "http://www.instagram.com";
+const instagram_url = "https://www.instagram.com/bombadesign.pl/";
 //images
 import background from "./footer-background.jpg";
 import backgroundDark from "./footer-background-dark.jpg";
 import backgroundAvif from "./footer-background.avif";
-import backgroundDarkAvif from "./footer-background-dark.avif"
+import backgroundDarkAvif from "./footer-background-dark.avif";
 
 function Footer({ theme }) {
   return (
     <div className={styles.footerContainer}>
       {theme === "light" ? (
         <picture>
-        <source type="image/avif" srcSet={backgroundAvif}/>
-            <img
-              className={styles.image}
-              src={background}
-              alt="Footer background"
-            />
+          <source type="image/avif" srcSet={backgroundAvif} />
+          <img
+            className={styles.image}
+            src={background}
+            alt="Footer background"
+          />
         </picture>
       ) : (
         <picture>
-        <source type="image/avif" srcSet={backgroundDarkAvif}/>
-            <img
-              className={styles.image}
-              src={backgroundDark}
-              alt="Footer background"
-            />
+          <source type="image/avif" srcSet={backgroundDarkAvif} />
+          <img
+            className={styles.image}
+            src={backgroundDark}
+            alt="Footer background"
+          />
         </picture>
       )}
       <a href={facebook_url} target="_blank" rel="noopener noreferrer">

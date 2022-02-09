@@ -5,6 +5,7 @@ import Button from "../Button/Button";
 import pl from "hyphenated-pl";
 import styled from "styled-components";
 import FancyButton from "../FancyButton/FancyButton";
+import { device } from "../../device";
 
 export const BlackBox = styled.div`
   width: 100%;
@@ -13,6 +14,10 @@ export const BlackBox = styled.div`
   background-image: ${({ theme }) => theme.gradient};
   color: ${({ theme }) => theme.text};
   margin-bottom: 30px;
+
+  @media ${device.laptop} {
+    padding: 5px;
+  }
 `;
 
 function GreyBox({
