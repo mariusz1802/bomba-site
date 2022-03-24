@@ -32,13 +32,14 @@ function App() {
     }
   };
   return (
+    
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
       <Suspense
         fallback={
           <LoadingScreen
             loading={true}
-            bgColor="#f1f1f1"
+            bgColor="#555555"
             spinnerColor="#9ee5f8"
             textColor="#676767"
             logoSrc={LogoAvif}
