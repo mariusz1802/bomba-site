@@ -9,7 +9,6 @@
        width: 100%;
      }
 
-
  @media screen and (max-width: 800px) {
          .ownClass{
              min-height: 850px;
@@ -25,18 +24,15 @@
          padding: 10px;
          padding-bottom: 20px;
        }
-     
      }
      
 @media screen and (min-width: 900px) {
 .column {
        width: 45%;
-       display: table-cell;
       margin-bottom: 50px;
-
 }
+
 .oferta {
- 
        display: flex;
        flex-direction : row;
        flex-wrap : wrap;
@@ -48,6 +44,13 @@
   .ownClass {
     padding: 10px;
     padding-bottom: 20px;
+  }
+
+}
+
+@media screen and (max-width: 475px){
+  .columnContianer {
+    display: block;
   }
 
 }

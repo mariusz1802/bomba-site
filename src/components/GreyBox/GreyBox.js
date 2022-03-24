@@ -44,7 +44,6 @@ function GreyBox({
   onClick,
   text,
   srcSet,
-  withLine
 }) {
   return (
 
@@ -58,7 +57,6 @@ function GreyBox({
         <Hyphenated language={pl}>
           <p className={styles.description}> {description} </p>
         </Hyphenated>
-     
         <div className={styles.buttonLocation}>
           {withButton && 
           <>
