@@ -122,11 +122,8 @@
     {
       "type": "checkbox",
       "text": "angepasst an Mobilgeräte und Tablets"
-    },
-    {
-      "type": "checkbox",
-      "text": ""
     }
+ 
   ],
   "websiteLogo": { "text": "Ich brauche ein Logo" },
   "websiteText": { "text": "Ich brauche Text für eine Website" },

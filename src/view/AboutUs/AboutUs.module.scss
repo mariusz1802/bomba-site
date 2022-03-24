@@ -8,6 +8,7 @@
   .column {
     width: 100%;
     margin: auto;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 450px) {
@@ -18,6 +19,7 @@
   .column {
     width: 45%;
     flex-direction: row;
+    margin-bottom: 30px;
   }
 
   .container {

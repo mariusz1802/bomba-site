@@ -10,15 +10,17 @@ const BombaWrapper = styled.div`
 `
 function Head({ theme, toggleTheme }) {
   return (
+    <>
     <div id="home" className={styles.container}>
       <BombaWrapper>
         <BombaLogo />
       </BombaWrapper>
-      <ToggleButton theme={theme} toggleTheme={toggleTheme} />
+      <ToggleButton on theme={theme} toggleTheme={toggleTheme} />
       <div className={styles.flag}>
         <Flag />
       </div>
     </div>
+    </>
   );
 }
 

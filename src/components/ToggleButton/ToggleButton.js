@@ -19,10 +19,8 @@ const ToggleContainer = styled.button`
   width: 6rem;
   height: 2.6rem;
   z-index: 100;
-  position: fixed;
-  right: 20px;
-  top: 17px;
   outline: 0 !important;
+  margin: 40px 0 70px 0;
 
   img {
     height: auto;
@@ -41,9 +39,8 @@ const ToggleContainer = styled.button`
   }
   @media screen and (max-width: 1000px) {
     position: relative;
-    top: 10vh;
-    left: 50%;
-    transform: translateX(-50%);
+
+  
   }
 `;
 

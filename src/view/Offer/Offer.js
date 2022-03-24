@@ -54,6 +54,9 @@ function Offer() {
         
         <h3 className={styles.whatWeCanDo}> {t("offer.whatWeCanDo")} </h3>
         <div className={styles.oferta}>
+
+
+  
           <div className={styles.column}>
             <GreyBox
               title={t("offerLogo.title")}
@@ -65,6 +68,7 @@ function Offer() {
               dataAos="fade-up"
               onClick={() => handleVisible("logo")}
               withButton
+              withLine
               text={t("fancyButton.text")}
             />
           </div>
@@ -79,6 +83,8 @@ function Offer() {
               animationImage="fade"
               onClick={() => handleVisible("website")}
               withButton
+              withLine
+
               text={t("fancyButton.text")}
             />
           </div>
@@ -93,6 +99,8 @@ function Offer() {
               onClick={() => handleVisible("shop")}
               animationImage="fade"
               withButton
+              withLine
+
               text={t("fancyButton.text")}
             />
           </div>
@@ -107,9 +115,12 @@ function Offer() {
               onClick={() => handleVisible("promo")}
               animationImage="fade"
               withButton
+              withLine
+
               text={t("fancyButton.text")}
             />
           </div>
+        
         </div>
       </div>
     </>

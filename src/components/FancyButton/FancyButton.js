@@ -16,19 +16,21 @@ const Wrapper = styled.div`
 `;
 
 const LineTop = styled.div`
-  width: 98%;
-  text-align: center;
-  margin: auto;
+  width: 95%;
+  margin:auto;
   border-bottom: 1px solid
     ${({ theme }) => {
       theme.text;
     }};
 `;
 
-function FancyButton({ text, onClick, disabled }) {
+
+
+function FancyButton({ text, onClick, disabled, withLine }) {
   return (
     <>
-      <LineTop />
+
+      {withLine && <LineTop/>}
       <Wrapper>
         <GutsButton disabled={disabled} text={text} onClick={onClick} />
       </Wrapper>

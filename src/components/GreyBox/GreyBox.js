@@ -10,19 +10,29 @@ import { device } from "../../device";
 
 const Picture = styled.picture`
     padding: 10px
+
 `
+const BottomStyle = styled.div`
+ position: absolute;
+ bottom: 0;
+ margin-left: auto;
+ margin-right: auto;
+ left: 0;
+ right: 0;
+`;
+
 export const BlackBox = styled.div`
   width: 100%;
+  height: 100%;
   text-align: center;
-  padding: 10px;
   background-image: ${({ theme }) => theme.gradient};
   color: ${({ theme }) => theme.text};
   margin-bottom: 30px;
-
   @media ${device.laptop} {
     padding: 5px;
   }
 `;
+
 
 function GreyBox({
   title,
@@ -34,8 +44,10 @@ function GreyBox({
   onClick,
   text,
   srcSet,
+  withLine
 }) {
   return (
+
     <BlackBox>
       <div className={`${styles.container} ${ownClass}`} data-aos={dataAos}>
         <h1 className={styles.title}>{title} </h1>
@@ -46,11 +58,20 @@ function GreyBox({
         <Hyphenated language={pl}>
           <p className={styles.description}> {description} </p>
         </Hyphenated>
+     
         <div className={styles.buttonLocation}>
-          {withButton && <FancyButton text={text} onClick={onClick} />}
+          {withButton && 
+          <>
+            <BottomStyle>
+              <FancyButton text={text} onClick={onClick} withLine />
+              </BottomStyle>          
+          </>
+        }
         </div>
       </div>
-    </BlackBox>
+    </BlackBox> 
+
+             
   );
 }
 

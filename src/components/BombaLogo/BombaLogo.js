@@ -48,6 +48,7 @@ const BombaText = styled.h3`
 `;
 const BombaSubText = styled.h3`
   font-size: 3rem;
+  font-family: 'Noto Sans', sans-serif;
   font-size: ${(props) => {
     switch (props.subText) {
       case "lg":
@@ -59,7 +60,7 @@ const BombaSubText = styled.h3`
     }
   }};
   letter-spacing: 2px;
-  font-family: "Noto Sans";
+
   @media only screen and (max-width: 1000px) {
     font-size: 2.5rem;
     line-height: 0;

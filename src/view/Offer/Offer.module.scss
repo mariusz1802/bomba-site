@@ -4,14 +4,17 @@
        font-weight : 300;
        font-size: 2rem;
      }
-
-     @media screen and (max-width: 800px) {
-         .ownClass{
-             min-height: 700px;
-         }
+     .columnContianer {
+       display: table;
+       width: 100%;
      }
 
-     
+
+ @media screen and (max-width: 800px) {
+         .ownClass{
+             min-height: 850px;
+         }
+     }
 
 @media screen and (min-width: 800px) {
        .image {
@@ -25,22 +28,13 @@
      
      }
      
-
-
 @media screen and (min-width: 900px) {
 .column {
        width: 45%;
-}
-
-@media screen and (min-width:1200px) {
-  .ownClass {
-    min-height: 800px;
-    padding: 10px;
-    padding-bottom: 20px;
-  }
+       display: table-cell;
+      margin-bottom: 50px;
 
 }
-
 .oferta {
  
        display: flex;
@@ -48,6 +42,14 @@
        flex-wrap : wrap;
        justify-content: space-evenly;
 }
+}
+
+@media screen and (min-width:1200px) {
+  .ownClass {
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+
 }
 
 
