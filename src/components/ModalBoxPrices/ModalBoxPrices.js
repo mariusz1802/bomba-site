@@ -21,7 +21,6 @@ function ModalBoxPrices({
   price,
   setPrice,
   modalName,
-  backButton,
   onChange
 }) {
 

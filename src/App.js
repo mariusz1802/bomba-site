@@ -13,8 +13,9 @@ import { lightTheme, darkTheme } from "./components/NightMode/theme";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./global.js";
 import { useDarkMode } from "./hooks/useDarkMode";
-import ModalBoxPrices from "./components/ModalBoxPrices/ModalBoxPrices";
-import CheckType from "./components/ModalBoxPrices/CheckType";
+
+import 'simplebar/dist/simplebar.min.css';
+
 
 const OfferComponent = loadable(() => import("./view/Offer/Offer"));
 const PartnersComponent = loadable(() => import("./view/Partners/Partners"));
@@ -32,7 +33,6 @@ function App() {
     }
   };
   return (
-    
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
       <Suspense
@@ -51,7 +51,6 @@ function App() {
           appId="3321358404655618"
           language="pl_PL"
         />
-        <Navbar />
         <Head theme={theme} toggleTheme={toggleTheme} />
         <Navbar />
         <NavbarDesktop />
@@ -64,6 +63,7 @@ function App() {
         <SliderMotion />
         {/* <Footer theme={theme} /> */}
         <FooterComponent theme={theme} />
+
       </Suspense>
     </ThemeProvider>
   );

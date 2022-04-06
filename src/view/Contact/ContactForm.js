@@ -5,6 +5,7 @@ import { withTranslation } from "react-i18next";
 import AOS from "aos";
 import Button from "../../components/Button/Button";
 import emailjs from "emailjs-com";
+import PropTypes from 'prop-types';
 import { FormErrors } from "./FormErrors";
 import Modal from "../../components/Modal/Modal";
 
@@ -228,12 +229,18 @@ class Form extends Component {
           <Button
             title={this.props.t("contact.button")}
             buttonColor="green"
-            disabled={!this.state.formValid}
+            // disabled={!this.state.formValid}
           />
         </form>
       </div>
     );
   }
 }
+
+  Form.propTypes = {
+      subject : PropTypes.string.isRequired,
+      name : PropTypes.string.isRequired,
+      phonenumber : PropTypes.number.isRequired
+  }
 
 export default withTranslation()(Form);

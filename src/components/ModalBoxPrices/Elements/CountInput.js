@@ -52,6 +52,9 @@ const ButtonWrapper = styled.div`
 function CountInput({ text, value, name, plusButton, minusButton, onChange }) {
   return (
     <WrapCounter>
+          <React.StrictMode>
+
+
       <ButtonWrapper>
         <ButtonPlusMinus
           id="plus"
@@ -65,6 +68,7 @@ function CountInput({ text, value, name, plusButton, minusButton, onChange }) {
           name={name}
           className={styles.count}
           value={value}
+          onChange={onChange}
         />
         <ButtonPlusMinus
           id="minus"
@@ -75,6 +79,8 @@ function CountInput({ text, value, name, plusButton, minusButton, onChange }) {
         </ButtonPlusMinus>
       </ButtonWrapper>
       <Text>{text}</Text>
+      </React.StrictMode>
+
     </WrapCounter>
   );
 }

@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import CheckedButton from "./Elements/CheckedBox";
 import ToCheckBox from "./Elements/ToCheckBox";
 import TitleComponent from "./Elements/TitleComponent";
 import CountInput from "./Elements/CountInput";
-import Counter from "./Elements/Counter";
 import { useTranslation } from "react-i18next";
 
 function Factory({
@@ -14,11 +13,7 @@ function Factory({
   setValue,
   plusButton,
   minusButton,
-  name,
-  price,
-  number,
-  type,
-  modalName,
+  name
 }) {
   const { t } = useTranslation();
   switch (component.type) {

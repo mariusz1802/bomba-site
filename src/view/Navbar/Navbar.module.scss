@@ -3,8 +3,8 @@
 .closeButton {
   color: $dark-grey;
   position: fixed;
-  right: 15px;
-  top: 15px;
+  right: 0px;
+  top: 10px;
   font-size: 45px;
   z-index: 120;
 }
@@ -12,6 +12,17 @@
 .hamburgerClick{
     user-select:none;
     scroll-behavior: smooth;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    transform: translateZ(0);
+    z-index: 1000;
+
 }
 
 .burger {
