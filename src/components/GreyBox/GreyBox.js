@@ -9,7 +9,7 @@ import { device } from "../../device";
 
 
 const Picture = styled.picture`
-    padding: 10px
+    padding: 10px;
 
 `
 const BottomStyle = styled.div`
