@@ -229,7 +229,7 @@ class Form extends Component {
           <Button
             title={this.props.t("contact.button")}
             buttonColor="green"
-            // disabled={!this.state.formValid}
+            disabled={!this.state.formValid}
           />
         </form>
       </div>

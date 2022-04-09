@@ -9,8 +9,7 @@ import { device } from "../../device";
 
 
 const Picture = styled.picture`
-    padding: 10px;
-
+    padding: 10px
 `
 const BottomStyle = styled.div`
  position: absolute;
@@ -54,9 +53,11 @@ function GreyBox({
           <source type="image/avif" srcSet={srcSet} />
           <img src={imgSrc} alt={title} className={styles.image} />
         </Picture>
+        {description &&
         <Hyphenated language={pl}>
           <p className={styles.description}> {description} </p>
         </Hyphenated>
+        }
         <div className={styles.buttonLocation}>
           {withButton && 
           <>

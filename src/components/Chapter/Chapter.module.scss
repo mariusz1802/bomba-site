@@ -25,14 +25,18 @@ justify-content: center;
 flex-direction: space-around;
 }
 
-.maniollo {
+.image {
     width: 300px;
     height: auto;
     margin-top: -100px;
 }
 
 .subtitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  width: 80%;
 }
 .underline {
   width: 40%;
@@ -49,6 +53,7 @@ flex-direction: space-around;
   );
 }
 
+
 @media only screen and (min-width: 670px) {
   .description {
     font-size: 1.5rem;
@@ -61,6 +66,7 @@ flex-direction: space-around;
     z-index: 0;
     opacity: 1;
   }
+
   .description {
     display: flex;
     justify-content: center;
@@ -76,7 +82,7 @@ flex-direction: space-around;
 
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px)  {
 
 .title {
     padding-top: 10px;
@@ -89,14 +95,34 @@ flex-direction: space-around;
 .descriptionWrapper {
     flex-direction : column-reverse;
 }
-.maniollo {
+.image {
     margin : 20px auto;
 }
-
 }
 
 @media only screen and (min-width: 1500px) {
   .description {
     width: 70%;
+  }
+}
+
+@media only screen and(max-width: 1100px ) and (min-width: 650px) {
+  .description{
+    display: inline-block;
+    color: red;
+    width: 50%;
+  }
+
+  .descriptionWrapper {
+
+    display: inline-block;
+    text-align: center;
+    justify-content: left;
+    background-color: #fff;
+  };
+
+  .image{
+    display: inline-block;
+    width: 30%;
   }
 }

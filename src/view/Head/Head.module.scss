@@ -10,7 +10,7 @@
   .flag {
     position: -webkit-sticky; /* Safari */
     position: fixed;
-    top: -8px;
+    top: -10px;
     z-index: 200;
   }
 }
@@ -19,6 +19,9 @@
 
   .flag {
     display: block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
   }
 }
 
@@ -31,6 +34,3 @@
   }
 }
 
-.flag {
-  display: none;
-}

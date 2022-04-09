@@ -22,13 +22,14 @@ function Chapter({ title, description, subtitle, src, srcSet }) {
       <p className={`${styles.subtitle} ${styles.description}`}>{subtitle} </p>
       <Hyphenated language={pl}>
         <div className={styles.descriptionWrapper}>
-          <p className={styles.description}>{description}</p>
+          <p className={styles.description}>{description}          </p>
           {src && (
             <Picture>
               <source type="image/avif" srcSet={srcSet} />
-              <img src={src} alt="myself" className={styles.maniollo} />
+              <img src={src} alt="myself" className={styles.image} />
             </Picture>
           )}
+
         </div>
       </Hyphenated>
     </>
