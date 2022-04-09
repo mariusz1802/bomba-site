@@ -6,22 +6,20 @@
   align-items: center;
 }
 
+
 @media only screen and (min-width: 550px) {
   .flag {
-    position: -webkit-sticky; /* Safari */
-    position: fixed;
-    top: -10px;
-    z-index: 200;
+ display: none;
   }
 }
 
 @media only screen and (min-width: 1000px) {
-
   .flag {
     display: block;
     position: fixed;
     left: 0px;
     top: 0px;
+    z-index: 100;
   }
 }
 
