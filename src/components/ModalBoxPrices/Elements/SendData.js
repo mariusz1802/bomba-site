@@ -12,9 +12,7 @@ import useFade from "../../../hooks/useFade/useFade";
 import { device } from "../../../device";
 
 const Wrapper = styled.div`
-  /* height: 80%; */
-  /* padding-top: 150px; */
-  /* padding: 100px; */
+   height: 90vh; 
   @media ${device.mobileL} {
     padding-top: 150px;
   }
