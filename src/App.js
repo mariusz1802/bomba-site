@@ -1,39 +1,38 @@
-import React, { Suspense } from "react";
-import loadable from "@loadable/component";
-import LoadingScreen from "react-loading-screen";
-import "./index.module.scss";
-import Head from "./view/Head/Head.js";
-import Navbar from "./view/Navbar/Navbar.js";
-import NavbarDesktop from "./view/NavbarDesktop/NavbarDesktop";
-import Wrapper from "./components/Wrapper/Wrapper";
-import MessengerCustomerChat from "react-messenger-customer-chat";
-import SliderMotion from "./components/SliderMotion/SliderMotion";
-import LogoAvif from "./components/BombaLogo/bomba_small.avif";
-import { lightTheme, darkTheme } from "./components/NightMode/theme";
-import { ThemeProvider } from "styled-components";
-import { GlobalStyles } from "./global.js";
-import { useDarkMode } from "./hooks/useDarkMode";
+import React, { Suspense } from 'react';
+import loadable from '@loadable/component';
+import LoadingScreen from 'react-loading-screen';
+import './index.module.scss';
+import Head from './view/Head/Head.js';
+import Navbar from './view/Navbar/Navbar.js';
+import NavbarDesktop from './view/NavbarDesktop/NavbarDesktop';
+import Wrapper from './components/Wrapper/Wrapper';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+import SliderMotion from './components/SliderMotion/SliderMotion';
+import LogoAvif from './components/BombaLogo/bomba_small.avif';
+import { lightTheme, darkTheme } from './components/NightMode/theme';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyles } from './global.js';
+import { useDarkMode } from './hooks/useDarkMode';
 
 import 'simplebar/dist/simplebar.min.css';
 
-
-const OfferComponent = loadable(() => import("./view/Offer/Offer"));
-const PartnersComponent = loadable(() => import("./view/Partners/Partners"));
-const ContactComponent = loadable(() => import("./view/Contact/Contact"));
-const AboutUsComponent = loadable(() => import("./view/AboutUs/AboutUs"));
-const FooterComponent = loadable(() => import("./view/Footer/Footer"));
+const OfferComponent = loadable(() => import('./view/Offer/Offer'));
+const PartnersComponent = loadable(() => import('./view/Partners/Partners'));
+const ContactComponent = loadable(() => import('./view/Contact/Contact'));
+const AboutUsComponent = loadable(() => import('./view/AboutUs/AboutUs'));
+const FooterComponent = loadable(() => import('./view/Footer/Footer'));
 
 function App() {
   const [theme, setTheme] = useDarkMode();
   const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
+    if (theme === 'light') {
+      setTheme('dark');
     } else {
-      setTheme("light");
+      setTheme('light');
     }
   };
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyles />
       <Suspense
         fallback={
@@ -61,9 +60,7 @@ function App() {
           <ContactComponent />
         </Wrapper>
         <SliderMotion />
-        {/* <Footer theme={theme} /> */}
         <FooterComponent theme={theme} />
-
       </Suspense>
     </ThemeProvider>
   );
