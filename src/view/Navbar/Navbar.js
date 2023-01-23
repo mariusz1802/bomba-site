@@ -11,23 +11,20 @@ import Flag from "./Flag/Flag";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const handleClick = () =>{
-    
-    setClick(!click)
-    
+  const handleClick = () => {
+    setClick(!click);
   };
   const { t } = useTranslation();
 
   const Wrapper = styled.div`
-  display: flex;
+    display: flex;
     flex-direction: column;
-      justify-content: center;
-background-color : ${({ theme }) => theme.body};
+    justify-content: center;
+    background-color: ${({ theme }) => theme.body};
     height: 100vh;
     overflow-y: scroll;
     width: 100%;
-    -webkit-overflow-scrolling:touch; // mobile safari
-  }
+    -webkit-overflow-scrolling: touch; // mobile safari
   `;
 
   return (

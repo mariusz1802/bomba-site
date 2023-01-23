@@ -27,28 +27,28 @@ const TextContainer = styled.div`
 
 const BombaText = styled.h3`
   color: ${({ theme }) => theme.text};
-  font-size: 6rem;
   font-size: ${(props) => {
     switch (props.fontSize) {
       case "lg":
-        return "8rem";
+        return "9rem";
       case "sm":
         return "3rem";
       default:
         return "6rem";
     }
   }};
+  font-size: 7rem;
   @media only screen and (max-width: 1000px) {
     font-size: 5rem;
     padding-top: 15px;
   }
   @media ${device.mobileL} {
-      font-size : 3.5rem;
+    font-size: 3.5rem;
   }
 `;
 const BombaSubText = styled.h3`
   font-size: 3rem;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: ${(props) => {
     switch (props.subText) {
       case "lg":
@@ -66,8 +66,8 @@ const BombaSubText = styled.h3`
     line-height: 0;
     letter-spacing: 1px;
   }
-    @media ${device.mobileL} {
-      font-size : 1.8rem;
+  @media ${device.mobileL} {
+    font-size: 1.8rem;
   }
 `;
 

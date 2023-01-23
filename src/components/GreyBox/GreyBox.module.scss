@@ -5,10 +5,8 @@
   text-align: center;
   margin-bottom: 20px;
   display: flex;
-  flex-direction:column;
-
+  flex-direction: column;
 }
-
 
 .image {
   width: 90%;
@@ -23,12 +21,12 @@
 
 .description {
   margin-bottom: 10px;
-  padding:   20px 35px 60px 35px;
-  margin : auto;
+  padding: 20px 35px 60px 35px;
+  margin: auto;
   text-align: justify;
-  
+
   text-justify: distribute;
-  font-size : 1.3rem;
+  font-size: 1.3rem;
   text-align-last: left;
   hyphens: auto;
 }
@@ -39,19 +37,13 @@
   right: 0;
 }
 
-@media screen and (max-width: 475px){
-  .image{
+@media screen and (max-width: 475px) {
+  .image {
     width: 100%;
     padding-top: 5px;
     padding: 0;
   }
   .title {
-    font-size : 1.5rem;
- 
+    font-size: 1.5rem;
   }
 }
-
-
-
-
-
