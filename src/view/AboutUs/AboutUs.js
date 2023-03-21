@@ -8,12 +8,12 @@ import "aos/dist/aos.css";
 
 //images
 import react from "./react-logo.png";
-import maniollo from "./maniollo.png";
+import maniollo from "./maniolo.png";
 import js from "./JS-logo.jpg";
 import wordpress from "./wordpress-logo.png";
 import node from "./node-logo.png";
 import reactAvif from "./react-logo.avif";
-import maniolloAvif from "./maniollo.avif";
+import maniolloAvif from "./maniolo.avif";
 import jsAvif from "./JS-logo.avif";
 import wordpressAvif from "./wordpress-logo.avif";
 import nodeAvif from "./node-logo.avif";
