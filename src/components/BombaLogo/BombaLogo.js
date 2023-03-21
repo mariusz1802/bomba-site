@@ -7,7 +7,9 @@ import styles from "./BombaLogo.module.scss";
 import styled from "styled-components";
 import { device } from "../../device";
 
-const TextContainer = styled.div`
+const TextContainer = styled.div.attrs(() => ({
+  className: "customFont",
+}))`
   margin: auto;
   font-family: "Pacifico";
   display: flex;
