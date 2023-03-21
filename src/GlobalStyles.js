@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
 
 
 .customFont {
-  animation: fontLoaded 5s ease-in-out forwards;
+  animation: fontLoaded 3s ease-in-out forwards;
 }
 
 
