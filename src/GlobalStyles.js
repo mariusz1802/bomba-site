@@ -14,23 +14,23 @@ const GlobalStyle = createGlobalStyle`
     src :local("Noto Sans"), url(${NotoSans}) format("woff");
 }
 
-@keyframes fontLoaded {
-  0% {
-    visibility: hidden;
-  }
-  100%{
-    visibility: visible;
-  }
-}
+
 
 
 .customFont {
-  visibility: hidden;
-  animation: fontLoaded 5s ease-in-out forwards;
+  animation: fontLoaded 3s ease-in-out forwards;
 }
 
 
+@keyframes fontLoaded {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
 
+  }
+}
 
   *,
   *::after,
