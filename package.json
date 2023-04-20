@@ -20,7 +20,6 @@
     "i18next": "^20.3.2",
     "i18next-browser-languagedetector": "^6.1.2",
     "i18next-http-backend": "^1.2.6",
-    "node-sass": "^6.0.1",
     "nodemailer": "^6.6.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -42,6 +41,7 @@
     "react-smooth-scrolling": "^1.0.2",
     "react-sticky-el": "^2.0.9",
     "react-use-smooth-scroll": "^1.0.0",
+    "sass": "^1.62.0",
     "simple-react-validator": "^1.6.0",
     "simplebar-react": "^2.3.6",
     "smooth-scrollbar": "^8.7.0",
@@ -50,18 +50,10 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "./node_modules/.bin/eslint .",
-    "lint:fix": "./node_modules/.bin/eslint . --fix"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [
@@ -81,10 +73,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.28.0",
     "prettier": "^2.5.1"
   }
 }
