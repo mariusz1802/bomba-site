@@ -13,6 +13,7 @@
     "emailjs-com": "^3.2.0",
     "express": "^4.17.1",
     "hamburger-react": "^2.4.1",
+    "html-webpack-plugin": "^5.5.1",
     "hyphenated": "^1.2.0",
     "hyphenated-de": "^1.2.0",
     "hyphenated-en-gb": "^1.2.0",
@@ -73,6 +74,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "webpack": "^5.80.0",
+    "webpack-dev-server": "^4.13.3"
   }
 }
