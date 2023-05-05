@@ -1,23 +1,22 @@
-import React from "react";
-import styles from "./GreyBox.module.scss";
-import Hyphenated from "react-hyphen";
-import Button from "../Button/Button";
-import pl from "hyphenated-pl";
-import styled from "styled-components";
-import FancyButton from "../FancyButton/FancyButton";
-import { device } from "../../device";
-
+import React from 'react';
+import styles from './GreyBox.module.scss';
+import Hyphenated from 'react-hyphen';
+import Button from '../Button/Button';
+import pl from 'hyphenated-pl';
+import styled from 'styled-components';
+import FancyButton from '../FancyButton/FancyButton';
+import { device } from '../../globals/device';
 
 const Picture = styled.picture`
-    padding: 10px
-`
+  padding: 10px;
+`;
 const BottomStyle = styled.div`
- position: absolute;
- bottom: 0;
- margin-left: auto;
- margin-right: auto;
- left: 0;
- right: 0;
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 `;
 
 export const BlackBox = styled.div`
@@ -32,7 +31,6 @@ export const BlackBox = styled.div`
   }
 `;
 
-
 function GreyBox({
   title,
   imgSrc,
@@ -45,7 +43,6 @@ function GreyBox({
   srcSet,
 }) {
   return (
-
     <BlackBox>
       <div className={`${styles.container} ${ownClass}`} data-aos={dataAos}>
         <h1 className={styles.title}>{title} </h1>
@@ -53,24 +50,22 @@ function GreyBox({
           <source type="image/avif" srcSet={srcSet} />
           <img src={imgSrc} alt={title} className={styles.image} />
         </Picture>
-        {description &&
-        <Hyphenated language={pl}>
-          <p className={styles.description}> {description} </p>
-        </Hyphenated>
-        }
+        {description && (
+          <Hyphenated language={pl}>
+            <p className={styles.description}> {description} </p>
+          </Hyphenated>
+        )}
         <div className={styles.buttonLocation}>
-          {withButton && 
-          <>
-            <BottomStyle>
-              <FancyButton text={text} onClick={onClick} withLine />
-              </BottomStyle>          
-          </>
-        }
+          {withButton && (
+            <>
+              <BottomStyle>
+                <FancyButton text={text} onClick={onClick} withLine />
+              </BottomStyle>
+            </>
+          )}
         </div>
       </div>
-    </BlackBox> 
-
-             
+    </BlackBox>
   );
 }
 

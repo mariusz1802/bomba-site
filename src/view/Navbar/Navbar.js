@@ -20,14 +20,14 @@ function Navbar() {
 
   const Wrapper = styled.div`
   display: flex;
-    flex-direction: column;
-      justify-content: center;
-background-color : ${({ theme }) => theme.body};
-    height: 100vh;
-    overflow-y: scroll;
-    width: 100%;
-    -webkit-overflow-scrolling:touch; // mobile safari
-  }
+  flex-direction: column;
+  justify-content: center;
+  background-color : ${({ theme }) => theme.body};
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+  -webkit-overflow-scrolling:touch; // mobile safari
+  
   `;
 
   return (

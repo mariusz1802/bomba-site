@@ -1,5 +1,5 @@
 export const aboutUs = {
-  title: "O nas",
+  title: 'O nas',
   description: `Nasza firma składa się z trzech osób którzy z zamiłowaniem poświęcają się swojej pracy.
      Różnimy się od siebie natomiast wspólnie tworzymy monolit, który przezwycięży każdy napotkany problem. 
      Zajmujemy się projektowaniem stron internetowych, sklepów i aplikacji mobilnych.
@@ -8,7 +8,7 @@ export const aboutUs = {
 };
 
 export const offer = {
-  title: "Oferta",
+  title: 'Oferta',
   description: `Oferujemy szeroki wachlarz usług związanych z samą grafiką komputerową jak i programowaniem webowym.
    Możemy wykonać dla Ciebie zarówno prostą stronę wizytową lub bardziej skomplikowane strony oparte na systemie CMS.
    Używamy technologii, które znakomicie pozycjonują się w wyszukiwarce internetowej.
@@ -34,6 +34,6 @@ export const offerPainting = {
 };
 
 export const partners = {
-  title: "Partnerzy",
-  subtitle: "Nasi partnerzy w biznesie",
+  title: 'Partnerzy',
+  subtitle: 'Nasi partnerzy w biznesie',
 };

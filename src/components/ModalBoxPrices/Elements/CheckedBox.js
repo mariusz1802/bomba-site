@@ -1,8 +1,8 @@
-import React from "react";
-import { InputCheckBox } from "./ToCheckBox";
-import styled from "styled-components";
-import { useTranslation } from "react-i18next";
-import { device } from "../../../device";
+import React from 'react';
+import { InputCheckBox } from './ToCheckBox';
+import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
+import { device } from '../../../globals/device';
 
 const CheckWrapper = styled.div`
   display: flex;

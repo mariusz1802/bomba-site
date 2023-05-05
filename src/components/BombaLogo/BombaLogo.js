@@ -1,25 +1,26 @@
-import React from "react";
-import bomba from "./bomba_logo_transparent.png";
-import bombaSmall from "./bomba_small.png";
-import bombaAvif from "./bomba_logo_transparent.avif";
-import bombaSmallAvif from "./bomba_small.avif";
-import styles from "./BombaLogo.module.scss";
-import styled from "styled-components";
-import { device } from "../../device";
+import React from 'react';
+import bomba from './bomba_logo_transparent.png';
+import bombaSmall from './bomba_small.png';
+import bombaAvif from './bomba_logo_transparent.avif';
+import bombaSmallAvif from './bomba_small.avif';
+import styles from './BombaLogo.module.scss';
+import styled from 'styled-components';
+import { device } from '../../globals/device';
+import PropTypes from 'prop-types';
 
 const TextContainer = styled.div`
   margin: auto;
-  font-family: "Pacifico";
+  font-family: 'Pacifico';
   display: flex;
   line-height: 0.8;
   line-height: ${(props) => {
     switch (props.lineHeight) {
-      case "height":
-        return "1.2";
-      case "low":
-        return "0.4";
+      case 'height':
+        return '1.2';
+      case 'low':
+        return '0.4';
       default:
-        return "0.8";
+        return '0.8';
     }
   }};
   flex-direction: column;
@@ -30,12 +31,12 @@ const BombaText = styled.h3`
   font-size: 6rem;
   font-size: ${(props) => {
     switch (props.fontSize) {
-      case "lg":
-        return "8rem";
-      case "sm":
-        return "3rem";
+      case 'lg':
+        return '8rem';
+      case 'sm':
+        return '3rem';
       default:
-        return "6rem";
+        return '6rem';
     }
   }};
   @media only screen and (max-width: 1000px) {
@@ -43,7 +44,7 @@ const BombaText = styled.h3`
     padding-top: 15px;
   }
   @media ${device.mobileL} {
-      font-size : 3.5rem;
+    font-size: 3.5rem;
   }
 `;
 const BombaSubText = styled.h3`
@@ -51,12 +52,12 @@ const BombaSubText = styled.h3`
   font-family: 'Noto Sans', sans-serif;
   font-size: ${(props) => {
     switch (props.subText) {
-      case "lg":
-        return "5rem";
-      case "sm":
-        return "1.3rem";
+      case 'lg':
+        return '5rem';
+      case 'sm':
+        return '1.3rem';
       default:
-        return "3rem";
+        return '3rem';
     }
   }};
   letter-spacing: 2px;
@@ -66,8 +67,8 @@ const BombaSubText = styled.h3`
     line-height: 0;
     letter-spacing: 1px;
   }
-    @media ${device.mobileL} {
-      font-size : 1.8rem;
+  @media ${device.mobileL} {
+    font-size: 1.8rem;
   }
 `;
 
@@ -106,6 +107,14 @@ function BombaLogo({ mobile, fontSize, subText, lineHeight }) {
     </div>
   );
 }
+
+BombaLogo.propTypes = {
+  mobile: PropTypes.bool,
+  fontSize: PropTypes.string,
+  subText: PropTypes.string,
+  lineHeight: PropTypes.string,
+};
+
 export { SpanText, BombaSubText };
 
 export default BombaLogo;

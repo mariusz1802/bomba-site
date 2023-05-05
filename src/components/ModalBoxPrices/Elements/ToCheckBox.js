@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { CheckWrapper, Text } from "./CheckedBox";
-import styled from "styled-components";
-import { device } from "../../../device";
+import React, { useState } from 'react';
+import { CheckWrapper, Text } from './CheckedBox';
+import styled from 'styled-components';
+import { device } from '../../../globals/device';
 
 const InputCheckBox = styled.input`
   font-size: 3rem;
@@ -15,8 +15,7 @@ const InputCheckBox = styled.input`
   @media ${device.mobileM} {
     height: 25px;
     width: 25px;
-  
-    }
+  }
 `;
 
 function ToCheckBox({ text, checked, onChange }) {
