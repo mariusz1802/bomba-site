@@ -26,9 +26,10 @@ const TextContainer = styled.div`
   flex-direction: column;
 `;
 
-const BombaText = styled.h3`
+const BombaText = styled.h3.attrs(() => ({
+  className: 'customFont',
+}))`
   color: ${({ theme }) => theme.text};
-  font-size: 6rem;
   font-size: ${(props) => {
     switch (props.fontSize) {
       case 'lg':
@@ -39,6 +40,7 @@ const BombaText = styled.h3`
         return '6rem';
     }
   }};
+  font-size: 7rem;
   @media only screen and (max-width: 1000px) {
     font-size: 5rem;
     padding-top: 15px;

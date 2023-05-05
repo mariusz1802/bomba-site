@@ -11,14 +11,13 @@ import Flag from "./Flag/Flag";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const handleClick = () =>{
-    
-    setClick(!click)
-    
+  const handleClick = () => {
+    setClick(!click);
   };
   const { t } = useTranslation();
 
   const Wrapper = styled.div`
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,6 +27,16 @@ function Navbar() {
   width: 100%;
   -webkit-overflow-scrolling:touch; // mobile safari
   
+=======
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: ${({ theme }) => theme.body};
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+    -webkit-overflow-scrolling: touch; // mobile safari
+>>>>>>> a7ad69fb4194412ec9f8f6ab5e7aeec9fcffa187
   `;
 
   return (
