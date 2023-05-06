@@ -1,6 +1,7 @@
-import React from "react";
-import styles from "./FormErrors.module.scss";
-import FadeIn from "react-fade-in";
+import React from 'react';
+import PropTypes from 'prop-types';
+import FadeIn from 'react-fade-in';
+import styles from './FormErrors.module.scss';
 
 export const FormErrors = ({ formErrors }) => (
   <div className={styles.formErrors}>
@@ -10,6 +11,10 @@ export const FormErrors = ({ formErrors }) => (
           <FadeIn>{formErrors}</FadeIn>
         </p>
       )}
-</div>
+    </div>
   </div>
 );
+
+FormErrors.propTypes = {
+  formErrors: PropTypes.string,
+};

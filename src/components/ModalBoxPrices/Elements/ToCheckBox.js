@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import { CheckWrapper, Text } from './CheckedBox';
+import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import { CheckWrapper, Text } from './CheckedBox';
 import { device } from '../../../globals/device';
 
 const InputCheckBox = styled.input`
@@ -25,7 +26,7 @@ function ToCheckBox({ text, checked, onChange }) {
         type="checkbox"
         checked={checked}
         onClick={onChange}
-        onChange={(e) => {}}
+        onChange={() => {}}
         checkStatus={checked}
       />
       <Text>{text}</Text>
@@ -34,5 +35,11 @@ function ToCheckBox({ text, checked, onChange }) {
 }
 
 export { InputCheckBox };
+
+ToCheckBox.propTypes = {
+  text: PropTypes.string.isRequired,
+  checked: PropTypes.bool.isRequired,
+  onChange: PropTypes.func.isRequired,
+};
 
 export default ToCheckBox;

@@ -1,5 +1,6 @@
-import React from "react";
-import styles from "./GutsButton.module.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './GutsButton.module.scss';
 function GutsButton({ text, onClick, disabled }) {
   return (
     <button disabled={disabled} className={styles.button} onClick={onClick}>
@@ -9,5 +10,11 @@ function GutsButton({ text, onClick, disabled }) {
     </button>
   );
 }
+
+GutsButton.propTypes = {
+  text: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  disabled: PropTypes.bool,
+};
 
 export default GutsButton;

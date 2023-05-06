@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import styles from "./Flag.module.scss";
-import polish from "./polish.jpg";
-import english from "./english.jpg";
-import german from "./german.jpg";
-import { useTranslation } from "react-i18next";
-import styled from "styled-components";
+import React, { useState } from 'react';
+import styles from './Flag.module.scss';
+import polish from './polish.jpg';
+import english from './english.jpg';
+import german from './german.jpg';
+import { useTranslation } from 'react-i18next';
+import styled from 'styled-components';
 
 const ButtonToggle = styled.button`
   opacity: 0.6;
@@ -29,8 +29,8 @@ function Flag() {
     <div className={styles.flagContainer}>
       <ButtonToggle
         key="pl"
-        active={active === "pl"}
-        onClick={() => handleLang("pl")}
+        active={active === 'pl'}
+        onClick={() => handleLang('pl')}
       >
         <div className={styles.buttonFlag}>
           <img
@@ -42,8 +42,8 @@ function Flag() {
       </ButtonToggle>
       <ButtonToggle
         key="en"
-        active={active === "en"}
-        onClick={() => handleLang("en")}
+        active={active === 'en'}
+        onClick={() => handleLang('en')}
       >
         <div className={styles.buttonFlag}>
           <img
@@ -56,8 +56,8 @@ function Flag() {
 
       <ButtonToggle
         key="ger"
-        active={active === "ger"}
-        onClick={() => handleLang("ger")}
+        active={active === 'ger'}
+        onClick={() => handleLang('ger')}
       >
         <div className={styles.buttonFlag}>
           <img

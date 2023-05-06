@@ -1,8 +1,8 @@
 import React from 'react';
-import NumericInput from 'react-numeric-input';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { CheckWrapper, Text } from './CheckedBox';
 import styles from './CountInput.module.scss';
-import styled from 'styled-components';
 import { device } from '../../../globals/device';
 
 const WrapCounter = styled(CheckWrapper)`
@@ -81,5 +81,14 @@ function CountInput({ text, value, name, plusButton, minusButton, onChange }) {
     </WrapCounter>
   );
 }
+
+CountInput.propTypes = {
+  text: PropTypes.string,
+  value: PropTypes.number,
+  name: PropTypes.string,
+  plusButton: PropTypes.func,
+  minusButton: PropTypes.func,
+  onChange: PropTypes.func,
+};
 
 export default CountInput;

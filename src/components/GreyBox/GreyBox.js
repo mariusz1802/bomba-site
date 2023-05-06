@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './GreyBox.module.scss';
+import PropTypes from 'prop-types';
 import Hyphenated from 'react-hyphen';
-import Button from '../Button/Button';
 import pl from 'hyphenated-pl';
 import styled from 'styled-components';
+import styles from './GreyBox.module.scss';
 import FancyButton from '../FancyButton/FancyButton';
 import { device } from '../../globals/device';
 
@@ -68,5 +68,17 @@ function GreyBox({
     </BlackBox>
   );
 }
+
+GreyBox.propTypes = {
+  title: PropTypes.string.isRequired,
+  imgSrc: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  ownClass: PropTypes.string,
+  dataAos: PropTypes.string,
+  withButton: PropTypes.bool,
+  onClick: PropTypes.func,
+  text: PropTypes.string,
+  srcSet: PropTypes.string,
+};
 
 export default GreyBox;
