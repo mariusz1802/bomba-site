@@ -1,18 +1,16 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import loadable from '@loadable/component';
-import LoadingScreen from 'react-loading-screen';
 import { ThemeProvider } from 'styled-components';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 import './index.module.scss';
+import Preloader from './components/Preloader/Preloader';
 import Head from './view/Head/Head.js';
-import Navbar from './view/Navbar/Navbar.js';
-import NavbarDesktop from './view/NavbarDesktop/NavbarDesktop';
+import Navbars from './view/Navbars/Navbars';
 import Wrapper from './components/Wrapper/Wrapper';
 import SliderMotion from './components/SliderMotion/SliderMotion';
-import LogoAvif from './assets/images/bomba_small.avif';
 import { lightTheme, darkTheme } from './components/NightMode/theme';
 import { GlobalStyles } from './globals/global.js';
 import { useDarkMode } from './hooks/useDarkMode';
+import MessengerChat from './components/MessengerChat/MessengerChat';
 
 import 'simplebar/dist/simplebar.min.css';
 
@@ -34,25 +32,10 @@ function App() {
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyles />
-      <Suspense
-        fallback={
-          <LoadingScreen
-            loading={true}
-            bgColor="#555555"
-            spinnerColor="#9ee5f8"
-            textColor="#676767"
-            logoSrc={LogoAvif}
-          />
-        }
-      >
-        <MessengerCustomerChat
-          pageId="108034361531951"
-          appId="3321358404655618"
-          language="pl_PL"
-        />
+      <Preloader>
+        <MessengerChat />
         <Head theme={theme} toggleTheme={toggleTheme} />
-        <Navbar />
-        <NavbarDesktop />
+        <Navbars />
         <Wrapper>
           <AboutUsComponent />
           <OfferComponent />
@@ -61,7 +44,7 @@ function App() {
         </Wrapper>
         <SliderMotion />
         <FooterComponent theme={theme} />
-      </Suspense>
+      </Preloader>
     </ThemeProvider>
   );
 }

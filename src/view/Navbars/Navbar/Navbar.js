@@ -3,8 +3,8 @@ import styles from './Navbar.module.scss';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import styled from 'styled-components';
-import BombaLogo from '../../components/BombaLogo/BombaLogo';
-import HamburgerButton from '../../components/Hamburger/Hamburger';
+import BombaLogo from '../../../components/BombaLogo/BombaLogo';
+import HamburgerButton from '../../../components/Hamburger/Hamburger';
 
 import { useTranslation } from 'react-i18next';
 import Flag from './Flag/Flag';

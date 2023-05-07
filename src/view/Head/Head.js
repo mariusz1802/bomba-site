@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import styles from './Head.module.scss';
-import Flag from '../Navbar/Flag/Flag';
+import Flag from '.././../view/Navbars/Navbar/Flag/Flag';
 import BombaLogo from '../../components/BombaLogo/BombaLogo';
 import ToggleButton from '../../components/ToggleButton/ToggleButton';
 
