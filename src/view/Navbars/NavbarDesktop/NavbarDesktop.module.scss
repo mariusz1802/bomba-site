@@ -1,0 +1,97 @@
+@import '../../../index.module.scss';
+
+.navbar {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  display: inline-block;
+  top: -2px;
+  box-shadow: 0 10px 40px -15px rgba(#818181, 0.5);
+}
+
+.iconContainer {
+  display: none;
+}
+
+.facebook {
+  transition: all 0.5s ease;
+}
+
+.facebook:hover {
+  color: #4267b2;
+}
+
+.instagram {
+  transition: all 0.5s ease;
+}
+.instagram:hover {
+  color: #833ab4;
+}
+
+@media screen and (min-width: 1000px) {
+  .navbar {
+    height: 75px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: #f42b03;
+    background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+    opacity: 0.9;
+    z-index: 10;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .button {
+    font-weight: 700;
+    width: 130px;
+    height: 75px;
+    font-size: 1.2rem;
+    color: white;
+    padding: 30px 0;
+    transition: all 0.4s ease;
+  }
+
+  .myclass {
+    border-bottom: 6px solid #751502;
+    width: 130px;
+    height: 75px;
+    display: block;
+    display: inline-block;
+    color: #751502;
+  }
+
+  .myclass .button {
+    color: #751502;
+  }
+
+  .button:hover {
+    cursor: pointer;
+    // background-color: #923cb5;
+    height: 75px;
+    border-bottom: 6px solid #a3270e;
+    color: #a3270e;
+  }
+
+  .iconContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 135px;
+    margin-top: -55px;
+  }
+
+  .icons {
+    font-size: 2.6rem;
+    color: white;
+  }
+}
+
+@media (max-width: 1000px) {
+  .buttonContainer {
+    display: none;
+  }
+}
