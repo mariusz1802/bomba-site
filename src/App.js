@@ -9,7 +9,7 @@ import Navbar from './view/Navbar/Navbar.js';
 import NavbarDesktop from './view/NavbarDesktop/NavbarDesktop';
 import Wrapper from './components/Wrapper/Wrapper';
 import SliderMotion from './components/SliderMotion/SliderMotion';
-import LogoAvif from './components/BombaLogo/bomba_small.avif';
+import LogoAvif from './assets/images/bomba_small.avif';
 import { lightTheme, darkTheme } from './components/NightMode/theme';
 import { GlobalStyles } from './globals/global.js';
 import { useDarkMode } from './hooks/useDarkMode';

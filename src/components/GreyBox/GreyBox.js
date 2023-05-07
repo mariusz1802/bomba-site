@@ -7,30 +7,6 @@ import styles from './GreyBox.module.scss';
 import FancyButton from '../FancyButton/FancyButton';
 import { device } from '../../globals/device';
 
-const Picture = styled.picture`
-  padding: 10px;
-`;
-const BottomStyle = styled.div`
-  position: absolute;
-  bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-`;
-
-export const BlackBox = styled.div`
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background-image: ${({ theme }) => theme.gradient};
-  color: ${({ theme }) => theme.text};
-  margin-bottom: 30px;
-  @media ${device.laptop} {
-    padding: 5px;
-  }
-`;
-
 function GreyBox({
   title,
   imgSrc,
@@ -82,3 +58,27 @@ GreyBox.propTypes = {
 };
 
 export default GreyBox;
+
+const Picture = styled.picture`
+  padding: 10px;
+`;
+const BottomStyle = styled.div`
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+`;
+
+export const BlackBox = styled.div`
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-image: ${({ theme }) => theme.gradient};
+  color: ${({ theme }) => theme.text};
+  margin-bottom: 30px;
+  @media ${device.laptop} {
+    padding: 5px;
+  }
+`;

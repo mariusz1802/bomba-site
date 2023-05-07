@@ -5,6 +5,28 @@ import { VscClose } from 'react-icons/vsc';
 import { device } from '../../globals/device';
 import useFade from '../../hooks/useFade/useFade';
 
+function ModalBox({ onClose, children }) {
+  const [fadeProps] = useFade(true);
+
+  return (
+    <BackgroundModal>
+      <Wrapper {...fadeProps}>
+        <Xbutton onClick={onClose}>
+          <VscClose />
+        </Xbutton>
+        {children}
+      </Wrapper>
+    </BackgroundModal>
+  );
+}
+
+ModalBox.propTypes = {
+  onClose: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired,
+};
+
+export default ModalBox;
+
 const BackgroundModal = styled.div`
   position: fixed;
   left: 0;
@@ -58,25 +80,3 @@ const Xbutton = styled.div`
   }
   top: 5px;
 `;
-
-function ModalBox({ onClose, children }) {
-  const [fadeProps] = useFade(true);
-
-  return (
-    <BackgroundModal>
-      <Wrapper {...fadeProps}>
-        <Xbutton onClick={onClose}>
-          <VscClose />
-        </Xbutton>
-        {children}
-      </Wrapper>
-    </BackgroundModal>
-  );
-}
-
-ModalBox.propTypes = {
-  onClose: PropTypes.func.isRequired,
-  children: PropTypes.node.isRequired,
-};
-
-export default ModalBox;

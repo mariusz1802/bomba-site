@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import Hyphenated from 'react-hyphen';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
 import pl from 'hyphenated-pl';
 import PropTypes from 'prop-types';
 import styles from './Chapter.module.scss';
-import 'aos/dist/aos.css';
 
 const Picture = styled.picture`
   padding: 20px;

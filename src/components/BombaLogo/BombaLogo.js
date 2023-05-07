@@ -1,12 +1,56 @@
 import React from 'react';
-import bomba from './bomba_logo_transparent.png';
-import bombaSmall from './bomba_small.png';
-import bombaAvif from './bomba_logo_transparent.avif';
-import bombaSmallAvif from './bomba_small.avif';
-import styles from './BombaLogo.module.scss';
-import styled from 'styled-components';
-import { device } from '../../globals/device';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+//Images
+import bomba from '../../assets/images/bomba_logo_transparent.png';
+import bombaAvif from '../../assets/images/bomba_logo_transparent.avif';
+import bombaSmall from '../../assets/images/bomba_small.png';
+import bombaSmallAvif from '../../assets/images/bomba_small.avif';
+import styles from './BombaLogo.module.scss';
+import { device } from '../../globals/device';
+
+function BombaLogo({ mobile, fontSize, subText, lineHeight }) {
+  return (
+    <div>
+      {mobile ? (
+        <picture>
+          <source type="image/avif" srcSet={bombaSmallAvif} />
+          <img
+            src={bombaSmall}
+            alt="Bomba Web Design"
+            className={`${styles.bombaMobileMenu} ${styles.responsive} `}
+          />
+        </picture>
+      ) : (
+        <picture>
+          <source type="image/avif" srcSet={bombaAvif} />
+          <img
+            src={bomba}
+            alt="Bomba Web Design"
+            className={styles.responsive}
+          />
+        </picture>
+      )}
+      <TextContainer lineHeight={lineHeight}>
+        <BombaText fontSize={fontSize}>Bomba</BombaText>
+        <BombaSubText subText={subText}>
+          <SpanText>web</SpanText> design
+        </BombaSubText>
+      </TextContainer>
+    </div>
+  );
+}
+
+BombaLogo.propTypes = {
+  mobile: PropTypes.bool,
+  fontSize: PropTypes.string,
+  subText: PropTypes.string,
+  lineHeight: PropTypes.string,
+};
+
+export { SpanText, BombaSubText };
+
+export default BombaLogo;
 
 const TextContainer = styled.div`
   margin: auto;
@@ -77,46 +121,3 @@ const BombaSubText = styled.h3`
 const SpanText = styled.span`
   color: #252424;
 `;
-
-function BombaLogo({ mobile, fontSize, subText, lineHeight }) {
-  return (
-    <div>
-      {mobile ? (
-        <picture>
-          <source type="image/avif" srcSet={bombaSmallAvif} />
-          <img
-            src={bombaSmall}
-            alt="Bomba Web Design"
-            className={`${styles.bombaMobileMenu} ${styles.responsive} `}
-          />
-        </picture>
-      ) : (
-        <picture>
-          <source type="image/avif" srcSet={bombaAvif} />
-          <img
-            src={bomba}
-            alt="Bomba Web Design"
-            className={styles.responsive}
-          />
-        </picture>
-      )}
-      <TextContainer lineHeight={lineHeight}>
-        <BombaText fontSize={fontSize}>Bomba</BombaText>
-        <BombaSubText subText={subText}>
-          <SpanText>web</SpanText> design
-        </BombaSubText>
-      </TextContainer>
-    </div>
-  );
-}
-
-BombaLogo.propTypes = {
-  mobile: PropTypes.bool,
-  fontSize: PropTypes.string,
-  subText: PropTypes.string,
-  lineHeight: PropTypes.string,
-};
-
-export { SpanText, BombaSubText };
-
-export default BombaLogo;
