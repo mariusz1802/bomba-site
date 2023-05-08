@@ -5,7 +5,6 @@ import './index.module.scss';
 import Preloader from './components/Preloader/Preloader';
 import Head from './view/Head/Head.js';
 import Navbars from './view/Navbars/Navbars';
-import Wrapper from './components/Wrapper/Wrapper';
 import SliderMotion from './components/SliderMotion/SliderMotion';
 import { lightTheme, darkTheme } from './components/NightMode/theme';
 import { GlobalStyles } from './globals/global.js';
@@ -14,11 +13,11 @@ import MessengerChat from './components/MessengerChat/MessengerChat';
 
 import 'simplebar/dist/simplebar.min.css';
 
-const OfferComponent = loadable(() => import('./view/Offer/Offer'));
-const PartnersComponent = loadable(() => import('./view/Partners/Partners'));
-const ContactComponent = loadable(() => import('./view/Contact/Contact'));
-const AboutUsComponent = loadable(() => import('./view/AboutUs/AboutUs'));
-const FooterComponent = loadable(() => import('./view/Footer/Footer'));
+const OfferSection = loadable(() => import('./view/Offer/Offer'));
+const PartnersSection = loadable(() => import('./view/Partners/Partners'));
+const ContactSection = loadable(() => import('./view/Contact/Contact'));
+const AboutUsSection = loadable(() => import('./view/AboutUs/AboutUs'));
+const FooterSection = loadable(() => import('./view/Footer/Footer'));
 
 function App() {
   const [theme, setTheme] = useDarkMode();
@@ -36,14 +35,12 @@ function App() {
         <MessengerChat />
         <Head theme={theme} toggleTheme={toggleTheme} />
         <Navbars />
-        <Wrapper>
-          <AboutUsComponent />
-          <OfferComponent />
-          <PartnersComponent />
-          <ContactComponent />
-        </Wrapper>
+        <AboutUsSection />
+        <OfferSection />
+        <PartnersSection />
+        <ContactSection />
         <SliderMotion />
-        <FooterComponent theme={theme} />
+        <FooterSection theme={theme} />
       </Preloader>
     </ThemeProvider>
   );

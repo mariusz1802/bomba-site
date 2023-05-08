@@ -39,7 +39,7 @@ function Offer() {
   return (
     <>
       {isVisible && <CheckType onClose={handleVisible} type={type} />}
-      <div id="oferta">
+      <div id="oferta" style={{ padding: '0 35px' }}>
         <Chapter
           title={t('offer.title')}
           description={t('offer.description')}

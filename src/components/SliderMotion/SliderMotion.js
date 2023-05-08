@@ -25,7 +25,6 @@ const Image = styled.div`
   top: 0;
   left: 0;
   height: 100%;
-  /* transform: translate3d(0, 0, 0); */
   animation: ${moveLeft} 95s linear infinite;
 `;
 

@@ -31,7 +31,7 @@ function Contact() {
   `;
 
   return (
-    <div id="kontakt">
+    <div id="kontakt" style={{ padding: '0 35px' }}>
       <Chapter title={t('contact.title')} />
       <ContactStyle>
         <Column>
