@@ -7,11 +7,9 @@ import Navbars from './view/Navbars/Navbars';
 import SliderMotion from './components/SliderMotion/SliderMotion';
 import { lightTheme, darkTheme } from './components/NightMode/theme';
 import { GlobalStyles } from './globals/global.js';
+import './index.module.scss';
 import { useDarkMode } from './hooks/useDarkMode';
 import MessengerChat from './components/MessengerChat/MessengerChat';
-import './index.module.scss';
-
-import 'simplebar/dist/simplebar.min.css';
 
 const OfferSection = loadable(() => import('./view/Offer/Offer'));
 const PartnersSection = loadable(() => import('./view/Partners/Partners'));
