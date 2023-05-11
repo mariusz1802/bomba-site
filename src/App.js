@@ -1,7 +1,6 @@
 import React from 'react';
 import loadable from '@loadable/component';
 import { ThemeProvider } from 'styled-components';
-import './index.module.scss';
 import Preloader from './components/Preloader/Preloader';
 import Head from './view/Head/Head.js';
 import Navbars from './view/Navbars/Navbars';
@@ -10,6 +9,7 @@ import { lightTheme, darkTheme } from './components/NightMode/theme';
 import { GlobalStyles } from './globals/global.js';
 import { useDarkMode } from './hooks/useDarkMode';
 import MessengerChat from './components/MessengerChat/MessengerChat';
+import './index.module.scss';
 
 import 'simplebar/dist/simplebar.min.css';
 
