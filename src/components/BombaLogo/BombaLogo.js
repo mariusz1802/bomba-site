@@ -52,7 +52,7 @@ export { SpanText, BombaSubText };
 
 export default BombaLogo;
 
-const TextContainer = styled.div`
+export const TextContainer = styled.div`
   margin: auto;
   font-family: 'Pacifico';
   display: flex;

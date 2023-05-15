@@ -10,7 +10,6 @@ function Input({
   value,
   maxLength,
   ownClass,
-  validations,
   required,
 }) {
   return (
@@ -22,7 +21,6 @@ function Input({
         className={`${styles.form} ${ownClass}`}
         id={name}
         value={value}
-        validations={validations}
         maxLength={maxLength}
         onChange={onChange}
         required={required}
@@ -42,7 +40,7 @@ Input.propTypes = {
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
   value: PropTypes.any.isRequired,
-  maxLength: PropTypes.number,
+  maxLength: PropTypes.string,
   ownClass: PropTypes.string,
   validations: PropTypes.array,
   required: PropTypes.bool,
