@@ -15,7 +15,6 @@ const Picture = styled.picture`
 
 function Chapter({ title, description, subtitle, src, srcSet }) {
   AOS.init();
-
   return (
     <>
       <h1 className={styles.title}>{title} </h1>

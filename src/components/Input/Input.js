@@ -39,7 +39,7 @@ Input.propTypes = {
   name: PropTypes.string,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
-  value: PropTypes.any.isRequired,
+  value: PropTypes.any,
   maxLength: PropTypes.string,
   ownClass: PropTypes.string,
   validations: PropTypes.array,

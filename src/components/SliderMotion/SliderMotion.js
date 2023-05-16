@@ -2,6 +2,14 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import one from './maxior.png';
 
+
+function SliderMotion() {
+  return (
+    <ImageContainer>
+      <Image src={one} />
+    </ImageContainer>
+  );
+}
 const moveLeft = keyframes`
    100% { 
     transform: translateX(-66.6666%);  
@@ -28,12 +36,6 @@ const Image = styled.div`
   animation: ${moveLeft} 95s linear infinite;
 `;
 
-function SliderMotion() {
-  return (
-    <ImageContainer>
-      <Image src={one} />
-    </ImageContainer>
-  );
-}
+
 
 export default SliderMotion;
