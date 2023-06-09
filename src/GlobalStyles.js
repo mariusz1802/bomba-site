@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 
+
 @font-face {
     font-family: "Noto Sans";
     src :local("Noto Sans"), url(${NotoSans}) format("woff");
