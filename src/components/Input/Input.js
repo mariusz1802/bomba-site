@@ -40,7 +40,7 @@ Input.propTypes = {
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
   value: PropTypes.any,
-  maxLength: PropTypes.string,
+  maxLength: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   ownClass: PropTypes.string,
   validations: PropTypes.array,
   required: PropTypes.bool,
