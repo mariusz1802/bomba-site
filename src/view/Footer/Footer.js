@@ -1,19 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './Footer.module.scss';
-import { AiFillFacebook, AiFillInstagram } from 'react-icons/ai';
-const facebook_url = 'https://www.facebook.com/Bombadesignpl-108034361531951';
-const instagram_url = 'https://www.instagram.com/bombadesign.pl/';
+import React from "react";
+import PropTypes from "prop-types";
+import styles from "./Footer.module.scss";
+import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 
-import background from '../../assets/images/footerImg/footer-background.jpg';
-import backgroundAvif from '../../assets/images/footerImg/footer-background.avif';
-import backgroundDark from '../../assets/images/footerImg/footer-background-dark.jpg';
-import backgroundDarkAvif from '../../assets/images/footerImg/footer-background-dark.avif';
+import background from "../../assets/images/footerImg/footer-background.jpg";
+import backgroundAvif from "../../assets/images/footerImg/footer-background.avif";
+import backgroundDark from "../../assets/images/footerImg/footer-background-dark.jpg";
+import backgroundDarkAvif from "../../assets/images/footerImg/footer-background-dark.avif";
+
+const facebook_url = "https://www.facebook.com/Bombadesignpl-108034361531951";
+const instagram_url = "https://www.instagram.com/bombadesign.pl/";
 
 function Footer({ theme }) {
   return (
     <div className={styles.footerContainer}>
-      {theme === 'light' ? (
+      {theme === "light" ? (
         <picture>
           <source type="image/avif" srcSet={backgroundAvif} />
           <img

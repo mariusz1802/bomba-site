@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import GutsButton from './GutsButton.js';
-import { device } from '../../globals/device.js';
-import PropTypes from 'prop-types';
+import React from "react";
+import styled from "styled-components";
+import GutsButton from "./GutsButton.js";
+import { device } from "../../globals/device.js";
+import PropTypes from "prop-types";
 
 function FancyButton({ text, onClick, disabled, withLine }) {
   return (
@@ -37,10 +37,6 @@ const Wrapper = styled.div`
 const LineTop = styled.div`
   width: 95%;
   margin: auto;
-  border-bottom: 1px solid
-    ${({ theme }) => {
-      theme.text;
-    }};
 `;
 
 export default FancyButton;
