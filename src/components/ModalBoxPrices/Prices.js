@@ -81,7 +81,7 @@ function Prices({ type, setPrice, price, action, modalName }) {
     </div>
   );
 }
-Prices.PropTypes = {
+Prices.propTypes = {
   type: PropTypes.any,
   setPrice: PropTypes.func,
   price: PropTypes.number,
