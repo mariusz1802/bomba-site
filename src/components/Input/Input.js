@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from './Input.module.scss';
-import PropTypes from 'prop-types';
+import React from "react";
+import styles from "./Input.module.scss";
+import PropTypes from "prop-types";
 
 function Input({
   type,
@@ -8,6 +8,7 @@ function Input({
   onChange,
   placeholder,
   value,
+  autoComplete,
   maxLength,
   ownClass,
   required,
@@ -15,7 +16,6 @@ function Input({
   return (
     <div className={styles.form}>
       <input
-        autoComplete="off"
         type={type}
         name={name}
         className={`${styles.form} ${ownClass}`}
@@ -23,11 +23,12 @@ function Input({
         value={value}
         maxLength={maxLength}
         onChange={onChange}
+        autoComplete={autoComplete}
         required={required}
       ></input>
       <label htmlFor="name" className={styles.labelName}>
         <span className={styles.contentName}>
-          {placeholder} {required && <i>*</i>}{' '}
+          {placeholder} {required && <i>*</i>}{" "}
         </span>
       </label>
     </div>
@@ -39,18 +40,19 @@ Input.propTypes = {
   name: PropTypes.string,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
-  value: PropTypes.any,
+  autoComplete: PropTypes.any,
   maxLength: PropTypes.string,
   ownClass: PropTypes.string,
-  validations: PropTypes.array,
   required: PropTypes.bool,
+
+  value: PropTypes.any.isRequired,
 };
 
 Input.defaultProps = {
-  type: 'text',
-  name: 'input',
+  type: "text",
+  name: "input",
   maxLength: 200,
-  label: 'labelName',
+  label: "labelName",
 };
 
 export default Input;
