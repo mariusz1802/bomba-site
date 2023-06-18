@@ -1,67 +1,45 @@
-import React, { Suspense } from "react";
-import loadable from "@loadable/component";
-import LoadingScreen from "react-loading-screen";
-import "./index.module.scss";
-import Head from "./view/Head/Head.js";
-import Navbar from "./view/Navbar/Navbar.js";
-import NavbarDesktop from "./view/NavbarDesktop/NavbarDesktop";
-import Wrapper from "./components/Wrapper/Wrapper";
-import MessengerCustomerChat from "react-messenger-customer-chat";
-import SliderMotion from "./components/SliderMotion/SliderMotion";
-import LogoAvif from "./components/BombaLogo/bomba_small.avif";
-import { lightTheme, darkTheme } from "./components/NightMode/theme";
-import { ThemeProvider } from "styled-components";
-import GlobalStyle from "./GlobalStyles.js";
-import { useDarkMode } from "./hooks/useDarkMode";
+import React from 'react';
+import loadable from '@loadable/component';
+import { ThemeProvider } from 'styled-components';
+import Preloader from './components/Preloader/Preloader';
+import Head from './view/Head/Head.js';
+import Navbars from './view/Navbars/Navbars';
+import SliderMotion from './components/SliderMotion/SliderMotion';
+import { lightTheme, darkTheme } from './components/NightMode/theme';
+import { GlobalStyles } from './globals/global.js';
+import './index.module.scss';
+import { useDarkMode } from './hooks/useDarkMode';
+import MessengerChat from './components/MessengerChat/MessengerChat';
 
-import "simplebar/dist/simplebar.min.css";
-
-const OfferComponent = loadable(() => import("./view/Offer/Offer"));
-const PartnersComponent = loadable(() => import("./view/Partners/Partners"));
-const ContactComponent = loadable(() => import("./view/Contact/Contact"));
-const AboutUsComponent = loadable(() => import("./view/AboutUs/AboutUs"));
-const FooterComponent = loadable(() => import("./view/Footer/Footer"));
+const OfferSection = loadable(() => import('./view/Offer/Offer'));
+const PartnersSection = loadable(() => import('./view/Partners/Partners'));
+const ContactSection = loadable(() => import('./view/Contact/Contact'));
+const AboutUsSection = loadable(() => import('./view/AboutUs/AboutUs'));
+const FooterSection = loadable(() => import('./view/Footer/Footer'));
 
 function App() {
   const [theme, setTheme] = useDarkMode();
   const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
+    if (theme === 'light') {
+      setTheme('dark');
     } else {
-      setTheme("light");
+      setTheme('light');
     }
   };
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-      <GlobalStyle />
-      <Suspense
-        fallback={
-          <LoadingScreen
-            loading={true}
-            bgColor="#555555"
-            spinnerColor="#9ee5f8"
-            textColor="#676767"
-            logoSrc={LogoAvif}
-          />
-        }
-      >
-        <MessengerCustomerChat
-          pageId="108034361531951"
-          appId="3321358404655618"
-          language="pl_PL"
-        />
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+      <GlobalStyles />
+      <Preloader>
+        <MessengerChat />
         <Head theme={theme} toggleTheme={toggleTheme} />
-        <Navbar />
-        <NavbarDesktop />
-        <Wrapper>
-          <AboutUsComponent />
-          <OfferComponent />
-          <PartnersComponent />
-          <ContactComponent />
-        </Wrapper>
+        <Navbars />
+        <AboutUsSection />
+        <OfferSection />
+        <PartnersSection />
+        <ContactSection />
         <SliderMotion />
-        <FooterComponent theme={theme} />
-      </Suspense>
+        <FooterSection theme={theme} />
+      </Preloader>
     </ThemeProvider>
   );
 }

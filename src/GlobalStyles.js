@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components";
-import Pacifico from "./fonts/Pacifico.woff";
-import NotoSans from "./fonts/NotoSans.woff";
+import { createGlobalStyle } from 'styled-components';
+import Pacifico from './fonts/Pacifico.woff';
+import NotoSans from './fonts/NotoSans.woff';
 const GlobalStyle = createGlobalStyle`
 
 @font-face {
@@ -14,8 +14,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Noto Sans";
     src :local("Noto Sans"), url(${NotoSans}) format("woff");
 }
-
-
 
 
 .customFont {

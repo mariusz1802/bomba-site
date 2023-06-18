@@ -1,17 +1,18 @@
-import React from "react";
-import i18next from "i18next";
-import Factory from "./Factory";
-import Counter from "./Elements/Counter";
-import styled from "styled-components";
+/* eslint-disable react/prop-types */
+import React from 'react';
+import PropTypes from 'prop-types';
+import i18next from 'i18next';
+import Factory from './Factory';
+import Counter from './Elements/Counter';
+import styled from 'styled-components';
 
 const PriceWrapper = styled.div`
-display: flex;
-justify-content: flex-end;
-margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
 `;
 
-function Prices({ type, setPrice, price, onClose, action, modalName }) {
-  //update Check buttons by name
+function Prices({ type, setPrice, price, action, modalName }) {
   const handleChange = (checkName) => {
     const updateCheck = type.map((element) => {
       if (element.name === checkName) {
@@ -28,10 +29,6 @@ function Prices({ type, setPrice, price, onClose, action, modalName }) {
     action(updateCheck);
   };
 
-  const orderArray = [];
-  const orderDetails = () => {};
-
-  // update plus and minus input buttton
   const plusButton = (counterName, max) => {
     const updatedCounters = type.map((element) => {
       if (element.name === counterName && element.value < max) {
@@ -60,28 +57,37 @@ function Prices({ type, setPrice, price, onClose, action, modalName }) {
   return (
     <div>
       {i18next.t(modalName, { returnObjects: true }).map((element, i) => (
-        // eslint-disable-next-line react/jsx-key
-        <Factory component={element} number={i} />
+        <Factory key={i} component={element} number={i} />
       ))}
-        {type.map((element, i) => (
-          <>
-            <Factory
-              component={element}
-              name={element.name}
-              value={element.value}
-              modalName={modalName}
-              checked={element.checked}
-              onChange={(e) => handleChange(element.name)}
-              plusButton={(e) => plusButton(element.name, element.max)}
-              minusButton={(e) => minusButton(element.name, element.min)}
-            />
-          </>
-        ))}
+      {type.map((element, i) => (
+        <>
+          <Factory
+            key={i}
+            component={element}
+            name={element.name}
+            value={element.value}
+            modalName={modalName}
+            checked={element.checked}
+            onChange={() => handleChange(element.name)}
+            plusButton={() => plusButton(element.name, element.max)}
+            minusButton={() => minusButton(element.name, element.min)}
+          />
+        </>
+      ))}
+
       <PriceWrapper>
-          <Counter price={price} />
+        <Counter price={price} />
       </PriceWrapper>
     </div>
   );
 }
+Prices.PropTypes = {
+  type: PropTypes.any,
+  setPrice: PropTypes.func,
+  price: PropTypes.number,
+  onClose: PropTypes.func,
+  action: PropTypes.func,
+  modalName: PropTypes.string,
+};
 
 export default Prices;

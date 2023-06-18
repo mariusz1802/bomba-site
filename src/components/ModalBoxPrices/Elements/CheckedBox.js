@@ -1,8 +1,8 @@
-import React from "react";
-import { InputCheckBox } from "./ToCheckBox";
-import styled from "styled-components";
-import { useTranslation } from "react-i18next";
-import { device } from "../../../device";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { InputCheckBox } from './ToCheckBox';
+import styled from 'styled-components';
+import { device } from '../../../globals/device';
 
 const CheckWrapper = styled.div`
   display: flex;
@@ -30,8 +30,6 @@ const CheckNotClick = styled(InputCheckBox)`
 `;
 
 function CheckedBox({ text }) {
-  const { t } = useTranslation();
-
   return (
     <CheckWrapper>
       <CheckNotClick type="checkbox" checked="true" />
@@ -41,5 +39,9 @@ function CheckedBox({ text }) {
 }
 
 export { CheckWrapper, Text };
+
+CheckedBox.propTypes = {
+  text: PropTypes.string.isRequired,
+};
 
 export default CheckedBox;

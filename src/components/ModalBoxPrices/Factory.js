@@ -1,9 +1,9 @@
-import React from "react";
-import CheckedButton from "./Elements/CheckedBox";
-import ToCheckBox from "./Elements/ToCheckBox";
-import TitleComponent from "./Elements/TitleComponent";
-import CountInput from "./Elements/CountInput";
-import { useTranslation } from "react-i18next";
+import React from 'react';
+import CheckedButton from './Elements/CheckedBox';
+import PropTypes from 'prop-types';
+import ToCheckBox from './Elements/ToCheckBox';
+import TitleComponent from './Elements/TitleComponent';
+import CountInput from './Elements/CountInput';
 
 function Factory({
   component,
@@ -13,15 +13,14 @@ function Factory({
   setValue,
   plusButton,
   minusButton,
-  name
+  name,
 }) {
-  const { t } = useTranslation();
   switch (component.type) {
-    case "title":
+    case 'title':
       return <TitleComponent text={component.text} />;
-    case "checkbox":
-      return <CheckedButton text={component.text} />; 
-    case "tocheck":
+    case 'checkbox':
+      return <CheckedButton text={component.text} />;
+    case 'tocheck':
       return (
         <ToCheckBox
           text={component.text}
@@ -29,7 +28,7 @@ function Factory({
           onChange={onChange}
         />
       );
-    case "prices":
+    case 'prices':
       return (
         <CountInput
           text={component.text}
@@ -45,5 +44,16 @@ function Factory({
       return <div>Reload...</div>;
   }
 }
+
+Factory.propTypes = {
+  component: PropTypes.object.isRequired,
+  checked: PropTypes.bool,
+  onChange: PropTypes.func,
+  value: PropTypes.number,
+  setValue: PropTypes.func,
+  plusButton: PropTypes.func,
+  minusButton: PropTypes.func,
+  name: PropTypes.string,
+};
 
 export default Factory;

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { CheckWrapper, Text } from "./CheckedBox";
-import styled from "styled-components";
-import { device } from "../../../device";
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import { CheckWrapper, Text } from './CheckedBox';
+import { device } from '../../../globals/device';
 
 const InputCheckBox = styled.input`
   font-size: 3rem;
@@ -15,8 +16,7 @@ const InputCheckBox = styled.input`
   @media ${device.mobileM} {
     height: 25px;
     width: 25px;
-  
-    }
+  }
 `;
 
 function ToCheckBox({ text, checked, onChange }) {
@@ -26,7 +26,7 @@ function ToCheckBox({ text, checked, onChange }) {
         type="checkbox"
         checked={checked}
         onClick={onChange}
-        onChange={(e) => {}}
+        onChange={() => {}}
         checkStatus={checked}
       />
       <Text>{text}</Text>
@@ -35,5 +35,11 @@ function ToCheckBox({ text, checked, onChange }) {
 }
 
 export { InputCheckBox };
+
+ToCheckBox.propTypes = {
+  text: PropTypes.string.isRequired,
+  checked: PropTypes.bool.isRequired,
+  onChange: PropTypes.func.isRequired,
+};
 
 export default ToCheckBox;

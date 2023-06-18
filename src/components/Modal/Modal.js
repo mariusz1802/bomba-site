@@ -1,7 +1,8 @@
-import React from "react";
-import styles from "./Modal.module.scss";
-import Button from "../Button/Button";
-import { FaTimes } from "react-icons/fa";
+import React from 'react';
+import styles from './Modal.module.scss';
+import Button from '../Button/Button';
+import { FaTimes } from 'react-icons/fa';
+import PropTypes from 'prop-types';
 
 function Modal({ show, onClose, header, description, btnTitle, textSize }) {
   if (!show) {
@@ -38,5 +39,13 @@ function Modal({ show, onClose, header, description, btnTitle, textSize }) {
     </div>
   );
 }
+Modal.propTypes = {
+  show: PropTypes.bool,
+  onClose: PropTypes.func,
+  header: PropTypes.string,
+  description: PropTypes.string,
+  btnTitle: PropTypes.string,
+  textSize: PropTypes.string,
+};
 
 export default Modal;

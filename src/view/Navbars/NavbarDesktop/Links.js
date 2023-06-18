@@ -16,31 +16,19 @@ function Links() {
       currentClassName={styles.myclass}
     >
       <NavHashLink to="#home">
-        <button currentClassName className={styles.button}>
-          {" "}
-          {t("Menu.1")}
-        </button>
+        <button className={styles.button}> {t("Menu.1")}</button>
       </NavHashLink>
       <NavHashLink to="#onas">
-        <button currentClassName className={styles.button}>
-          {" "}
-          {t("Menu.2")}
-        </button>
+        <button className={styles.button}> {t("Menu.2")}</button>
       </NavHashLink>
       <NavHashLink to="#oferta">
-        <button currentClassName className={styles.button}>
-          {t("Menu.3")}
-        </button>
+        <button className={styles.button}>{t("Menu.3")}</button>
       </NavHashLink>
       <NavHashLink to="#partnerzy">
-        <button currentClassName className={styles.button}>
-          {t("Menu.4")}
-        </button>
+        <button className={styles.button}>{t("Menu.4")}</button>
       </NavHashLink>
       <NavHashLink to="#kontakt">
-        <button currentClassName className={styles.button}>
-          {t("Menu.5")}
-        </button>
+        <button className={styles.button}>{t("Menu.5")}</button>
       </NavHashLink>
     </Scrollspy>
   );

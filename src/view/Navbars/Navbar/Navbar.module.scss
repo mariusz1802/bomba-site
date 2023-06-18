@@ -1,4 +1,4 @@
-@import "../../index.module";
+@import '../../../index.module.scss';
 
 .closeButton {
   color: $dark-grey;
@@ -9,20 +9,19 @@
   z-index: 120;
 }
 
-.hamburgerClick{
-    user-select:none;
-    scroll-behavior: smooth;
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
-    position: sticky;
-    position: fixed;
-    right: 0px;
-    top: 0px;
-    transform: translateZ(0);
-    z-index: 120;
-
+.hamburgerClick {
+  user-select: none;
+  scroll-behavior: smooth;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  transform: translateZ(0);
+  z-index: 120;
 }
 
 .burger {
@@ -65,7 +64,7 @@ button {
   transition: all 0.5s ease;
   z-index: 110;
   overflow: hidden;
-  background-color : black;
+  background-color: black;
 }
 
 .navMenu.active {
@@ -77,7 +76,7 @@ button {
 .navLinks {
   display: flex;
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 1.2rem;
   text-align: center;
   padding: 0.7rem;
@@ -85,7 +84,6 @@ button {
   display: table;
   color: grey;
 }
-
 
 @media only screen and (min-width: 1000px) {
   .navMenu.active {

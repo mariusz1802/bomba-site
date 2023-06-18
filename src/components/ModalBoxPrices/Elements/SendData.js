@@ -1,25 +1,26 @@
-import React, { useState, useEffect } from "react";
-import Input from "../../Input/Input";
-import { useTranslation } from "react-i18next";
-import FancyButton from "../../FancyButton/FancyButton";
-import BombaLogo from "../../BombaLogo/BombaLogo";
-import styled from "styled-components";
-import emailjs from "emailjs-com";
-import { FormErrors } from "../../../view/Contact/FormErrors";
-import { HiOutlineArrowLeft } from "react-icons/hi";
-import CheckAnimation from "./CheckAnimation/CheckAnimation";
-import useFade from "../../../hooks/useFade/useFade";
-import { device } from "../../../device";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
+import styled from 'styled-components';
+import emailjs from 'emailjs-com';
+import Input from '../../Input/Input';
+import FancyButton from '../../FancyButton/FancyButton';
+import BombaLogo from '../../BombaLogo/BombaLogo';
+import { FormErrors } from '../../../view/Contact/FormErrors';
+import { HiOutlineArrowLeft } from 'react-icons/hi';
+import CheckAnimation from './CheckAnimation/CheckAnimation';
+import useFade from '../../../hooks/useFade/useFade';
+import { device } from '../../../globals/device';
 
 const Wrapper = styled.div`
-   height: 90vh; 
+  height: 90vh;
   @media ${device.mobileL} {
     padding-top: 150px;
   }
 `;
 
 const Paragraph = styled.p`
-margin : 10px 0;
+  margin: 10px 0;
 `;
 
 const InputWrapper = styled.div`
@@ -44,22 +45,22 @@ export const ArrowWrapper = styled.div`
     cursor: pointer;
   }
   @media ${device.mobileL} {
-      font-size : 2.5rem;
-      top: 10px;
-      left: 10px;
+    font-size: 2.5rem;
+    top: 10px;
+    left: 10px;
   }
 `;
 
 function SendData({ backButton, orderDetails, onClose }) {
   const { t } = useTranslation();
   const [state, setState] = useState({
-    name: "",
-    email: "",
-    phonenumber: "",
+    name: '',
+    email: '',
+    phonenumber: '',
   });
 
   const [valid, setValid] = useState({
-    formErrors: { name: "", email: "", phonenumber: "" },
+    formErrors: { name: '', email: '', phonenumber: '' },
     nameValid: false,
     emailValid: false,
     phoneValid: false,
@@ -82,10 +83,10 @@ function SendData({ backButton, orderDetails, onClose }) {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_qgqt86q",
-        "template_yd9zjxh",
+        'service_qgqt86q',
+        'template_yd9zjxh',
         e.target,
-        "user_1TdvSO4giHTFbWcnfWoJ4"
+        'user_1TdvSO4giHTFbWcnfWoJ4'
       )
       .then(
         () => {},
@@ -105,26 +106,26 @@ function SendData({ backButton, orderDetails, onClose }) {
     );
 
     switch (fieldName) {
-      case "name":
+      case 'name':
         nameValid = value.length >= 4;
-        fieldValidationErrors.name = nameValid ? "" : t("validation.name");
+        fieldValidationErrors.name = nameValid ? '' : t('validation.name');
         break;
-      case "email":
+      case 'email':
         emailValid = emailPatt.test(value);
-        fieldValidationErrors.email = emailValid ? "" : t("validation.email");
+        fieldValidationErrors.email = emailValid ? '' : t('validation.email');
         break;
-      case "phonenumber":
+      case 'phonenumber':
         phoneValid = phonePatt.test(value);
         fieldValidationErrors.phonenumber = phoneValid
-          ? ""
-          : t("validation.phonenumber");
+          ? ''
+          : t('validation.phonenumber');
         break;
       default:
         break;
     }
 
     if (!value) {
-      fieldValidationErrors[fieldName] = value.length === 0 && "";
+      fieldValidationErrors[fieldName] = value.length === 0 && '';
     }
     //TODO: Disable button when Email or Phone is incorect(trigger validateForm function from setValid)
     setValid({
@@ -145,14 +146,14 @@ function SendData({ backButton, orderDetails, onClose }) {
       <BombaLogo mobile fontSize="sm" subText="sm" lineHeight="low" />
       <form onSubmit={sendEmail} autoComplete="off">
         <InputWrapper>
-          <Paragraph>{t("intresstedButton.data")}</Paragraph>
+          <Paragraph>{t('intresstedButton.data')}</Paragraph>
           <Input
             type="text"
             name="name"
             value={state.name}
-            onChange={(event, value) => handleChange(event)}
+            onChange={(event) => handleChange(event)}
             maxLength="30"
-            placeholder={t("placeholder.name")}
+            placeholder={t('placeholder.name')}
           />
           <FormErrors formErrors={valid.formErrors.name} />
 
@@ -162,7 +163,7 @@ function SendData({ backButton, orderDetails, onClose }) {
             value={state.email}
             onChange={(event) => handleChange(event)}
             maxLength="40"
-            placeholder={t("placeholder.email")}
+            placeholder={t('placeholder.email')}
           />
           <FormErrors formErrors={valid.formErrors.email} />
 
@@ -172,19 +173,19 @@ function SendData({ backButton, orderDetails, onClose }) {
             value={state.phonenumber}
             onChange={(event) => handleChange(event)}
             maxLength="40"
-            placeholder={t("placeholder.phone")}
+            placeholder={t('placeholder.phone')}
           />
           <FormErrors formErrors={valid.formErrors.phonenumber} />
 
           <textarea
-            style={{ display: "none" }}
+            style={{ display: 'none' }}
             name="message"
             value={orderDetails}
           ></textarea>
         </InputWrapper>
         <FancyButton
           disabled={!valid.formValid}
-          text={t("sendDataButton.text")}
+          text={t('sendDataButton.text')}
           onClick={sendData}
         />
       </form>
@@ -198,5 +199,11 @@ function SendData({ backButton, orderDetails, onClose }) {
     </>
   );
 }
+
+SendData.propTypes = {
+  backButton: PropTypes.func.isRequired,
+  orderDetails: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
 
 export default SendData;

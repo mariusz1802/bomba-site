@@ -1,4 +1,4 @@
-@import "../../index.module.scss";
+@import '../../../index.module.scss';
 
 .navbar {
   position: -webkit-sticky; /* Safari */
@@ -6,31 +6,26 @@
   display: inline-block;
   top: -2px;
   box-shadow: 0 10px 40px -15px rgba(#818181, 0.5);
-
 }
 
 .iconContainer {
   display: none;
 }
 
-
 .facebook {
-  transition: all .5s ease;
-
+  transition: all 0.5s ease;
 }
 
-.facebook:hover{
-  color: #4267B2;
+.facebook:hover {
+  color: #4267b2;
 }
 
 .instagram {
-
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
-.instagram:hover{
-  color:  #833AB4;
+.instagram:hover {
+  color: #833ab4;
 }
-
 
 @media screen and (min-width: 1000px) {
   .navbar {
@@ -41,7 +36,7 @@
     color: white;
     background-color: #f42b03;
     background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
-    opacity: .9;
+    opacity: 0.9;
     z-index: 10;
   }
   .buttonContainer {
@@ -81,19 +76,17 @@
     color: #a3270e;
   }
 
-
   .iconContainer {
     display: flex;
-    flex-direction : row;
+    flex-direction: row;
     justify-content: flex-end;
     margin-right: 135px;
     margin-top: -55px;
-  
   }
-  
-  .icons{
-    font-size : 2.6rem; 
-     color: white;
+
+  .icons {
+    font-size: 2.6rem;
+    color: white;
   }
 }
 

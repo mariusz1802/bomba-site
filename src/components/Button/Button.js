@@ -1,5 +1,6 @@
-import React from "react";
-import styles from "./Button.module.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './Button.module.scss';
 function Button({
   buttonStyle,
   buttonColor,
@@ -45,5 +46,15 @@ function Button({
     </button>
   );
 }
+
+Button.propTypes = {
+  buttonStyle: PropTypes.string,
+  buttonColor: PropTypes.string,
+  buttonSize: PropTypes.string,
+  title: PropTypes.string,
+  onClick: PropTypes.func,
+  type: PropTypes.string,
+  disabled: PropTypes.bool,
+};
 
 export default Button;

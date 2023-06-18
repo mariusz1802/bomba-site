@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import styles from "./Navbar.module.scss";
-import { BrowserRouter as Router } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
-import styled from "styled-components";
-import BombaLogo from "../../components/BombaLogo/BombaLogo";
-import HamburgerButton from "../../components/Hamburger/Hamburger";
+import React, { useState } from 'react';
+import styles from './Navbar.module.scss';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+import styled from 'styled-components';
+import BombaLogo from '../../../components/BombaLogo/BombaLogo';
+import HamburgerButton from '../../../components/Hamburger/Hamburger';
 
-import { useTranslation } from "react-i18next";
-import Flag from "./Flag/Flag";
+import { useTranslation } from 'react-i18next';
+import Flag from './Flag/Flag';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -31,7 +31,7 @@ function Navbar() {
     <>
       <div className={styles.hamburgerClick} onClick={handleClick}>
         <HamburgerButton
-          style={{ WebkitTapHighLightColor: "rgba(0,0,0,0)" }}
+          style={{ WebkitTapHighLightColor: 'rgba(0,0,0,0)' }}
           hideOutline={false}
           toggled={click}
           toggle={handleClick}
@@ -52,7 +52,7 @@ function Navbar() {
                 onClick={handleClick}
                 className={styles.navLinks}
               >
-                {t("Menu.1")}
+                {t('Menu.1')}
               </Link>
             </li>
             <li>
@@ -62,7 +62,7 @@ function Navbar() {
                 onClick={handleClick}
                 className={styles.navLinks}
               >
-                {t("Menu.2")}
+                {t('Menu.2')}
               </Link>
             </li>
             <li>
@@ -72,7 +72,7 @@ function Navbar() {
                 onClick={handleClick}
                 className={styles.navLinks}
               >
-                {t("Menu.3")}
+                {t('Menu.3')}
               </Link>
             </li>
             <li>
@@ -82,7 +82,7 @@ function Navbar() {
                 onClick={handleClick}
                 className={styles.navLinks}
               >
-                {t("Menu.4")}
+                {t('Menu.4')}
               </Link>
             </li>
             <li>
@@ -92,7 +92,7 @@ function Navbar() {
                 onClick={handleClick}
                 className={styles.navLinks}
               >
-                {t("Menu.5")}
+                {t('Menu.5')}
               </Link>
             </li>
             <Flag />
