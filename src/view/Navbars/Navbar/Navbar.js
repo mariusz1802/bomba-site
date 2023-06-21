@@ -50,7 +50,7 @@ function Navbar() {
                 smooth
                 to="#home"
                 onClick={handleClick}
-                className={styles.navLinks}
+                currentClassName={styles.navLinks}
               >
                 {t('Menu.1')}
               </Link>
