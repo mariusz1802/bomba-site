@@ -60,7 +60,7 @@ function Navbar() {
                 smooth
                 to="#onas"
                 onClick={handleClick}
-                className={styles.navLinks}
+                currentClassName={styles.navLinks}
               >
                 {t('Menu.2')}
               </Link>
@@ -70,7 +70,7 @@ function Navbar() {
                 smooth
                 to="#oferta"
                 onClick={handleClick}
-                className={styles.navLinks}
+                currentClassName={styles.navLinks}
               >
                 {t('Menu.3')}
               </Link>
