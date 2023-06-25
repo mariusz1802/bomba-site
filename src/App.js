@@ -14,7 +14,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./GlobalStyles.js";
 import { useDarkMode } from "./hooks/useDarkMode";
 
-import "simplebar/dist/simplebar.min.css";
+// import "simplebar/dist/simplebar.min.css";
 
 const OfferComponent = loadable(() => import("./view/Offer/Offer"));
 const PartnersComponent = loadable(() => import("./view/Partners/Partners"));
@@ -54,6 +54,7 @@ function App() {
         <Navbar />
         <NavbarDesktop />
         <Wrapper>
+          <div id="first">ldasdsajdas dataAosd sa darksa d d as.</div>
           <AboutUsComponent />
           <OfferComponent />
           <PartnersComponent />
