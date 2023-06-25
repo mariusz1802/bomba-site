@@ -1,18 +1,20 @@
-import { createGlobalStyle } from 'styled-components';
-import Pacifico from './fonts/Pacifico.woff';
-import NotoSans from './fonts/NotoSans.woff';
+import { createGlobalStyle } from "styled-components";
+import Pacifico from "./fonts/Pacifico.woff";
+import NotoSans from "./fonts/NotoSans.woff";
 const GlobalStyle = createGlobalStyle`
+
+
 
 @font-face {
     font-family: "Pacifico";
-    src :local("Pacifico"), url(${Pacifico}) format("woff");
+    src: local("Pacifico"), url(${Pacifico}) format("woff");
 }
 
 
 
 @font-face {
     font-family: "Noto Sans";
-    src :local("Noto Sans"), url(${NotoSans}) format("woff");
+    src: local("Noto Sans"), url(${NotoSans}) format("woff");
 }
 
 
