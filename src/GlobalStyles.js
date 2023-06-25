@@ -1,7 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 import Pacifico from "./fonts/Pacifico.woff";
 import NotoSans from "./fonts/NotoSans.woff";
+import styled from "styled-components";
 const GlobalStyle = createGlobalStyle`
+
 
 
 
@@ -65,5 +67,9 @@ select:-webkit-autofill:focus {
   }`;
 
 /* Change Autocomplete styles in Chrome*/
+
+export const StyledComponent = styled.div`
+  font-family: "Pacifico";
+`;
 
 export default GlobalStyle;
