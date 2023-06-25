@@ -52,9 +52,9 @@
     "workbox-webpack-plugin": "^6.0.0-alpha.3"
   },
   "scripts": {
-    "start": "react-scripts start --openssl-legacy-provider",
+    "start": "react-scripts --openssl-legacy-provider start",
     "dev": "NODE_OPTIONS=--openssl-legacy-provider && next dev",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider && next build && next export",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "./node_modules/.bin/eslint .",
