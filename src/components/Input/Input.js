@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from './Input.module.scss';
-import PropTypes from 'prop-types';
+import React from "react";
+import styles from "./Input.module.scss";
+import PropTypes from "prop-types";
 
 function Input({
   type,
@@ -10,7 +10,6 @@ function Input({
   value,
   maxLength,
   ownClass,
-  validations,
   required,
 }) {
   return (
@@ -22,14 +21,13 @@ function Input({
         className={`${styles.form} ${ownClass}`}
         id={name}
         value={value}
-        validations={validations}
         maxLength={maxLength}
         onChange={onChange}
         required={required}
       ></input>
       <label htmlFor="name" className={styles.labelName}>
         <span className={styles.contentName}>
-          {placeholder} {required && <i>*</i>}{' '}
+          {placeholder} {required && <i>*</i>}{" "}
         </span>
       </label>
     </div>
@@ -44,15 +42,14 @@ Input.propTypes = {
   value: PropTypes.any.isRequired,
   maxLength: PropTypes.number,
   ownClass: PropTypes.string,
-  validations: PropTypes.array,
   required: PropTypes.bool,
 };
 
 Input.defaultProps = {
-  type: 'text',
-  name: 'input',
+  type: "text",
+  name: "input",
   maxLength: 200,
-  label: 'labelName',
+  label: "labelName",
 };
 
 export default Input;
